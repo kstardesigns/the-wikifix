@@ -452,11 +452,11 @@ televisionFactsList[94]="Scott Weigner, the voice of Aladdin in the film <i>Alad
 televisionFactsList[95]="On April 21, 1990, an animated drug-abuse prevention television special aired on all four major networks (ABC, NBC, Fox, CBS) as well as many independent stations and cable networks. It included characters from 10 different franchises, such as Winnie the Pooh, Looney Tunes, The Smurfs, and Teenage Mutant Ninja Turtles.<sup><a href='http://en.wikipedia.org/wiki/Cartoon_All-Stars_to_the_Rescue' target='_blank'>[1]</a></sup>";
 televisionFactsList[96]="In the show <i>Taxi</i>, Danny DeVito's character Louie has a girlfriend who is played by his real life wife Rhea Perlman, and a mother who is played by his real life mother.<sup><a href='http://en.wikipedia.org/wiki/Taxi_(TV_series)' target='_blank'>[1]</a></sup>";
 televisionFactsList[97]="Rather than the usual repeated lines that Bart Simpson writes as punishment, the 25th season episode \"Four Regrettings and a Funeral\" opening had Bart write \"We'll really miss you Mrs. K\", just once. This is in reference to the voice of Edna Krabapple, Marcia Wallace's recent death.<sup><a href='http://en.wikipedia.org/wiki/The_Simpsons_opening_sequence' target='_blank'>[1]</a></sup>";
-
+televisionFactsList[98]="In response to The Simpsons episode \"Brother's Little Helper\", where Bart is diagnosed with ADHD, U.S. President Bill Clinton held the first ever White House conference on Mental Health.<sup><a href='https://en.wikipedia.org/wiki/Brother%27s_Little_Helper' target='_blank'>[1]</a></sup>";
 
 
 	/*  --          User-submitted list          --  */
-var userSubmittedFactsList = ["food18","history19","music9","television47","pop20", "pop24","history24","pop31","technology23","technology24","television59","food22","pop43","pop46"];
+var userSubmittedFactsList = ["food18","history19","music9","television47","pop20", "pop24","history24","pop31","technology23","technology24","television59","food22","pop43","pop46", "television98"];
 
 	/*  --          Pictures list          --  */
 var picturesFactsList = ["history1","history16","pop8","pop37","history22","history29","sports22","music17","music23","pop49", "technology35","technology37","technology38", "television92"];

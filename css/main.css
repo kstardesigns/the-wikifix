@@ -538,7 +538,7 @@ dd {
 
 /* -- Responsive -- */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1150px){
     .left, .right {float: none; width: 100%;}
     .left {margin: 0;}
     .right {margin: 10px 10px 0 0;}
