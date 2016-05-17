@@ -206,6 +206,7 @@ musicFactsList[30]="Taylor Swift was on tour at some point in every year from 20
 musicFactsList[31]="Katy Perry's album <i>Teenage Dream</i> became the first by a female artist to produce 5 number one <i>Billboard</i> Hot 100 songs (\"California Gurls\", \"Teenage Dream\", \"Firework\", \"E.T.\", and \"Last Friday Night (T.G.I.F.)\").<sup><a href='http://en.wikipedia.org/wiki/Katy_Perry' target='_blank'>[1]</a></sup>";
 musicFactsList[32]="Elton John's 1974 song \"Candle in the Wind\" was written in honor of Marilyn Monroe, who died 11 years earlier. In 1997, he rewrote and rerecorded the song as \"Candle in the Wind 1997\", in honor of Princess Diana, who died that year.<sup><a href='http://en.wikipedia.org/wiki/Candle_in_the_Wind' target='_blank'>[1]</a><a href='http://en.wikipedia.org/wiki/Candle_in_the_Wind_1997' target='_blank'>[2]</a></sup>";
 musicFactsList[33]="Taylor Swift's album <i>1989</i> was the top-selling album of 2014 although it was only available for 2 months and 4 days of the year.<sup><a href='http://en.wikipedia.org/wiki/1989_(Taylor_Swift_album)' target='_blank'>[1]</a></sup>";
+musicFactsList[34]="In their 50+ years as a band, The Rolling Stones have released 24 studio albums in the US (22 in the UK), and have had 27 band members.<sup><a href='https://en.wikipedia.org/wiki/The_Rolling_Stones' target='_blank'>[1]</a></sup>";
 
 
 	/*  --          Pop Culture list          --  */
