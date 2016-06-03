@@ -129,7 +129,7 @@ foodFactsList[28]="The original working names for Cocoa Pebbles and Fruity Pebbl
 foodFactsList[29]="From 1999 to 2000, General Mills released a version of Cheerios called Millenios, which had \"2\"-shaped pieces, to go along with its O's to celebrate the year 2000.<sup><a href='http://en.wikipedia.org/wiki/Cheerios' target='_blank'>[1]</a></sup>";
 foodFactsList[30]="In 2001, Taco Bell held a promotion coinciding with the re-entry of the Mir Space Station. A large target was brought out into the Pacific Ocean and they announced that if the target was hit with a falling piece of Mir, every person in the United States would win a free Taco Bell taco. However no piece of station struck the target.<sup><a href='http://en.wikipedia.org/wiki/Taco_Bell' target='_blank'>[1]</a></sup>";
 foodFactsList[31]="In an effort to promote its $2 meal deals, Taco Bell started a Facebook group in 2010 to collect signatures for a petition to the Federal Reserve to produce more $2 bills.<sup><a href='https://en.wikipedia.org/wiki/Taco_Bell' target='_blank'>[1]</a></sup>";
-
+foodFactsList[32]="The popular McDonald's jingle \"I'm lovin' it\" was written and performed by Justin Timberlake and Pusha T, and produced by The Neptunes.<sup><a href='http://en.wikipedia.org/wiki/I%27m_Lovin%27_It_(song)' target='_blank'>[1]</a></sup>";
 
 
 
