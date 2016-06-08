@@ -130,8 +130,7 @@ foodFactsList[29]="From 1999 to 2000, General Mills released a version of Cheeri
 foodFactsList[30]="In 2001, Taco Bell held a promotion coinciding with the re-entry of the Mir Space Station. A large target was brought out into the Pacific Ocean and they announced that if the target was hit with a falling piece of Mir, every person in the United States would win a free Taco Bell taco. However no piece of station struck the target.<sup><a href='http://en.wikipedia.org/wiki/Taco_Bell' target='_blank'>[1]</a></sup>";
 foodFactsList[31]="In an effort to promote its $2 meal deals, Taco Bell started a Facebook group in 2010 to collect signatures for a petition to the Federal Reserve to produce more $2 bills.<sup><a href='https://en.wikipedia.org/wiki/Taco_Bell' target='_blank'>[1]</a></sup>";
 foodFactsList[32]="The popular McDonald's jingle \"I'm lovin' it\" was written and performed by Justin Timberlake and Pusha T, and produced by The Neptunes.<sup><a href='http://en.wikipedia.org/wiki/I%27m_Lovin%27_It_(song)' target='_blank'>[1]</a></sup>";
-
-
+foodFactsList[33]="In the early 1980s, the Chuck E. Cheese opened in Australia under the name \"Charlie Cheese's Pizza Playhouse\" due to the word \"chuck\" meaning to throw up in Australia.<sup><a href='http://en.wikipedia.org/wiki/Chuck_E._Cheese%27s' target='_blank'>[1]</a></sup>";
 
 
 	/*  --          History list          --  */
