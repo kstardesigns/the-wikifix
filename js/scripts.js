@@ -479,6 +479,58 @@ return false;
 
 window.onload=giveafact;
 
+
+/*  --          Featured facts section          --  */
+	
+	var featuredFacts = [
+		{
+			'ffNumber': '1',
+			'theFact': sportsFactsList[9],
+			'filter': 'Sports',
+			'bgImage': 'nolanryan.jpg',
+			'altTag': 'Nolan Ryan pitching',
+			'gradient': '#064b91',
+			'textColor': '#fff'
+		},
+		{
+			'ffNumber': '2',
+			'theFact': popFactsList[27],
+			'filter': 'Pop Culture',
+			'bgImage': 'mj-wheaties.jpg',
+			'altTag': 'Michael Jordan in front of giant Wheaties box',
+			'gradient': '#eb8603',
+			'textColor': '#fff'
+		},
+		{
+			'ffNumber': '3',
+			'theFact': historyFactsList[4],
+			'filter': 'History',
+			'bgImage': 'moonlanding.jpg',
+			'altTag': 'Gene Cernan on the moon',
+			'gradient': '#444',
+			'textColor': '#fff'
+		}
+
+
+	];
+
+/*  --          Random featured fact function          --  */
+
+function giveafeaturedfact(){ 
+var randomFeaturedFact = Math.floor(Math.random()*featuredFacts.length);
+var randomff = featuredFacts[randomFeaturedFact];
+var path = 'assets/featured/';
+var ffImage = $('.ffimage').attr({'src': path + randomff.bgImage, 'alt': randomff.altTag});
+$('.featfact').prepend(ffImage);
+$('.ffcaption').html(randomff.theFact).css({'color': randomff.textColor, 'background': 'linear-gradient(to top, ' + randomff.gradient + ' 40%, transparent'});
+return false;
+}
+
+window.onload=giveafeaturedfact;
+
+
+
+
 	/*  --          Update the Twitter share link          --  */
 
 function updateShareLinks() {
@@ -679,38 +731,13 @@ $( document ).ready(function() {
 	}
 
 
-/*  --          Recently added facts section          --  */
-
-/*	
-	var featuredFacts = [
-		{
-			'ffNumber': '1';
-			'theFact': sportsFactsList[9];
-			'filter': 'Sports';
-			'bgImage': '../assets/featured/nolanryan.jpg';
-			'alt': 'Nolan Ryan pitching';
-			'gradient': '#064b91';
-			'textColor' '#fff';
-		},
-		{
-			'ffNumber': '2';
-			'theFact': popFactsList[27];
-			'filter': 'Pop Culture';
-			'bgImage': '../assets/featured/mj-wheaties.jpg';
-			'alt': 'Michael Jordan in front of giant Wheaties box';
-			'gradient': '#064b91';
-			'textColor' '#fff';
-		}
-
-
-	];
 
 
 
-
-
-*/
 
 
 
 });
+
+
+
