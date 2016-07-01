@@ -19,7 +19,7 @@
 
 <div class="content">
 
-    <div class="header">
+    <div id="top" class="header">
         <a href="index.html" title="The WikiFix Home"><img src="assets/logo.png" class="logo" alt="The WikiFix" /></a>
         <div class="links">
             <a href="http://donate.wikimedia.org" title="Donate to Wikipedia" target="_blank"><img class="wikipedia" src="assets/wikipedia.png" alt="Donate to Wikipedia"></a>

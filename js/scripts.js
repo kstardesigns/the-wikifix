@@ -1,5 +1,3 @@
-// JavaScript Document
-
 /*  --          Filter buttons          --  */
 
 function changeToFood() {
@@ -592,5 +590,127 @@ $( document ).ready(function() {
 	var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
 	var weeklyTotal = ((factsList.length/totalDays)*7).toFixed(2);
 	document.getElementById("weeklytotal").innerHTML = weeklyTotal;
+
+
+/*  --          Recently added facts section          --  */
+
+	//How many facts to show for each filter
+	var factsShown = 3;
+
+	//Get the most recent facts and show most recent first
+	var lastFood = foodFactsList.slice(-factsShown).reverse();
+	var lastHistory = historyFactsList.slice(-factsShown).reverse();
+	var lastMusic = musicFactsList.slice(-factsShown).reverse();
+	var lastPop = popFactsList.slice(-factsShown).reverse();
+	var lastSports = sportsFactsList.slice(-factsShown).reverse();
+	var lastTech = technologyFactsList.slice(-factsShown).reverse();
+	var lastTelevision = televisionFactsList.slice(-factsShown).reverse();
+
+	// Bold the current filter
+	$('.ra.filterbuttons a').click(function(){
+		$('.ra.filterbuttons a').removeClass('activefilter');
+		$(this).addClass('activefilter');
+	});
+
+	// Change the filter
+	$('#ra-listfood a').click(function(){
+		$('.recentlists ul:not(.ra-food)').removeClass('recentShown').addClass('recentHidden');
+		$('.ra-food').removeClass('recentHidden').addClass('recentShown');
+	});
+
+	$('#ra-listhistory a').click(function(){
+		$('.recentlists ul:not(.ra-history)').removeClass('recentShown').addClass('recentHidden');
+		$('.ra-history').removeClass('recentHidden').addClass('recentShown');
+	});
+
+	$('#ra-listmusic a').click(function(){
+		$('.recentlists ul:not(.ra-music)').removeClass('recentShown').addClass('recentHidden');
+		$('.ra-music').removeClass('recentHidden').addClass('recentShown');
+	});
+
+	$('#ra-listpopculture a').click(function(){
+		$('.recentlists ul:not(.ra-pop)').removeClass('recentShown').addClass('recentHidden');
+		$('.ra-pop').removeClass('recentHidden').addClass('recentShown');
+	});
+
+	$('#ra-listsports a').click(function(){
+		$('.recentlists ul:not(.ra-sports)').removeClass('recentShown').addClass('recentHidden');
+		$('.ra-sports').removeClass('recentHidden').addClass('recentShown');
+	});
+
+	$('#ra-listtechnology a').click(function(){
+		$('.recentlists ul:not(.ra-tech)').removeClass('recentShown').addClass('recentHidden');
+		$('.ra-tech').removeClass('recentHidden').addClass('recentShown');
+	});
+
+	$('#ra-listtelevision a').click(function(){
+		$('.recentlists ul:not(.ra-television)').removeClass('recentShown').addClass('recentHidden');
+		$('.ra-television').removeClass('recentHidden').addClass('recentShown');
+	});
+
+	//Append the facts for each filter
+
+	for (var i = 0; i < lastFood.length; i++) {
+		$('.ra-food').append('<li>' + lastFood[i] + '</li>');
+	}
+
+	for (var i = 0; i < lastHistory.length; i++) {
+		$('.ra-history').append('<li>' + lastHistory[i] + '</li>');
+	}
+
+	for (var i = 0; i < lastMusic.length; i++) {
+		$('.ra-music').append('<li>' + lastMusic[i] + '</li>');
+	}
+
+	for (var i = 0; i < lastPop.length; i++) {
+		$('.ra-pop').append('<li>' + lastPop[i] + '</li>');
+	}
+
+	for (var i = 0; i < lastSports.length; i++) {
+		$('.ra-sports').append('<li>' + lastSports[i] + '</li>');
+	}
+
+	for (var i = 0; i < lastTech.length; i++) {
+		$('.ra-tech').append('<li>' + lastTech[i] + '</li>');
+	}
+
+	for (var i = 0; i < lastTelevision.length; i++) {
+		$('.ra-television').append('<li>' + lastTelevision[i] + '</li>');
+	}
+
+
+/*  --          Recently added facts section          --  */
+
+/*	
+	var featuredFacts = [
+		{
+			'ffNumber': '1';
+			'theFact': sportsFactsList[9];
+			'filter': 'Sports';
+			'bgImage': '../assets/featured/nolanryan.jpg';
+			'alt': 'Nolan Ryan pitching';
+			'gradient': '#064b91';
+			'textColor' '#fff';
+		},
+		{
+			'ffNumber': '2';
+			'theFact': popFactsList[27];
+			'filter': 'Pop Culture';
+			'bgImage': '../assets/featured/mj-wheaties.jpg';
+			'alt': 'Michael Jordan in front of giant Wheaties box';
+			'gradient': '#064b91';
+			'textColor' '#fff';
+		}
+
+
+	];
+
+
+
+
+
+*/
+
+
 
 });

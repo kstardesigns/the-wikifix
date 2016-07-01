@@ -25,6 +25,10 @@
             <a href="http://donate.wikimedia.org" title="Donate to Wikipedia" target="_blank"><img class="wikipedia" src="assets/wikipedia.png" alt="Donate to Wikipedia"></a>
             <a href="http://wikiwand.com/" title="Download Wikiwand" target="_blank"><img class="wikiwand" src="assets/wikiwand.png" alt="Download Wikiwand"></a>
         </div>
+        <div class="quicknav">
+          <p><a href="#recent">Recently added facts</a> &bull; <a href="#submitfact">Submit a fact</a></p>
+        </div>
+        <div class="c"></div>
     </div>
 
     <section class="left">
@@ -55,15 +59,40 @@
             </div>
             <div class="c"></div>
         </div>
-
-        <div class="references box">
-            <h1>References</h1>
-            <ol>
-             <li id="ref1">This website uses material from <a href="http://en.wikipedia.org/" target="_blank">Wikipedia</a>, which is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-ShareAlike 3.0" target="_blank">Creative Commons</a>. </li>
-             <li id="ref2">Some information referenced on this site may not necessarily be factual.</li>
-             <li id="ref3">This site is for entertainment purposes only. It is in no affiliation with Wikipedia.</li>
-             </ol>
+        <div id="recent" class="recent box">
+            
+            <h1>Recently added facts</h1>
+            <div class="ra filterbuttons">
+                <ul>
+                    <li id="filterby">Show:</li>
+                    <li id="ra-listfood"><a href="javascript:void(0);" class="activefilter">Food &amp; Drink</a></li>
+                    <li id="ra-listhistory"><a href="javascript:void(0);">History</a></li>
+                    <li id="ra-listmusic"><a href="javascript:void(0);">Music</a></li>
+                    <li id="ra-listpopculture"><a href="javascript:void(0);">Pop Culture</a></li>
+                    <li id="ra-listsports"><a href="javascript:void(0);">Sports</a></li>
+                    <li id="ra-listtechnology"><a href="javascript:void(0);">Technology</a></li>
+                    <li id="ra-listtelevision"><a href="javascript:void(0);">TV &amp; Film</a></li>
+                    <div class="c"></div>
+                </ul>
+            </div>
+            <div class="recentlists">
+                <ul class="ra-food recentShown">
+                </ul>
+                <ul class="ra-history recentHidden">
+                </ul>
+                <ul class="ra-music recentHidden">
+                </ul>
+                <ul class="ra-pop recentHidden">
+                </ul>
+                <ul class="ra-sports recentHidden">
+                </ul>
+                <ul class="ra-tech recentHidden">
+                </ul>
+                <ul class="ra-television recentHidden">
+                </ul>
+            </div>
         </div>
+        
         <div id="submitfact" class="submitform box">
             <p><strong>Submit a fact</strong> to The WikiFix below. The fact and its source will be reviewed and will likely be added to the site. Thanks for your contribution!</p>
             <div class="form">
@@ -98,17 +127,14 @@
                     </form>
             </div>
         </div>
-        <div class="ad box">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- second -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-2915147104262662"
-                 data-ad-slot="8921621031"
-                 data-ad-format="auto"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script> 
+        
+        <div class="references box">
+            <h1>References</h1>
+            <ol>
+             <li id="ref1">This website uses material from <a href="http://en.wikipedia.org/" target="_blank">Wikipedia</a>, which is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-ShareAlike 3.0" target="_blank">Creative Commons</a>. </li>
+             <li id="ref2">Some information referenced on this site may not necessarily be factual.</li>
+             <li id="ref3">This site is for entertainment purposes only. It is in no affiliation with Wikipedia.</li>
+             </ol>
         </div>
 
     
@@ -116,25 +142,16 @@
 
     <section class="right">
 
-        <div class="submitfact box">
-            <div class="submitfacttext">
-                <h1>Submit a fact</h1>
-                <p>Want to contribute to the The WikiFix? <a href="#submitfact" title="Submit a fact">Submit a fact.</a></p>
+        <div class="featuredfact box">
+            <div class="featuredfacttext">
+                <figure><img src="assets/featured/nolanryan.jpg" alt="" />
+                    <figcaption class="featuredfact">In Nolan Ryan's 27-year pitching career, he struck out 7 pairs of fathers and sons.</figcaption>
+                </figure>
+                
+
             </div>
             <div class="placeholder">
             </div>
-        </div>
-        <div class="ad box">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- first -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-2915147104262662"
-                 data-ad-slot="6903491037"
-                 data-ad-format="auto"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
         </div>
 
         <div class="stats box">
