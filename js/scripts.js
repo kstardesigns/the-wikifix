@@ -65,11 +65,11 @@ function changeToTelevision() {
 
 
 function changeToUnfiltered() {
-	$('#button').attr("onClick","giveafact()");
+	$('#button').attr("onClick","giveafactbutton()");
 	$('.filterbuttons a').not('#resetbutton a').removeClass("activefilter");
 	$('#resetbutton').css('display','none');
 	updateShareLinks();
-	giveafact();
+	giveafactbutton();
 }
 
 document.getElementById('addSource').onclick = function createInputField() {
@@ -525,6 +525,13 @@ return false;
 
 window.onload=giveafact;
 
+function giveafactbutton(){ //instead of relisting all array items here, add all the other arrays to this one
+// give a fact in main box
+var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
+randomFact = Math.floor(Math.random()*factsList.length);
+document.getElementById("fact").innerHTML=factsList[randomFact];
+updateShareLinks();
+}
 
 	/*  --          Update the Twitter share link          --  */
 
