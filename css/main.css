@@ -273,9 +273,6 @@ a.popimg:hover > span {
 	font-size: 13px;
 }
 
-.filterbuttons ul li a {
-	color: #000;
-}
 
 .filterbuttons ul li#resetbutton a {
 	color: #ff0000;
