@@ -467,19 +467,6 @@ var retiredFactsList = new Array;
 retiredFactsList[0]="The word for \"second-to-last\" is <i>penultimate</i>, from Latin <i>paene</i> (\"almost\") + <i>ultimus</i> (\"last\"). Similarly, third-to-last is <i>antepenultimate</i>, fourth-to-last is <i>preantepenultimate</i>, and fifth-to-last is <i>propreantepenultimate</i>.<sup><a href='http://en.wiktionary.org/wiki/penultimate' target='_blank'>[1]</a></sup>";
 
 
-/*  --          Unfiltered combined fact list          --  */
-
-function giveafact(){ //instead of relisting all array items here, add all the other arrays to this one
-var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
-randomFact = Math.floor(Math.random()*factsList.length);
-document.getElementById("fact").innerHTML=factsList[randomFact];
-updateShareLinks();
-return false;
-}
-
-window.onload=giveafact;
-
-
 /*  --          Featured facts section          --  */
 	
 	var featuredFacts = [
@@ -498,7 +485,7 @@ window.onload=giveafact;
 			'filter': 'Pop Culture',
 			'bgImage': 'mj-wheaties.jpg',
 			'altTag': 'Michael Jordan in front of giant Wheaties box',
-			'gradient': '#eb8603',
+			'gradient': '#ff5f36',
 			'textColor': '#fff'
 		},
 		{
@@ -514,21 +501,29 @@ window.onload=giveafact;
 
 	];
 
-/*  --          Random featured fact function          --  */
+/*  --          Unfiltered combined fact list          --  */
 
-function giveafeaturedfact(){ 
+function giveafact(){ //instead of relisting all array items here, add all the other arrays to this one
+// give a fact in main box
+var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
+randomFact = Math.floor(Math.random()*factsList.length);
+document.getElementById("fact").innerHTML=factsList[randomFact];
+updateShareLinks();
+
+//give a featured fact
 var randomFeaturedFact = Math.floor(Math.random()*featuredFacts.length);
 var randomff = featuredFacts[randomFeaturedFact];
 var path = 'assets/featured/';
 var ffImage = $('.ffimage').attr({'src': path + randomff.bgImage, 'alt': randomff.altTag});
 $('.featfact').prepend(ffImage);
 $('.ffcaption').html(randomff.theFact).css({'color': randomff.textColor, 'background': 'linear-gradient(to top, ' + randomff.gradient + ' 40%, transparent'});
+
+
 return false;
+
 }
 
-window.onload=giveafeaturedfact;
-
-
+window.onload=giveafact;
 
 
 	/*  --          Update the Twitter share link          --  */
