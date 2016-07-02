@@ -1,3 +1,35 @@
+/*  --          Table of Contents          --  */ 
+
+/*
+I. Filter buttons
+II. Fact lists
+	a. Filtered fact lists
+		i. Food list
+		ii. History list
+		iii. Music list
+		iv. Pop Culture list
+		v. Sports list
+		vi. Technology list
+		vii. TV/Film list
+	b. User-submitted facts list
+	c. Most used Wiki page list 
+	d. Pictures facts list
+	e. Retired facts list
+	f. Featured facts list
+III. Functions
+	a. giveafact - randomFact, randomFeaturedFact on page load
+	b. giveafactbutton - randomFact on button click
+	c. updateShareLinks - update Twitter link w/fact
+	d. Generate unfiltered facts
+		i. giveafoodfact, etc.
+IV. Stats section
+	a. Input sentence stats
+	b. Build the chart
+	c. Calculate weekly stat count
+V. Recently added facts section
+*/
+
+
 /*  --          Filter buttons          --  */
 
 function changeToFood() {
@@ -518,7 +550,6 @@ var ffImage = $('.ffimage').attr({'src': path + randomff.bgImage, 'alt': randomf
 $('.featfact').prepend(ffImage);
 $('.ffcaption').html(randomff.theFact).css({'color': randomff.textColor, 'background': 'linear-gradient(to top, ' + randomff.gradient + ' 40%, transparent'});
 
-
 return false;
 
 }
@@ -595,6 +626,7 @@ updateShareLinks();
 	/*  --          Stats section          --  */
 
 $( document ).ready(function() {
+	/* --    Input sentence stats   -- */
 	var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
 	document.getElementById("total").innerHTML=factsList.length;
 	document.getElementById("usertotal").innerHTML=userSubmittedFactsList.length;
@@ -629,7 +661,7 @@ $( document ).ready(function() {
 	$("#techtotal").html(technologyFactsList.length);
 	$("#televisiontotal").html(televisionFactsList.length);
 
-	/* -- Calculate date since site started  -- */
+	/* -- Calculate weekly stat count  -- */
 	var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 
 	var oneDay = 24*60*60*1000; //number of seconds in a day
