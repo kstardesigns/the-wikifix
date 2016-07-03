@@ -132,7 +132,92 @@ section {
     margin-right: 0;
 }
 
+.mobilenav {
+	background: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+	padding-bottom: 10px;
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.25);
+	box-shadow: 0 1px 4px rgba(0,0,0,.25);
+    display: none;
+}
 
+.mobilenav ul {
+	padding-left: 0;
+    list-style-type: none;
+    margin: 5px 0 0 0;
+}
+
+.mobilenav li {
+	line-height: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-style: italic;
+}
+
+.mobilenav li:first-child {
+	border-top: 1px solid #ddd;
+}
+
+.mobilenav img {
+	margin: 9px 15px 3px 15px;
+}
+
+.mobilenav .links img {
+	margin: 10px;
+}
+
+.mobilemenu {
+	position: absolute;
+    top: 35px;
+    right: 26px;
+    width: 25px;
+    height: 20px;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+}
+
+.mobilemenu.close {
+	position: fixed;
+}
+
+.mobilemenu span {
+	width: 22px;
+    height: 2px;
+    background: #3d78e8;
+    margin-bottom: 4px;
+    display: block;
+    -moz-transition: margin 300ms, transform 300ms;
+    -webkit-transition: margin 300ms, transform 300ms;
+    transition: margin 300ms, transform 300ms;
+}
+
+.mobilemenu.close span.top {
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	margin-top: 6px;
+}
+
+.mobilemenu.close span.mid {
+	-ms-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	margin-top: -6px;
+}
+
+.mobilemenu.close span.bottom {
+	display: none;
+}
 
 /* -- Left side -- */
 
@@ -166,6 +251,8 @@ section {
   	color: white;
 	background-color: #ff0000;
 	border-radius: 50%;
+	-moz-box-shadow: 0px 5px 0px 2px #961b29;
+	-webkit-box-shadow: 0px 5px 0px 2px #961b29;
 	box-shadow: 0px 5px 0px 2px #961b29;
 	padding: 39px 15px;
 	font-size: 25px;
@@ -177,6 +264,9 @@ section {
 	top: 0;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-transition: box-shadow 300ms, top 300ms;
+    -webkit-transition: box-shadow 300ms, top 300ms;
+    transition: box-shadow 300ms, top 300ms;
 }
 
 #button:active {
@@ -291,8 +381,6 @@ a.popimg:hover > span {
 
 .activefilter {
 	font-weight: bold;
-	font-size: 14px;
-	line-height: 15px;
 }
 
 .references {
@@ -627,8 +715,8 @@ dd {
 
 @media screen and (max-width: 1150px){
     .left, .right {float: none; width: 100%;}
-    .left {margin: 0;}
     .right {margin: 10px 10px 0 0;}
+    .featuredfact { display: none;}
 	.box {border-right: none; border-left: none;}
     .links {top: 5px;}
     .submitfact {display: none;}
@@ -647,15 +735,17 @@ dd {
 	.logo {width: 180px;}
 	.content {width: 100%;}
 	.thankyou {width: 100%; margin: 30px 0;}
-	.quicknav {text-align: center; float: none; bottom: initial; right: initial; position: relative;}
+	.quicknav {display: none;}
 	.quicknav p {margin: 10px 0;}
 	.quicknav a {margin: 0 5px;font-size: 14px;}
+	.left {margin: -10px 0 0 0;}
+	.mobilemenu { display: block;}
 	.fact {border-top: none;}
 	.fact p.sharing {text-align: center;}
 	.links {display: none;}
-	.header img.logo {float: none; display: block; margin: 5px auto;}
+	.mobilenav .links {display:block; margin: 0 auto; width: 160px; float: none; position: relative; right: inherit; top: inherit;}
+	.header img.logo {float: none; margin: 9px 15px 3px 15px;}
 	.backtotop {display: block;}
-	#filterby {display: none;}
 	#sourcearea input#addSource { display: none; }
 	.recentlists ul {padding-left: 30px;}
 	select { -webkit-appearance: none; }

@@ -1,6 +1,7 @@
 /*  --          Table of Contents          --  */ 
 
 /*
+
 I. Filter buttons
 II. Fact lists
 	a. Filtered fact lists
@@ -27,6 +28,7 @@ IV. Stats section
 	b. Build the chart
 	c. Calculate weekly stat count
 V. Recently added facts section
+
 */
 
 
@@ -36,7 +38,7 @@ function changeToFood() {
 	$('#button').attr("onClick","giveafoodfact()");
 	$('#listfood a').addClass("activefilter");
 	$('.filterbuttons a').not('#listfood a').removeClass("activefilter");	
-	$('#resetbutton').css('display','block');
+	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveafoodfact();	
 }
@@ -45,7 +47,7 @@ function changeToHistory() {
 	$('#button').attr("onClick","giveahistoryfact()");
 	$('#listhistory a').addClass("activefilter");
 	$('.filterbuttons a').not('#listhistory a').removeClass("activefilter");
-	$('#resetbutton').css('display','block');
+	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveahistoryfact();
 }
@@ -54,7 +56,7 @@ function changeToMusic() {
 	$('#button').attr("onClick","giveamusicfact()");
 	$('#listmusic a').addClass("activefilter");
 	$('.filterbuttons a').not('#listmusic a').removeClass("activefilter");
-	$('#resetbutton').css('display','block');
+	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveamusicfact();
 }
@@ -63,7 +65,7 @@ function changeToPop() {
 	$('#button').attr("onClick","giveapopculturefact()");
 	$('#listpopculture a').addClass("activefilter");
 	$('.filterbuttons a').not('#listpopculture a').removeClass("activefilter");
-	$('#resetbutton').css('display','block');
+	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveapopculturefact();
 }
@@ -72,7 +74,7 @@ function changeToSports() {
 	$('#button').attr("onClick","giveasportsfact()");
 	$('#listsports a').addClass("activefilter");
 	$('.filterbuttons a').not('#listsports a').removeClass("activefilter");
-	$('#resetbutton').css('display','block');
+	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveasportsfact();
 }
@@ -81,7 +83,7 @@ function changeToTechnology() {
 	$('#button').attr("onClick","giveatechnologyfact()");
 	$('#listtechnology a').addClass("activefilter");
 	$('.filterbuttons a').not('#listtechnology a').removeClass("activefilter");
-	$('#resetbutton').css('display','block');
+	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveatechnologyfact();
 }
@@ -90,7 +92,7 @@ function changeToTelevision() {
 	$('#button').attr("onClick","giveatelevisionfact()");
 	$('#listtelevision a').addClass("activefilter");
 	$('.filterbuttons a').not('#listtelevision a').removeClass("activefilter");
-	$('#resetbutton').css('display','block');
+	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveatelevisionfact();
 }
@@ -621,6 +623,31 @@ randomTelevisionFact = Math.floor(Math.random()*televisionFactsList.length);
 document.getElementById("fact").innerHTML=televisionFactsList[randomTelevisionFact];
 updateShareLinks();
 }
+
+// Activate mobile menu
+$('.mobilemenu').click(function(){
+	$('.mobilenav').toggle('slide');
+	$(this).toggleClass('close');
+});
+
+$('.mobilenav a').click(function(){
+	$('.mobilenav').hide();
+	$('.mobilemenu').removeClass('close');
+});
+
+// Auto scroll
+$('.mobilenav a[href*=#]').bind('click', function(e) {
+	e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump
+       
+	var target = $(this).attr("href"); //Get the target
+			
+	// perform animated scrolling by getting top-position of target-element and set it as scroll target
+	$('html, body').stop().animate({ scrollTop: $(target).offset().top}, 1000, function() { //adjust - 48 if the header height changes
+	     location.hash = target;  //attach the hash (#jumptarget) to the pageurl
+	});
+			
+	return false;
+   });
 
 
 	/*  --          Stats section          --  */

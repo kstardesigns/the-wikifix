@@ -4,21 +4,34 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Click the button to get a random Wikipedia fact!">
     <link rel="shortcut icon" href="assets/icons/favicon.png">
     <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon-iphone-60x60.png">
-    <!-- Need new icons
-    <link rel="apple-touch-icon" sizes="60x60" href="docs/assets/ico/apple-touch-icon-ipad-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="docs/assets/ico/apple-touch-icon-iphone-retina-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="docs/assets/ico/apple-touch-icon-ipad-retina-152x152.png">
-    -->
-    <title>The WikiFix</title>
+    <title>the wikifix - click the button to get a random Wikipedia fact!</title>
     <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
+<div class="mobilemenu">
+    <span class="top"></span>
+    <span class="mid"></span>
+    <span class="bottom"></span>
+</div>
+<div class="mobilenav">
+    <a href="index.html" title="The WikiFix Home"><img src="assets/logo.png" class="logo" alt="The WikiFix" /></a>
+    <ul>
+        <li><a href="#top">Random facts</a></li>
+        <li><a href="#recent">Recently added facts</a></li>
+        <li><a href="#submitfact">Submit a fact</a></li>
+        <li><a href="#stats">Stats</a></li>
+    </ul>
+    <div class="links">
+            <a href="http://donate.wikimedia.org" title="Donate to Wikipedia" target="_blank"><img class="wikipedia" src="assets/wikipedia.png" alt="Donate to Wikipedia"></a>
+            <a href="http://wikiwand.com/" title="Download Wikiwand" target="_blank"><img class="wikiwand" src="assets/wikiwand.png" alt="Download Wikiwand"></a>
+    </div>
+</div>
 
 <div class="content">
-
     <div id="top" class="header">
         <a href="index.html" title="The WikiFix Home"><img src="assets/logo.png" class="logo" alt="The WikiFix" /></a>
         <div class="links">
@@ -149,7 +162,7 @@
                 </figure>
         </div>
 
-        <div class="stats box">
+        <div id="stats" class="stats box">
             <div class="statstext">
                 <!--<div class="chart">
                 <span class="hidden"></span> <span class="red"></span> <span class="green"></span> <span class="yellow"> </span> <span class="blue"></span>
