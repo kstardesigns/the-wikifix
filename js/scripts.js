@@ -163,7 +163,7 @@ foodFactsList[30]="In 2001, Taco Bell held a promotion coinciding with the re-en
 foodFactsList[31]="In an effort to promote its $2 meal deals, Taco Bell started a Facebook group in 2010 to collect signatures for a petition to the Federal Reserve to produce more $2 bills.<sup><a href='https://en.wikipedia.org/wiki/Taco_Bell' target='_blank'>[1]</a></sup>";
 foodFactsList[32]="The popular McDonald's jingle \"I'm lovin' it\" was written and performed by Justin Timberlake and Pusha T, and produced by The Neptunes.<sup><a href='http://en.wikipedia.org/wiki/I%27m_Lovin%27_It_(song)' target='_blank'>[1]</a></sup>";
 foodFactsList[33]="In the early 1980s, the Chuck E. Cheese opened in Australia under the name \"Charlie Cheese's Pizza Playhouse\" due to the word \"chuck\" meaning to throw up in Australia.<sup><a href='http://en.wikipedia.org/wiki/Chuck_E._Cheese%27s' target='_blank'>[1]</a></sup>";
-
+foodFactsList[34]="In an effort to target a more adult audience, McDonald's developed a massive marketing campaign in 1996 for the <a class='popimg' href='#'>Arch Deluxe burger<span><i></i><img src='assets/facts/archdeluxe.jpg'/></span></a>. It is considered to be one of McDonald's most expensive flops of all time, having spent over $300 million on research, production, and marketing.<sup><a href='http://en.wikipedia.org/wiki/Arch_Deluxe' target='_blank'>[1]</a></sup>";
 
 	/*  --          History list          --  */
 var historyFactsList = new Array;
@@ -238,7 +238,7 @@ musicFactsList[31]="Katy Perry's album <i>Teenage Dream</i> became the first by 
 musicFactsList[32]="Elton John's 1974 song \"Candle in the Wind\" was written in honor of Marilyn Monroe, who died 11 years earlier. In 1997, he rewrote and rerecorded the song as \"Candle in the Wind 1997\", in honor of Princess Diana, who died that year.<sup><a href='http://en.wikipedia.org/wiki/Candle_in_the_Wind' target='_blank'>[1]</a><a href='http://en.wikipedia.org/wiki/Candle_in_the_Wind_1997' target='_blank'>[2]</a></sup>";
 musicFactsList[33]="Taylor Swift's album <i>1989</i> was the top-selling album of 2014 although it was only available for 2 months and 4 days of the year.<sup><a href='http://en.wikipedia.org/wiki/1989_(Taylor_Swift_album)' target='_blank'>[1]</a></sup>";
 musicFactsList[34]="In their 50+ years as a band, The Rolling Stones have released 24 studio albums in the US (22 in the UK), and have had 27 band members.<sup><a href='https://en.wikipedia.org/wiki/The_Rolling_Stones' target='_blank'>[1]</a></sup>";
-
+musicFactsList[35]="Kobe Bryant was scheduled to release his debut rap album, <i>Visions</i>, in the spring of 2000. The first single, \"K.O.B.E.\", debuted in January 2000, and was performed at NBA All-Star Weekend that month. The song was not well received. Sony abandoned plans for the album, and dropped Bryant later that year.<sup><a href='http://en.wikipedia.org/wiki/Kobe_Bryant' target='_blank'>[1]</a></sup>";
 
 	/*  --          Pop Culture list          --  */
 var popFactsList = new Array;
@@ -295,6 +295,11 @@ popFactsList[49]="Epcot's famous ride and structure Spaceship Earth is made up o
 popFactsList[50]="2 people have been killed due to gun violence at Universal Studios Hollywood, California. One man committed suicide by shooting himself near Despicable Me: Minion Mayhem; another incident involved a police officer shooting and killing a man carrying a gun. <sup><a href='http://en.wikipedia.org/wiki/Incidents_at_Universal_parks' target='_blank'>[1]</a></sup>";
 popFactsList[51]="Among Grumpy Cat's numerous public appearances, she has appeared on a Honey Nut Cheerios commercial, and episode of <i>The Bachelorette</i>, and WWE <i>Monday Night Raw</i>.<sup><a href='https://en.wikipedia.org/wiki/Grumpy_Cat' target='_blank'>[1]</a></sup>";
 popFactsList[52]="Pigs were chosen as the enemies in the game <i>Angry Birds</i> because of the swine-flu epidemic was popular in the news, during the game's development in 2009.<sup><a href='http://en.wikipedia.org/wiki/Angry_Birds_(video_game)' target='_blank'>[1]</a></sup>";
+popFactsList[53]="The Upright Citizens Brigade Theatre produced a play called <i>Seinfeld: The Purge</i>, which parodied both <i>Seinfeld</i> and <i>The Purge</i>. The play focused on what each Seinfeld character would do during a purge.<sup><a href='http://en.wikipedia.org/wiki/The_Purge' target='_blank'>[1]</a></sup>";
+popFactsList[54]="Playing cards first entered Southern Europe in the 14th century, using the Mamluk suits of cups, coins, swords, and polo-sticks, which are still used in traditional Latin decks today.<sup><a href='http://en.wikipedia.org/wiki/Playing_card' target='_blank'>[1]</a></sup>";
+popFactsList[55]="The joker was added to playing card decks around 1860, as a third trump for the game of Euchre, which ranked higher than the two bowers (the two highest ranking cards, the Jack of the trump suit and the Jack of the same color as the trump suit).<sup><a href='http://en.wikipedia.org/wiki/Playing_card' target='_blank'>[1]</a></sup>";
+popFactsList[56]="The FCC fined CBS a record $550,000 over Janet Jackson's \"wardrobe malfunction\" at the Super Bowl XXXVIII halftime show in 2003. It was fought in the Supreme Court, and the fine was appealed and ultimately voided by the Third Circuit Court of Appeals in a 2011 ruling. A case to reinstate the fine was refused in 2012.<sup><a href='http://en.wikipedia.org/wiki/Super_Bowl_XXXVIII_halftime-show_controversy' target='_blank'>[1]</a></sup>";
+popFactsList[57]="YouTube co-founder Jawed Karim claims that Janet Jackson's \"wardrobe malfunction\" at the Super Bowl XXXVIII halftime show was what led to the creation of the video sharing website. This was due to his frustration at not being able to easily find a video clip of the incident.<sup><a href='http://en.wikipedia.org/wiki/Super_Bowl_XXXVIII_halftime-show_controversy' target='_blank'>[1]</a></sup>";
 
 	/*  --          Sports list          --  */
 var sportsFactsList = new Array;
@@ -336,11 +341,13 @@ sportsFactsList[34]="The 1995-96 Chicago Bulls finished the season with a 72-10 
 sportsFactsList[35]="The 2001 Seattle Mariners had a 116-46 record (or a winning percentage of .716), however they lost in the American League Championship series against the Yankees, losing the series 4-1. <sup><a href='http://en.wikipedia.org/wiki/2001_Seattle_Mariners_season' target='_blank'>[1]</a></sup>";
 sportsFactsList[36]="Only 17 of the 50 states currently have an MLB franchise, in addition to the 1 team in Canada and 1 team in Washington, D.C.<sup><a href='http://en.wikipedia.org/wiki/Current_Major_League_Baseball_franchises' target='_blank'>[1]</a></sup>";
 sportsFactsList[37]="In 2011, the U.S. House of Representatives passed a bill ordering the United States Mint to produce commemorative coins with baseballs and gloves on them, including  50,000 gold coins, 400,000 silver coins, and 750,000 clad (Nickel-Copper) coins.  The money from surcharges of these non-circulating coins goes to the Baseball Hall of Fame.<sup><a href='http://en.wikipedia.org/wiki/Current_Major_League_Baseball_franchises' target='_blank'>[1]</a></sup>";
-sportsFactsList[38]="In 1994, Buffalo Sabres' goaltender Dominik Hašek made 70 saves in a single game, not allowing one goal. The game lasted until the 4th overtime when the Sabres finally won, 1-0.<sup><a href='https://en.wikipedia.org/wiki/Dominik_Hašek' target='_blank'>[1]</a></sup>";
+sportsFactsList[38]="In 1994, Buffalo Sabres' goaltender Dominik Hašek made 70 saves in a single game, not allowing one goal. The game lasted until the 4th overtime when the Sabres finally won, 1-0.<sup><a href='http://en.wikipedia.org/wiki/Dominik_Hašek' target='_blank'>[1]</a></sup>";
 sportsFactsList[39]="After clinching the NL West in 2013, the Dodgers were asked by the Diamondbacks to not celebrate on the field (the Diamondbacks' Chase Field), so several Dodgers players climbed over the outfield wall and jumped into the pool.<sup><a href='http://en.wikipedia.org/wiki/Chase_Field' target='_blank'>[1]</a></sup>";
 sportsFactsList[40]="To help funding for building Chase Field, the Diamondbacks' home stadium, a quarter-cent increase in county sales tax was approved. The issue was so controversial that a homeless man shot and injured County Supervisor Mary Rose Wilcox, claiming her support for the tax justified his attack.<sup><a href='http://en.wikipedia.org/wiki/Chase_Field' target='_blank'>[1]</a></sup>";
-
-
+sportsFactsList[41]="Kobe Bryant's parents named him after the famous beef of Kobe, Japan, which they saw on a restaurant menu.<sup><a href='http://en.wikipedia.org/wiki/Kobe_Bryant' target='_blank'>[1]</a></sup>";
+sportsFactsList[42]="From 2000-2010, the Los Angeles Lakers appeared in the NBA Finals 7 times, winning the championship 5 times.<sup><a href='http://en.wikipedia.org/wiki/List_of_NBA_champions' target='_blank'>[1]</a></sup>";
+sportsFactsList[43]="The New Orleans Hornets (now Pelicans) relocated to Oklahoma City due to the damage caused by Hurricane Katrina in 2005, and were officially known as the New Orleans/Oklahoma City Hornets for two seasons.<sup><a href='http://en.wikipedia.org/wiki/New_Orleans_Pelicans' target='_blank'>[1]</a></sup>";
+sportsFactsList[44]="When Shaquille O'Neill and Kobe Bryant were no longer teammates, Shaq's team went 7-4 against Kobe's in the 11 times they played each other. However, Kobe outscored Shaq all 11 times, by a total of 385-184.<sup><a href='http://en.wikipedia.org/wiki/Shaq%E2%80%93Kobe_feud' target='_blank'>[1]</a></sup>";
 
 	/*  --          Technology list          --  */
 var technologyFactsList = new Array;
@@ -383,6 +390,7 @@ technologyFactsList[35]="The Atari 2600 game <i>E.T. the Extra-Terrestrial</i>, 
 technologyFactsList[36]="The first Nintendo game to feature Luigi as the lone main character was <i>Mario is Missing!</i>, released in 1992. This did not happen again until <i>Luigi's Mansion</i> in 2001.<sup><a href='http://en.wikipedia.org/wiki/Mario_Is_Missing' target='_blank'>[1]</a></sup>";
 technologyFactsList[37]="The Sony PlayStation was originally an add-on peripheral for the Super Nintendo, called Play Station, which allowed the SNES to play a CD format called <a class='popimg' href='#'>SNES-CD<span><i></i><img src='assets/facts/snes-cd.jpg'/></span></a>.  After Nintendo broke their contract with Sony in favor of their rival Philips, Sony eventually created their own video game system.<sup><a href='http://en.wikipedia.org/wiki/SNES-CD' target='_blank'>[1]</a></sup>";
 technologyFactsList[38]="Nintendo's first attempt at a 3D gaming system was the <a class='popimg' href='#'>Virtual Boy<span><i></i><img src='assets/facts/virtualboy.jpg'/></span></a> in 1995, which was considered a commercial failure as it sold less than 800,000 units, lacked portability, had poor wireframe monochromatic graphics, was overpriced, and sometimes caused painful physiological symptoms. It was discontinued after just 7 months.<sup><a href='http://en.wikipedia.org/wiki/Virtual_Boy' target='_blank'>[1]</a></sup>";
+technologyFactsList[39]="Amazon released the <a class='popimg' href='#'>first Kindle<span><i></i><img src='assets/facts/kindle.jpg'/></span></a> in November 2007, for $399. It sold out in five and a half hours and remained out of stock for five months until late April 2008.pic<sup><a href='https://en.wikipedia.org/wiki/Amazon_Kindle' target='_blank'>[1]</a></sup>";
 
 	/*  --          Television/Film list          --  */
 var televisionFactsList = new Array;
@@ -491,7 +499,7 @@ televisionFactsList[98]="In response to The Simpsons episode \"Brother's Little 
 var userSubmittedFactsList = ["food18","history19","music9","television47","pop20", "pop24","history24","pop31","technology23","technology24","television59","food22","pop43","pop46", "television98"];
 
 	/*  --          Pictures list          --  */
-var picturesFactsList = ["history1","history16","pop8","pop37","history22","history29","sports22","music17","music23","pop49", "technology35","technology37","technology38", "television92"];
+var picturesFactsList = ["history1","history16","pop8","pop37","history22","history29","sports22","music17","music23","pop49", "technology35","technology37","technology38", "television92", "food34", "technology39"];
 
 	/*  --          Most used Wiki page list          --  */
 var mostFactsList = ["music21","pop18","pop19","television63","television64"];
