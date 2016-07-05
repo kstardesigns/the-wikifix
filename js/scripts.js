@@ -493,6 +493,8 @@ televisionFactsList[95]="On April 21, 1990, an animated drug-abuse prevention te
 televisionFactsList[96]="In the show <i>Taxi</i>, Danny DeVito's character Louie has a girlfriend who is played by his real life wife Rhea Perlman, and a mother who is played by his real life mother.<sup><a href='http://en.wikipedia.org/wiki/Taxi_(TV_series)' target='_blank'>[1]</a></sup>";
 televisionFactsList[97]="Rather than the usual repeated lines that Bart Simpson writes as punishment, the 25th season episode \"Four Regrettings and a Funeral\" opening had Bart write \"We'll really miss you Mrs. K\", just once. This is in reference to the voice of Edna Krabapple, Marcia Wallace's recent death.<sup><a href='http://en.wikipedia.org/wiki/The_Simpsons_opening_sequence' target='_blank'>[1]</a></sup>";
 televisionFactsList[98]="In response to The Simpsons episode \"Brother's Little Helper\", where Bart is diagnosed with ADHD, U.S. President Bill Clinton held the first ever White House conference on Mental Health.<sup><a href='https://en.wikipedia.org/wiki/Brother%27s_Little_Helper' target='_blank'>[1]</a></sup>";
+televisionFactsList[99]="The Comedy Central television series <i>Drunk History</i> was inspired by a 2007 conversation that creator Derek Waters had with <i>New Girl</i> actor Jake Johnson, who drunkenly tried to explain Otis Reddings' death to Waters. Johnson later appeared in multiple episodes of the show after it started in 2013.<sup><a href='http://en.wikipedia.org/wiki/Jake_Johnson' target='_blank'>[1]</a></sup>";
+televisionFactsList[100]="Jaleel White, who played Steve Urkel in <i>Family Matters</i>, also appeared as his character Steve Urkel in <i>Full House</i>, <i>Step by Step</i>, and <i>Meego</i>. In <i>Family Matters</i> he also sends a chain letter to his friend Cory Matthews, who lived in Philadelphia, referencing a crossover to the series <i>Boy Meets World</i>.<sup><a href='http://en.wikipedia.org/wiki/Steve_Urkel' target='_blank'>[1]</a></sup>";
 
 
 	/*  --          User-submitted list          --  */
@@ -519,6 +521,7 @@ retiredFactsList[0]="The word for \"second-to-last\" is <i>penultimate</i>, from
 			'bgImage': 'nolanryan.jpg',
 			'altTag': 'Nolan Ryan pitching',
 			'gradient': '#064b91',
+			'height': '20%',
 			'textColor': '#fff'
 		},
 		{
@@ -528,6 +531,7 @@ retiredFactsList[0]="The word for \"second-to-last\" is <i>penultimate</i>, from
 			'bgImage': 'mj-wheaties.jpg',
 			'altTag': 'Michael Jordan in front of giant Wheaties box',
 			'gradient': '#ff5f36',
+			'height': '40%',
 			'textColor': '#fff'
 		},
 		{
@@ -537,8 +541,42 @@ retiredFactsList[0]="The word for \"second-to-last\" is <i>penultimate</i>, from
 			'bgImage': 'moonlanding.jpg',
 			'altTag': 'Gene Cernan on the moon',
 			'gradient': '#444',
+			'height': '40%',
+			'textColor': '#fff'
+		},
+		{
+			'ffNumber': '4',
+			'theFact': popFactsList[52],
+			'filter': 'Pop Culture',
+			'bgImage': 'angrybirds.jpg',
+			'altTag': 'Screenshot of Angry Birds iOS',
+			'gradient': '#49aa33',
+			'height': '40%',
+			'textColor': '#fff'
+		},
+		{
+			'ffNumber': '5',
+			'theFact': televisionFactsList[23],
+			'filter': 'TV &amp; Film',
+			'bgImage': 'tuco.jpg',
+			'altTag': 'Raymond Cruz as Tuco, in Breaking Bad',
+			'gradient': '#bbc7d1',
+			'height': '50%',
+			'textColor': '#fff'
+		},
+		{
+			'ffNumber': '6',
+			'theFact': foodFactsList[13],
+			'filter': 'Food &amp; Drink',
+			'bgImage': 'pringles.jpg',
+			'altTag': 'Asian Pringles cans',
+			'gradient': '#56a8d4',
+			'height': '60%',
 			'textColor': '#fff'
 		}
+
+
+		
 
 
 	];
@@ -558,7 +596,7 @@ var randomff = featuredFacts[randomFeaturedFact];
 var path = 'assets/featured/';
 var ffImage = $('.ffimage').attr({'src': path + randomff.bgImage, 'alt': randomff.altTag});
 $('.featfact').prepend(ffImage);
-$('.ffcaption').html(randomff.theFact).css({'color': randomff.textColor, 'background': 'linear-gradient(to top, ' + randomff.gradient + ' 40%, transparent'});
+$('.ffcaption').html(randomff.theFact).css({'color': randomff.textColor, 'background': 'linear-gradient(to top, ' + randomff.gradient + ' ' + randomff.height + ', transparent'});
 
 return false;
 
