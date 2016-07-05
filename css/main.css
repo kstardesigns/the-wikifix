@@ -366,6 +366,7 @@ a.popimg:hover > span {
 	float: left;
 	display: inline;
 	margin-left: 10px;
+	line-height: 13px;
 	font-size: 13px;
 }
 

@@ -1,7 +1,8 @@
 
 
 To do:
-- recount popup pics list, make sure they're all there
+- rewrite rest of sources as a function
+
 - dim overlay when mobile menu is open (or bigger box shadow under menu)
 - make an easier way to put pics in facts (variables?)  "bla bla blah" + factpicopen + "picname.jpg" + factpicclose + "bla bla blah"
 - start an array of date-based facts so I can make sure theyre updated. referencing 2014, 2015, 2016, 15, 14, etc
@@ -14,3 +15,5 @@ To do:
 Later:
 - add finger press on button click. maybe swipe somewhere (changing filters)
 - apple touch icons, other stuff to make it fully done like kstar
+- function to auto count facts with images
+- more automation........ !
