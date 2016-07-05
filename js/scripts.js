@@ -4,14 +4,15 @@
 
 I. Filter buttons
 II. Fact lists
-	a. Filtered fact lists
-		i. Food list
-		ii. History list
-		iii. Music list
-		iv. Pop Culture list
-		v. Sports list
-		vi. Technology list
-		vii. TV/Film list
+	a. Filtered fact lists and functions
+		i. functions
+		ii. Food list
+		iii. History list
+		iv. Music list
+		v. Pop Culture list
+		vi. Sports list
+		vii. Technology list
+		viii. TV/Film list
 	b. User-submitted facts list
 	c. Most used Wiki page list 
 	d. Pictures facts list
@@ -125,12 +126,12 @@ document.getElementById('addSource').onclick = function createInputField() {
 
 
 
-/*  --          Filtered fact lists          --  */
+/*  --          Filtered fact lists and functions         --  */
 
+// Functions
 
 // function to include an image in a fact
 	// example: (includeImage('Arch Deluxe burger', 'archdeluxe.jpg'))
-
 var imageOpen = "<a class='popimg' href='#'>";
 var imageMid = "<span><i></i><img src='assets/facts/";
 var imageClose = "'/></span></a>";
@@ -140,11 +141,22 @@ function includeImage(imageName, imageURL) {
 	return(incImage);
 }
 
+// function to add source to a fact
+	// example: (source('1', 'archdeluxe.jpg'))
+
+var sourceOpen = "<sup><a href='http://en.wikipedia.org/wiki/";
+var sourceMid = "' target='_blank'>[";
+var sourceClose = "]</a></sup>";
+
+function source(sourceNo, sourceURL) {
+	var incSource = sourceOpen + sourceURL + sourceMid + sourceNo + sourceClose;
+	return(incSource);
+}
 
 
 	/*  --          Food list          --  */
 var foodFactsList = new Array;
-foodFactsList[0]="The first McDonald's Drive-Thru was created in 1975, in Sierra Vista, Arizona, to serve military members who weren't permitted to get out of their cars while wearing fatigues.<sup><a href='http://en.wikipedia.org/wiki/Drive-through' target='_blank'>[1]</a></sup>";
+foodFactsList[0]="The first McDonald's Drive-Thru was created in 1975, in Sierra Vista, Arizona, to serve military members who weren't permitted to get out of their cars while wearing fatigues." + (source('1', 'Drive-through'));
 foodFactsList[1]="In Spain and Russia, McDonald's drive-thru services are called <i>McAuto</i>.<sup><a href='http://en.wikipedia.org/wiki/Drive-through' target='_blank'>[1]</a></sup>";
 foodFactsList[2]="The name Orange Julius came from its customers waiting in line, who would shout, \"Give me an Orange, Julius!\" Its founder was Julius Freed.<sup><a href='http://en.wikipedia.org/wiki/Orange_Julius' target='_blank'>[1]</a></sup>";
 foodFactsList[3]="Orange and Lemon-Lime were the only 2 Gatorade flavors available for their first 20 years, until Fruit Punch was introduced.<sup><a href='http://en.wikipedia.org/wiki/Gatorade' target='_blank'>[1]</a></sup>";
