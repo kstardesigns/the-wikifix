@@ -127,6 +127,21 @@ document.getElementById('addSource').onclick = function createInputField() {
 
 /*  --          Filtered fact lists          --  */
 
+
+// function to include an image in a fact
+	// example: (includeImage('Arch Deluxe burger', 'archdeluxe.jpg'))
+
+var imageOpen = "<a class='popimg' href='#'>";
+var imageMid = "<span><i></i><img src='assets/facts/";
+var imageClose = "'/></span></a>";
+
+function includeImage(imageName, imageURL) {
+	var incImage = imageOpen + imageName + imageMid + imageURL + imageClose;
+	return(incImage);
+}
+
+
+
 	/*  --          Food list          --  */
 var foodFactsList = new Array;
 foodFactsList[0]="The first McDonald's Drive-Thru was created in 1975, in Sierra Vista, Arizona, to serve military members who weren't permitted to get out of their cars while wearing fatigues.<sup><a href='http://en.wikipedia.org/wiki/Drive-through' target='_blank'>[1]</a></sup>";
@@ -163,12 +178,12 @@ foodFactsList[30]="In 2001, Taco Bell held a promotion coinciding with the re-en
 foodFactsList[31]="In an effort to promote its $2 meal deals, Taco Bell started a Facebook group in 2010 to collect signatures for a petition to the Federal Reserve to produce more $2 bills.<sup><a href='https://en.wikipedia.org/wiki/Taco_Bell' target='_blank'>[1]</a></sup>";
 foodFactsList[32]="The popular McDonald's jingle \"I'm lovin' it\" was written and performed by Justin Timberlake and Pusha T, and produced by The Neptunes.<sup><a href='http://en.wikipedia.org/wiki/I%27m_Lovin%27_It_(song)' target='_blank'>[1]</a></sup>";
 foodFactsList[33]="In the early 1980s, the Chuck E. Cheese opened in Australia under the name \"Charlie Cheese's Pizza Playhouse\" due to the word \"chuck\" meaning to throw up in Australia.<sup><a href='http://en.wikipedia.org/wiki/Chuck_E._Cheese%27s' target='_blank'>[1]</a></sup>";
-foodFactsList[34]="In an effort to target a more adult audience, McDonald's developed a massive marketing campaign in 1996 for the <a class='popimg' href='#'>Arch Deluxe burger<span><i></i><img src='assets/facts/archdeluxe.jpg'/></span></a>. It is considered to be one of McDonald's most expensive flops of all time, having spent over $300 million on research, production, and marketing.<sup><a href='http://en.wikipedia.org/wiki/Arch_Deluxe' target='_blank'>[1]</a></sup>";
+foodFactsList[34]="In an effort to target a more adult audience, McDonald's developed a massive marketing campaign in 1996 for the " +  (includeImage('Arch Deluxe burger', 'archdeluxe.jpg')) + ". It is considered to be one of McDonald's most expensive flops of all time, having spent over $300 million on research, production, and marketing.<sup><a href='http://en.wikipedia.org/wiki/Arch_Deluxe' target='_blank'>[1]</a></sup>";
 
 	/*  --          History list          --  */
 var historyFactsList = new Array;
 historyFactsList[0]="In World War II, the British Secret Service distributed special edition Monopoly games to prisoners of war held by the Nazis. In the games were maps, compasses, real money, and other useful tools for escaping.<sup><a href='http://en.wikipedia.org/wiki/Monopoly_(game)' target='_blank'>[1]</a></sup>";
-historyFactsList[1]="The unit for one-thousandth of a dollar, or a tenth of a cent (mostly used in accounting and on gas station price signs), is called a <a class='popimg' href='#'>mill<span><i></i><img src='assets/facts/mill.jpg'/></span></a>.<sup><a href='http://en.wikipedia.org/wiki/United_States_dollar' target='_blank'>[1]</a></sup>";
+historyFactsList[1]="The unit for one-thousandth of a dollar, or a tenth of a cent (mostly used in accounting and on gas station price signs), is called a " + (includeImage('mill', 'mill.jpg')) + ".<sup><a href='http://en.wikipedia.org/wiki/United_States_dollar' target='_blank'>[1]</a></sup>";
 historyFactsList[2]="Canada has a policy of adopting non-overlapping province abbreviations to adjacent countries, unlike Mexico which shares state abbreviations with the United States and Canada: CO, MI, MO, NL, and BC.<sup><a href='http://en.wikipedia.org/wiki/Canadian_postal_abbreviations_for_provinces_and_territories' target='_blank'>[1]</a></sup>";
 historyFactsList[3]="Colorado, Wyoming, and Utah are the only states which have boundaries defined solely by lines of latitude and longtitude.<sup><a href='http://en.wikipedia.org/wiki/Colorado' target='_blank'>[1]</a></sup>";
 historyFactsList[4]="Man has not been to the moon since Gene Cernan stepped off the lunar surface in 1972.<sup><a href='http://en.wikipedia.org/wiki/Moon_landing' target='_blank'>[1]</a></sup>";
@@ -390,7 +405,7 @@ technologyFactsList[35]="The Atari 2600 game <i>E.T. the Extra-Terrestrial</i>, 
 technologyFactsList[36]="The first Nintendo game to feature Luigi as the lone main character was <i>Mario is Missing!</i>, released in 1992. This did not happen again until <i>Luigi's Mansion</i> in 2001.<sup><a href='http://en.wikipedia.org/wiki/Mario_Is_Missing' target='_blank'>[1]</a></sup>";
 technologyFactsList[37]="The Sony PlayStation was originally an add-on peripheral for the Super Nintendo, called Play Station, which allowed the SNES to play a CD format called <a class='popimg' href='#'>SNES-CD<span><i></i><img src='assets/facts/snes-cd.jpg'/></span></a>.  After Nintendo broke their contract with Sony in favor of their rival Philips, Sony eventually created their own video game system.<sup><a href='http://en.wikipedia.org/wiki/SNES-CD' target='_blank'>[1]</a></sup>";
 technologyFactsList[38]="Nintendo's first attempt at a 3D gaming system was the <a class='popimg' href='#'>Virtual Boy<span><i></i><img src='assets/facts/virtualboy.jpg'/></span></a> in 1995, which was considered a commercial failure as it sold less than 800,000 units, lacked portability, had poor wireframe monochromatic graphics, was overpriced, and sometimes caused painful physiological symptoms. It was discontinued after just 7 months.<sup><a href='http://en.wikipedia.org/wiki/Virtual_Boy' target='_blank'>[1]</a></sup>";
-technologyFactsList[39]="Amazon released the <a class='popimg' href='#'>first Kindle<span><i></i><img src='assets/facts/kindle.jpg'/></span></a> in November 2007, for $399. It sold out in five and a half hours and remained out of stock for five months until late April 2008.pic<sup><a href='https://en.wikipedia.org/wiki/Amazon_Kindle' target='_blank'>[1]</a></sup>";
+technologyFactsList[39]="Amazon released the <a class='popimg' href='#'>first Kindle<span><i></i><img src='assets/facts/kindle.jpg'/></span></a> in November 2007, for $399. It sold out in five and a half hours and remained out of stock for five months until late April 2008.<sup><a href='https://en.wikipedia.org/wiki/Amazon_Kindle' target='_blank'>[1]</a></sup>";
 
 	/*  --          Television/Film list          --  */
 var televisionFactsList = new Array;
@@ -492,7 +507,7 @@ televisionFactsList[94]="Scott Weigner, the voice of Aladdin in the film <i>Alad
 televisionFactsList[95]="On April 21, 1990, an animated drug-abuse prevention television special aired on all four major networks (ABC, NBC, Fox, CBS) as well as many independent stations and cable networks. It included characters from 10 different franchises, such as Winnie the Pooh, Looney Tunes, The Smurfs, and Teenage Mutant Ninja Turtles.<sup><a href='http://en.wikipedia.org/wiki/Cartoon_All-Stars_to_the_Rescue' target='_blank'>[1]</a></sup>";
 televisionFactsList[96]="In the show <i>Taxi</i>, Danny DeVito's character Louie has a girlfriend who is played by his real life wife Rhea Perlman, and a mother who is played by his real life mother.<sup><a href='http://en.wikipedia.org/wiki/Taxi_(TV_series)' target='_blank'>[1]</a></sup>";
 televisionFactsList[97]="Rather than the usual repeated lines that Bart Simpson writes as punishment, the 25th season episode \"Four Regrettings and a Funeral\" opening had Bart write \"We'll really miss you Mrs. K\", just once. This is in reference to the voice of Edna Krabapple, Marcia Wallace's recent death.<sup><a href='http://en.wikipedia.org/wiki/The_Simpsons_opening_sequence' target='_blank'>[1]</a></sup>";
-televisionFactsList[98]="In response to The Simpsons episode \"Brother's Little Helper\", where Bart is diagnosed with ADHD, U.S. President Bill Clinton held the first ever White House conference on Mental Health.<sup><a href='https://en.wikipedia.org/wiki/Brother%27s_Little_Helper' target='_blank'>[1]</a></sup>";
+televisionFactsList[98]="In response to <i>The Simpsons</i> episode \"Brother's Little Helper\", where Bart is diagnosed with ADHD, U.S. President Bill Clinton held the first ever White House conference on Mental Health.<sup><a href='https://en.wikipedia.org/wiki/Brother%27s_Little_Helper' target='_blank'>[1]</a></sup>";
 televisionFactsList[99]="The Comedy Central television series <i>Drunk History</i> was inspired by a 2007 conversation that creator Derek Waters had with <i>New Girl</i> actor Jake Johnson, who drunkenly tried to explain Otis Reddings' death to Waters. Johnson later appeared in multiple episodes of the show after it started in 2013.<sup><a href='http://en.wikipedia.org/wiki/Jake_Johnson' target='_blank'>[1]</a></sup>";
 televisionFactsList[100]="Jaleel White, who played Steve Urkel in <i>Family Matters</i>, also appeared as his character Steve Urkel in <i>Full House</i>, <i>Step by Step</i>, and <i>Meego</i>. In <i>Family Matters</i> he also sends a chain letter to his friend Cory Matthews, who lived in Philadelphia, referencing a crossover to the series <i>Boy Meets World</i>.<sup><a href='http://en.wikipedia.org/wiki/Steve_Urkel' target='_blank'>[1]</a></sup>";
 
