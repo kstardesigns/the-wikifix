@@ -37,63 +37,63 @@ V. Recently added facts section
 /*  --          Filter buttons          --  */
 
 function changeToFood() {
-	$('#button').attr("onClick","giveafoodfact()");
-	$('#listfood a').addClass("activefilter");
-	$('.filterbuttons a').not('#listfood a').removeClass("activefilter");	
+	$('#button').attr('onClick','giveafoodfact()');
+	$('#listfood a').addClass('activefilter');
+	$('.filterbuttons a').not('#listfood a').removeClass('activefilter');	
 	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveafoodfact();	
 }
 
 function changeToHistory() {
-	$('#button').attr("onClick","giveahistoryfact()");
-	$('#listhistory a').addClass("activefilter");
-	$('.filterbuttons a').not('#listhistory a').removeClass("activefilter");
+	$('#button').attr('onClick','giveahistoryfact()');
+	$('#listhistory a').addClass('activefilter');
+	$('.filterbuttons a').not('#listhistory a').removeClass('activefilter');
 	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveahistoryfact();
 }
 
 function changeToMusic() {
-	$('#button').attr("onClick","giveamusicfact()");
-	$('#listmusic a').addClass("activefilter");
-	$('.filterbuttons a').not('#listmusic a').removeClass("activefilter");
+	$('#button').attr('onClick','giveamusicfact()');
+	$('#listmusic a').addClass('activefilter');
+	$('.filterbuttons a').not('#listmusic a').removeClass('activefilter');
 	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveamusicfact();
 }
 
 function changeToPop() {
-	$('#button').attr("onClick","giveapopculturefact()");
-	$('#listpopculture a').addClass("activefilter");
-	$('.filterbuttons a').not('#listpopculture a').removeClass("activefilter");
+	$('#button').attr('onClick','giveapopculturefact()');
+	$('#listpopculture a').addClass('activefilter');
+	$('.filterbuttons a').not('#listpopculture a').removeClass('activefilter');
 	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveapopculturefact();
 }
 
 function changeToSports() {
-	$('#button').attr("onClick","giveasportsfact()");
-	$('#listsports a').addClass("activefilter");
-	$('.filterbuttons a').not('#listsports a').removeClass("activefilter");
+	$('#button').attr('onClick','giveasportsfact()');
+	$('#listsports a').addClass('activefilter');
+	$('.filterbuttons a').not('#listsports a').removeClass('activefilter');
 	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveasportsfact();
 }
 
 function changeToTechnology() {
-	$('#button').attr("onClick","giveatechnologyfact()");
-	$('#listtechnology a').addClass("activefilter");
-	$('.filterbuttons a').not('#listtechnology a').removeClass("activefilter");
+	$('#button').attr('onClick','giveatechnologyfact()');
+	$('#listtechnology a').addClass('activefilter');
+	$('.filterbuttons a').not('#listtechnology a').removeClass('activefilter');
 	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveatechnologyfact();
 }
 
 function changeToTelevision() {
-	$('#button').attr("onClick","giveatelevisionfact()");
-	$('#listtelevision a').addClass("activefilter");
-	$('.filterbuttons a').not('#listtelevision a').removeClass("activefilter");
+	$('#button').attr('onClick','giveatelevisionfact()');
+	$('#listtelevision a').addClass('activefilter');
+	$('.filterbuttons a').not('#listtelevision a').removeClass('activefilter');
 	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
 	giveatelevisionfact();
@@ -101,14 +101,14 @@ function changeToTelevision() {
 
 
 function changeToUnfiltered() {
-	$('#button').attr("onClick","giveafactbutton()");
-	$('.filterbuttons a').not('#resetbutton a').removeClass("activefilter");
+	$('#button').attr('onClick','giveafactbutton()');
+	$('.filterbuttons a').not('#resetbutton a').removeClass('activefilter');
 	$('#resetbutton').css('display','none');
 	updateShareLinks();
 	giveafactbutton();
 }
 
-document.getElementById('addSource').onclick = function createInputField() {
+$('#addSource').click = function createInputField() {
   var input = document.createElement('input');
   var lineBreak = document.createElement('br');
   var testId = "Source";
@@ -120,7 +120,7 @@ document.getElementById('addSource').onclick = function createInputField() {
   input.setAttribute('id', testId + i);
   input.type = 'text';
   input.name = 'Source' + i;
-  var aplayer1 = document.getElementById('sourcearea');
+  var aplayer1 = $('#sourcearea');
   aplayer1.appendChild(input);
   aplayer1.appendChild(lineBreak);
 }
@@ -634,7 +634,7 @@ function giveafact(){ //instead of relisting all array items here, add all the o
 // give a fact in main box
 var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
 randomFact = Math.floor(Math.random()*factsList.length);
-document.getElementById("fact").innerHTML=factsList[randomFact];
+$('#fact').html=factsList[randomFact];
 updateShareLinks();
 
 //give a featured fact
@@ -655,7 +655,7 @@ function giveafactbutton(){ //instead of relisting all array items here, add all
 // give a fact in main box
 var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
 randomFact = Math.floor(Math.random()*factsList.length);
-document.getElementById("fact").innerHTML=factsList[randomFact];
+$('#fact').html=factsList[randomFact];
 updateShareLinks();
 }
 
@@ -668,7 +668,7 @@ function updateShareLinks() {
 	var trimmedFact = factStr.slice(0, trimSpot); // Trims the source links
 	
 	// Update the Twitter link
-	var linkRefTW = "http://twitter.com/share?url=thewikifix.com&text=" + trimmedFact + "&hashtags=thewikifix";
+	var linkRefTW = 'http://twitter.com/share?url=thewikifix.com&text=' + trimmedFact + '&hashtags=thewikifix';
 	$('#shareLinkTwitter').attr('href', linkRefTW);
 
 }
@@ -677,43 +677,43 @@ function updateShareLinks() {
 
 function giveafoodfact() {
 randomFoodFact = Math.floor(Math.random()*foodFactsList.length);
-document.getElementById("fact").innerHTML=foodFactsList[randomFoodFact];
+$('#fact').html=foodFactsList[randomFoodFact];
 updateShareLinks();
 }
 
 function giveahistoryfact() {
 randomHistoryFact = Math.floor(Math.random()*historyFactsList.length);
-document.getElementById("fact").innerHTML=historyFactsList[randomHistoryFact];
+$('#fact').html=historyFactsList[randomHistoryFact];
 updateShareLinks();
 }
 
 function giveamusicfact() {
 randomMusicFact = Math.floor(Math.random()*musicFactsList.length);
-document.getElementById("fact").innerHTML=musicFactsList[randomMusicFact];
+$('#fact').html=musicFactsList[randomMusicFact];
 updateShareLinks();
 }
 
 function giveapopculturefact() {
 randomPopCultureFact = Math.floor(Math.random()*popFactsList.length);
-document.getElementById("fact").innerHTML=popFactsList[randomPopCultureFact];
+$('#fact').html=popFactsList[randomPopCultureFact];
 updateShareLinks();
 }
 
 function giveasportsfact() {
 randomSportsFact = Math.floor(Math.random()*sportsFactsList.length);
-document.getElementById("fact").innerHTML=sportsFactsList[randomSportsFact];
+$('#fact').html=sportsFactsList[randomSportsFact];
 updateShareLinks();
 }
 
 function giveatechnologyfact() {
 randomTechnologyFact = Math.floor(Math.random()*technologyFactsList.length);
-document.getElementById("fact").innerHTML=technologyFactsList[randomTechnologyFact];
+$('#fact').html=technologyFactsList[randomTechnologyFact];
 updateShareLinks();
 }
 
 function giveatelevisionfact() {
 randomTelevisionFact = Math.floor(Math.random()*televisionFactsList.length);
-document.getElementById("fact").innerHTML=televisionFactsList[randomTelevisionFact];
+$('#fact').html=televisionFactsList[randomTelevisionFact];
 updateShareLinks();
 }
 
@@ -748,11 +748,11 @@ $('.mobilenav a[href*=#]').bind('click', function(e) {
 $( document ).ready(function() {
 	/* --    Input sentence stats   -- */
 	var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
-	document.getElementById("total").innerHTML=factsList.length;
-	document.getElementById("usertotal").innerHTML=userSubmittedFactsList.length;
-	document.getElementById("pictotal").innerHTML=picturesFactsList.length;	
-	document.getElementById("retiredtotal").innerHTML=retiredFactsList.length;	
-	document.getElementById("mosttotal").innerHTML=mostFactsList.length;
+	$('#total').html=factsList.length;
+	$('#usertotal').html=userSubmittedFactsList.length;
+	$('#pictotal').html=picturesFactsList.length;	
+	$('#retiredtotal').html=retiredFactsList.length;	
+	$('#mosttotal').html=mostFactsList.length;
 	
 	/* --    Build the chart    -- */	
 	var multiplier = 2;
@@ -765,21 +765,21 @@ $( document ).ready(function() {
 	var techbar = technologyFactsList.length * multiplier + "px";
 	var tvbar = televisionFactsList.length * tvmultiplier + "px";
 	
-	$("#fooddrinksbar").css("width", foodbar);
-	$("#historybar").css("width", histbar);
-	$("#musicbar").css("width", musicbar);
-	$("#popbar").css("width", popbar);
-	$("#sportsbar").css("width", sportsbar);
-	$("#techbar").css("width", techbar);
-	$("#tvfilmbar").css("width", tvbar);	
+	$('#fooddrinksbar').css("width", foodbar);
+	$('#historybar').css("width", histbar);
+	$('#musicbar').css("width", musicbar);
+	$('#popbar').css("width", popbar);
+	$('#sportsbar').css("width", sportsbar);
+	$('#techbar').css("width", techbar);
+	$('#tvfilmbar').css("width", tvbar);	
 	
-	$("#foodtotal").html(foodFactsList.length);
-	$("#historytotal").html(historyFactsList.length);
-	$("#musictotal").html(musicFactsList.length);
-	$("#poptotal").html(popFactsList.length);
-	$("#sportstotal").html(sportsFactsList.length);
-	$("#techtotal").html(technologyFactsList.length);
-	$("#televisiontotal").html(televisionFactsList.length);
+	$('#foodtotal').html(foodFactsList.length);
+	$('#historytotal').html(historyFactsList.length);
+	$('#musictotal').html(musicFactsList.length);
+	$('#poptotal').html(popFactsList.length);
+	$('#sportstotal').html(sportsFactsList.length);
+	$('techtotal').html(technologyFactsList.length);
+	$('#televisiontotal').html(televisionFactsList.length);
 
 	/* -- Calculate weekly stat count  -- */
 	var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
@@ -790,12 +790,12 @@ $( document ).ready(function() {
 	var currentDate = todaysDate.getDate();
 	var currentMonth = todaysDate.getMonth();
 	var currentYear = todaysDate.getFullYear();
-	//document.getElementById("today").innerHTML = months[currentMonth] + " " + currentDate + ", " + currentYear;
+	//$('#today').html = months[currentMonth] + ' ' + currentDate + ', ' + currentYear;
 
 	var totalDays = Math.round((todaysDate.getTime() - startDate.getTime())/(oneDay)); 
 	var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
 	var weeklyTotal = ((factsList.length/totalDays)*7).toFixed(2);
-	document.getElementById("weeklytotal").innerHTML = weeklyTotal;
+	$('#weeklytotal').html = weeklyTotal;
 
 
 /*  --          Recently added facts section          --  */

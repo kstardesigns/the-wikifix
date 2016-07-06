@@ -1,20 +1,21 @@
 
 
 To do:
-- start an array of date-based facts so I can make sure theyre updated. referencing 2014, 2015, 2016, 15, 14, etc (auto updates on some)
 
 
+- higher quality wiki logos in menu/header, same with wikifix (svg
+
+
+)
 
 - dim overlay when mobile menu is open (or bigger box shadow under menu)
 
 - fix mobile/desktop speed. testwithgoogle
 - show press down on touch
 - make a 404 page
-- higher quality wiki logos in menu/header
 - figure out how to show hover images on mobile (max width, etc)
 - compliant in other browsers,
 - move js that's in html, into js file
-- change javascript (when possible) to jquery (ie: document.getElementById("total").innerHTML=factsList.length; )
 
 Later:
 - add finger press on button click. maybe swipe somewhere (changing filters)
