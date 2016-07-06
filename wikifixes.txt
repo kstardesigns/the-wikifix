@@ -3,10 +3,9 @@
 To do:
 
 
-- higher quality wiki logos in menu/header, same with wikifix (svg
+- higher quality wiki logos in menu/header, same with wikifix, twitter, etc. (svg)
 
 
-)
 
 - dim overlay when mobile menu is open (or bigger box shadow under menu)
 

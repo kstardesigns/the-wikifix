@@ -567,8 +567,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'Sports',
 			'bgImage': 'nolanryan.jpg',
 			'altTag': 'Nolan Ryan pitching',
-			'gradient': '#064b91',
-			'height': '20%',
+			'bgcolor': 'rgba(6, 75, 145, .75)',
 			'textColor': '#fff'
 		},
 		{
@@ -577,8 +576,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'Pop Culture',
 			'bgImage': 'mj-wheaties.jpg',
 			'altTag': 'Michael Jordan in front of giant Wheaties box',
-			'gradient': '#ff5f36',
-			'height': '40%',
+			'bgcolor': 'rgba(255, 95, 54, .75)',
 			'textColor': '#fff'
 		},
 		{
@@ -587,8 +585,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'History',
 			'bgImage': 'moonlanding.jpg',
 			'altTag': 'Gene Cernan on the moon',
-			'gradient': '#444',
-			'height': '40%',
+			'bgcolor': 'rgba(68, 68, 68, .75)',
 			'textColor': '#fff'
 		},
 		{
@@ -597,8 +594,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'Pop Culture',
 			'bgImage': 'angrybirds.jpg',
 			'altTag': 'Screenshot of Angry Birds iOS',
-			'gradient': '#49aa33',
-			'height': '40%',
+			'bgcolor': 'rgba(73, 170, 51, .9)',
 			'textColor': '#fff'
 		},
 		{
@@ -607,8 +603,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'TV &amp; Film',
 			'bgImage': 'tuco.jpg',
 			'altTag': 'Raymond Cruz as Tuco, in Breaking Bad',
-			'gradient': '#bbc7d1',
-			'height': '50%',
+			'bgcolor': 'rgba(187, 199, 209, .75)',
 			'textColor': '#fff'
 		},
 		{
@@ -617,8 +612,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'Food &amp; Drink',
 			'bgImage': 'pringles.jpg',
 			'altTag': 'Asian Pringles cans',
-			'gradient': '#56a8d4',
-			'height': '60%',
+			'bgcolor': 'rgba(86, 168, 212, .75)',
 			'textColor': '#fff'
 		}
 
@@ -643,7 +637,7 @@ var randomff = featuredFacts[randomFeaturedFact];
 var path = 'assets/featured/';
 var ffImage = $('.ffimage').attr({'src': path + randomff.bgImage, 'alt': randomff.altTag});
 $('.featfact').prepend(ffImage);
-$('.ffcaption').html(randomff.theFact).css({'color': randomff.textColor, 'background': 'linear-gradient(to top, ' + randomff.gradient + ' ' + randomff.height + ', transparent'});
+$('.ffcaption').html(randomff.theFact).css({'color': randomff.textColor, 'background': randomff.bgcolor});
 
 return false;
 
@@ -721,11 +715,13 @@ updateShareLinks();
 $('.mobilemenu').click(function(){
 	$('.mobilenav').toggle('slide');
 	$(this).toggleClass('close');
+	$('.overlay').toggle();
 });
 
 $('.mobilenav a').click(function(){
 	$('.mobilenav').hide();
 	$('.mobilemenu').removeClass('close');
+	$('.overlay').hide();
 });
 
 // Auto scroll
@@ -778,7 +774,7 @@ $( document ).ready(function() {
 	$('#musictotal').html(musicFactsList.length);
 	$('#poptotal').html(popFactsList.length);
 	$('#sportstotal').html(sportsFactsList.length);
-	$('techtotal').html(technologyFactsList.length);
+	$('#techtotal').html(technologyFactsList.length);
 	$('#televisiontotal').html(televisionFactsList.length);
 
 	/* -- Calculate weekly stat count  -- */

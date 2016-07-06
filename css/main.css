@@ -107,18 +107,20 @@ section {
 }
 
 .header img.wikipedia {
-	margin: 16px 10px 0 0;
-	width: 40px;
+	margin: 9px 0 0 0;
+	width: 60px;
 }
 
 .header img.wikiwand {
-	width: 51px;
+	margin: 0 0 0 5px;
+	width: 60px;
+
 }
 
 .quicknav {
     float: right;
     position: absolute;
-    bottom: -18px;
+    bottom: -24px;
     right: -3px;
     font-weight: bold;
     color: #3d78e8;
@@ -139,9 +141,9 @@ section {
     z-index: 99;
     top: 0;
 	padding-bottom: 10px;
-	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.25);
-	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.25);
-	box-shadow: 0 1px 4px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 1px 34px rgba(0,0,0,.85);
+	-webkit-box-shadow: 0 1px 34px rgba(0,0,0,.85);
+	box-shadow: 0 1px 34px rgba(0,0,0,.85);
     display: none;
 }
 
@@ -165,12 +167,21 @@ section {
 	border-top: 1px solid #ddd;
 }
 
+.mobilenav li a {
+	display: block;
+}
+
 .mobilenav img {
 	margin: 9px 15px 3px 15px;
 }
 
 .mobilenav .links img {
-	margin: 10px;
+	margin: 10px 0 0 0;
+	width: 60px;
+}
+
+.mobilenav .links img.wikiwand {
+	margin-bottom: 10px;
 }
 
 .mobilemenu {
@@ -217,6 +228,17 @@ section {
 
 .mobilemenu.close span.bottom {
 	display: none;
+}
+
+.overlay {
+	background: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    display: none;
 }
 
 /* -- Left side -- */
@@ -565,8 +587,8 @@ label {
     position: absolute;
     bottom: 0;
     text-align: right;
-    text-shadow: 1px 0px 20px rgba(0,0,0,.3);
-    padding: 40px 10px 10px 10px;
+    text-shadow: 1px 0px 20px rgba(0,0,0,.9);
+    padding: 10px;
     color: #fff;
     margin-bottom: 0;
     font-size: 14px;
@@ -678,6 +700,15 @@ dd {
 	margin: 5px 0;
 }
 
+.notestext ul li:last-child {
+	line-height: 39px;
+}
+
+.notestext ul li img {
+	width: 150px;
+	vertical-align: bottom;
+}
+
 .backtotop {
 	width: 100%;
 	margin: 10px 0;
@@ -732,6 +763,11 @@ dd {
 	.break {display: inline;}
 }
 
+@media screen and (min-width: 600px){
+	.mobilenav {display: none!important;}
+	.overlay {display: none!important;}
+}
+
 @media screen and (max-width: 600px){
 	.logo {width: 180px;}
 	.content {width: 100%;}
@@ -745,7 +781,7 @@ dd {
 	.fact p.sharing {text-align: center;}
 	a.popimg > span { display: none; }
 	.links {display: none;}
-	.mobilenav .links {display:block; margin: 0 auto; width: 160px; float: none; position: relative; right: inherit; top: inherit;}
+	.mobilenav .links {display:block; margin: 0 auto; width: 125px; float: none; position: relative; right: inherit; top: inherit;}
 	.header img.logo {float: none; margin: 9px 15px 3px 15px;}
 	.backtotop {display: block;}
 	#sourcearea input#addSource { display: none; }
