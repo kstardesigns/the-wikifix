@@ -111,7 +111,7 @@ function changeToUnfiltered() {
 $('#addSource').click = function createInputField() {
   var input = document.createElement('input');
   var lineBreak = document.createElement('br');
-  var testId = "Source";
+  var testId = 'Source';
   var i = 0;
   var x = document.getElementsByTagName('INPUT').length - 2;
   for (i = 0; i < x; i++) {
@@ -634,7 +634,7 @@ function giveafact(){ //instead of relisting all array items here, add all the o
 // give a fact in main box
 var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
 randomFact = Math.floor(Math.random()*factsList.length);
-$('#fact').html=factsList[randomFact];
+$('#fact').html(factsList[randomFact]);
 updateShareLinks();
 
 //give a featured fact
@@ -655,7 +655,7 @@ function giveafactbutton(){ //instead of relisting all array items here, add all
 // give a fact in main box
 var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
 randomFact = Math.floor(Math.random()*factsList.length);
-$('#fact').html=factsList[randomFact];
+$('#fact').html(factsList[randomFact]);
 updateShareLinks();
 }
 
@@ -664,7 +664,7 @@ updateShareLinks();
 function updateShareLinks() {
 	var factText = $('#fact').text(); // Gets the fact text
 	var factStr = factText.toString(); // Converts text to string
-	var trimSpot = factStr.indexOf("["); // Finds the start of the fact sources 
+	var trimSpot = factStr.indexOf('['); // Finds the start of the fact sources 
 	var trimmedFact = factStr.slice(0, trimSpot); // Trims the source links
 	
 	// Update the Twitter link
@@ -677,43 +677,43 @@ function updateShareLinks() {
 
 function giveafoodfact() {
 randomFoodFact = Math.floor(Math.random()*foodFactsList.length);
-$('#fact').html=foodFactsList[randomFoodFact];
+$('#fact').html(foodFactsList[randomFoodFact]);
 updateShareLinks();
 }
 
 function giveahistoryfact() {
 randomHistoryFact = Math.floor(Math.random()*historyFactsList.length);
-$('#fact').html=historyFactsList[randomHistoryFact];
+$('#fact').html(historyFactsList[randomHistoryFact]);
 updateShareLinks();
 }
 
 function giveamusicfact() {
 randomMusicFact = Math.floor(Math.random()*musicFactsList.length);
-$('#fact').html=musicFactsList[randomMusicFact];
+$('#fact').html(musicFactsList[randomMusicFact]);
 updateShareLinks();
 }
 
 function giveapopculturefact() {
 randomPopCultureFact = Math.floor(Math.random()*popFactsList.length);
-$('#fact').html=popFactsList[randomPopCultureFact];
+$('#fact').html(popFactsList[randomPopCultureFact]);
 updateShareLinks();
 }
 
 function giveasportsfact() {
 randomSportsFact = Math.floor(Math.random()*sportsFactsList.length);
-$('#fact').html=sportsFactsList[randomSportsFact];
+$('#fact').html(sportsFactsList[randomSportsFact]);
 updateShareLinks();
 }
 
 function giveatechnologyfact() {
 randomTechnologyFact = Math.floor(Math.random()*technologyFactsList.length);
-$('#fact').html=technologyFactsList[randomTechnologyFact];
+$('#fact').html(technologyFactsList[randomTechnologyFact]);
 updateShareLinks();
 }
 
 function giveatelevisionfact() {
 randomTelevisionFact = Math.floor(Math.random()*televisionFactsList.length);
-$('#fact').html=televisionFactsList[randomTelevisionFact];
+$('#fact').html(televisionFactsList[randomTelevisionFact]);
 updateShareLinks();
 }
 
@@ -732,7 +732,7 @@ $('.mobilenav a').click(function(){
 $('.mobilenav a[href*=#]').bind('click', function(e) {
 	e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump
        
-	var target = $(this).attr("href"); //Get the target
+	var target = $(this).attr('href'); //Get the target
 			
 	// perform animated scrolling by getting top-position of target-element and set it as scroll target
 	$('html, body').stop().animate({ scrollTop: $(target).offset().top}, 1000, function() { //adjust - 48 if the header height changes
@@ -748,30 +748,30 @@ $('.mobilenav a[href*=#]').bind('click', function(e) {
 $( document ).ready(function() {
 	/* --    Input sentence stats   -- */
 	var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
-	$('#total').html=factsList.length;
-	$('#usertotal').html=userSubmittedFactsList.length;
-	$('#pictotal').html=picturesFactsList.length;	
-	$('#retiredtotal').html=retiredFactsList.length;	
-	$('#mosttotal').html=mostFactsList.length;
+	$('#total').html(factsList.length);
+	$('#usertotal').html(userSubmittedFactsList.length);
+	$('#pictotal').html(picturesFactsList.length);	
+	$('#retiredtotal').html(retiredFactsList.length);	
+	$('#mosttotal').html(mostFactsList.length);
 	
 	/* --    Build the chart    -- */	
 	var multiplier = 2;
 	var tvmultiplier = 1.6;
-	var foodbar = foodFactsList.length * multiplier + "px";
-	var histbar = historyFactsList.length * multiplier + "px";
-	var musicbar = musicFactsList.length * multiplier + "px";
-	var popbar = popFactsList.length * multiplier + "px";
-	var sportsbar = sportsFactsList.length * multiplier + "px";
-	var techbar = technologyFactsList.length * multiplier + "px";
-	var tvbar = televisionFactsList.length * tvmultiplier + "px";
+	var foodbar = foodFactsList.length * multiplier + 'px';
+	var histbar = historyFactsList.length * multiplier + 'px';
+	var musicbar = musicFactsList.length * multiplier + 'px';
+	var popbar = popFactsList.length * multiplier + 'px';
+	var sportsbar = sportsFactsList.length * multiplier + 'px';
+	var techbar = technologyFactsList.length * multiplier + 'px';
+	var tvbar = televisionFactsList.length * tvmultiplier + 'px';
 	
-	$('#fooddrinksbar').css("width", foodbar);
-	$('#historybar').css("width", histbar);
-	$('#musicbar').css("width", musicbar);
-	$('#popbar').css("width", popbar);
-	$('#sportsbar').css("width", sportsbar);
-	$('#techbar').css("width", techbar);
-	$('#tvfilmbar').css("width", tvbar);	
+	$('#fooddrinksbar').css('width', foodbar);
+	$('#historybar').css('width', histbar);
+	$('#musicbar').css('width', musicbar);
+	$('#popbar').css('width', popbar);
+	$('#sportsbar').css('width', sportsbar);
+	$('#techbar').css('width', techbar);
+	$('#tvfilmbar').css('width', tvbar);	
 	
 	$('#foodtotal').html(foodFactsList.length);
 	$('#historytotal').html(historyFactsList.length);
@@ -790,12 +790,12 @@ $( document ).ready(function() {
 	var currentDate = todaysDate.getDate();
 	var currentMonth = todaysDate.getMonth();
 	var currentYear = todaysDate.getFullYear();
-	//$('#today').html = months[currentMonth] + ' ' + currentDate + ', ' + currentYear;
+	//$('#today').html(months[currentMonth] + ' ' + currentDate + ', ' + currentYear);
 
 	var totalDays = Math.round((todaysDate.getTime() - startDate.getTime())/(oneDay)); 
 	var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
 	var weeklyTotal = ((factsList.length/totalDays)*7).toFixed(2);
-	$('#weeklytotal').html = weeklyTotal;
+	$('#weeklytotal').html(weeklyTotal);
 
 
 /*  --          Recently added facts section          --  */
