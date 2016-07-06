@@ -743,6 +743,7 @@ dd {
 	.mobilemenu { display: block;}
 	.fact {border-top: none;}
 	.fact p.sharing {text-align: center;}
+	a.popimg > span { display: none; }
 	.links {display: none;}
 	.mobilenav .links {display:block; margin: 0 auto; width: 160px; float: none; position: relative; right: inherit; top: inherit;}
 	.header img.logo {float: none; margin: 9px 15px 3px 15px;}

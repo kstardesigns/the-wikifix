@@ -10,10 +10,22 @@ To do:
 - show press down on touch
 - make a 404 page
 - higher quality wiki logos in menu/header
+- figure out how to show hover images on mobile (max width, etc)
 - compliant in other browsers,
+- move js that's in html, into js file
+- change javascript (when possible) to jquery (ie: document.getElementById("total").innerHTML=factsList.length; )
 
 Later:
 - add finger press on button click. maybe swipe somewhere (changing filters)
 - apple touch icons, other stuff to make it fully done like kstar
 - function to auto count facts with images
 - more automation........ !
+\\\
+
+
+kstarfixes: http://cpwdentistry.com/ banner idea
+
+
+
+https://na26.salesforce.com/50032000012ORzX
+https://na26.salesforce.com/50032000012OJ5E
