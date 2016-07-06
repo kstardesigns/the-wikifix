@@ -1,11 +1,12 @@
 
 
 To do:
-- rewrite rest of sources as a function
+- start an array of date-based facts so I can make sure theyre updated. referencing 2014, 2015, 2016, 15, 14, etc (auto updates on some)
+
+
 
 - dim overlay when mobile menu is open (or bigger box shadow under menu)
-- make an easier way to put pics in facts (variables?)  "bla bla blah" + factpicopen + "picname.jpg" + factpicclose + "bla bla blah"
-- start an array of date-based facts so I can make sure theyre updated. referencing 2014, 2015, 2016, 15, 14, etc
+
 - fix mobile/desktop speed. testwithgoogle
 - show press down on touch
 - make a 404 page
@@ -23,9 +24,4 @@ Later:
 \\\
 
 
-kstarfixes: http://cpwdentistry.com/ banner idea
 
-
-
-https://na26.salesforce.com/50032000012ORzX
-https://na26.salesforce.com/50032000012OJ5E

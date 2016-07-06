@@ -6,13 +6,14 @@ I. Filter buttons
 II. Fact lists
 	a. Filtered fact lists and functions
 		i. functions
-		ii. Food list
-		iii. History list
-		iv. Music list
-		v. Pop Culture list
-		vi. Sports list
-		vii. Technology list
-		viii. TV/Film list
+		ii. Time-based fact list
+		iii. Food list
+		iv. History list
+		v. Music list
+		vi. Pop Culture list
+		vii. Sports list
+		viii. Technology list
+		ix. TV/Film list
 	b. User-submitted facts list
 	c. Most used Wiki page list 
 	d. Pictures facts list
@@ -152,6 +153,21 @@ function source(sourceNo, sourceURL) {
 	var incSource = sourceOpen + sourceURL + sourceMid + sourceNo + sourceClose;
 	return(incSource);
 }
+
+
+
+	/*  --          Time-based fact list           --    */
+	// last updated: 7/6/16
+var timedFactsList = new Array;
+timedFactsList[0]="As of the end of 2015 - the Seattle Mariners, owned by Nintendo of America, have had a losing record in 27 of the 39 seasons they have been a team. The team did not have a winning season for its first 14 seasons, and have also never been to the World Series." + (source('1', 'Seattle_Mariners'));
+timedFactsList[1]="As of the end of the 2015 season, only 5 MLB players have hit 60 or more home runs in a season: Babe Ruth (60), Roger Maris (61), Sammy Sosa (66, 63, 64), Mark McGwire (70, 65), and Barry Bonds (73)." + (source('1', '50_home_run_club'));
+timedFactsList[2]="As of the end of the 2015-2016 NBA season, only 3 players have ever won NBA MVP, All-Star game MVP, and Finals MVP awards in the same year: Willis Reed (1970), Michael Jordan (1996, 1998), and Shaquille O'Neal (2000)." + (source('1', 'Shaquille_O%27Neal'));
+timedFactsList[3]="As of the end of the NHL's 2015-16 regular season, the Detroit Red Wings have appeared in the playoffs 25 seasons in a row, dating back to the 1990-91 season." + (source('1', 'List_of_NHL_franchise_post-season_appearance_streaks'));
+timedFactsList[4]="As of 2016, the NFL has never had a team win the Super Bowl 3 times in a row. The NBA (5 times), NHL (5 times), and MLB (4 times), have all had teams win the championship at least 3 times in a row." + (source('1', 'List_of_Super_Bowl_champions')) + (source('2', 'List_of_NBA_champions')) + (source('3', 'List_of_Stanley_Cup_champions')) + (source('4', 'List_of_World_Series_champions'));
+timedFactsList[5]="As of 2016, Barry Bonds holds the record for most intentional walks in a 9-inning game (4), season (120), and career (668)." + (source('1', 'Intentional_base_on_balls'));
+// retired timedFactsList[6]= "";
+timedFactsList[7]="As of 2016, the longest running scripted television series are <i>The Simpsons</i> (currently in its 27th season), <i>Gunsmoke</i> (lasted 20 seasons), <i>Law &amp; Order</i> (lasted 20 seasons), <i>Lassie</i> (lasted 19 seasons), and <i>South Park</i> (currently in its 19th season)." + (source('1', 'List_of_longest-running_U.S._primetime_television_series'));
+timedFactsList[8]="As of 2016, <i>Spongebob Squarepants</i> is the only remaining Nickelodeon show that debuted before the year 2000." + (source('1', 'List_of_longest-running_United_States_television_series'));
 
 
 	/*  --          Food list          --  */
@@ -337,7 +353,7 @@ sportsFactsList[0]="The New York Yankees were originally founded in 1901 as the 
 sportsFactsList[1]="In 1912, Detroit Tigers pitcher Allan Travers pitched a complete game, giving up 26 hits, 24 runs (14 earned), 7 walks, and 1 strikeout. The Tigers lost 24-2. That was his only appearance in MLB." + (source('1', 'Allan_Travers'));
 sportsFactsList[2]="Fictional characters who have bowled a perfect 300 game: Peg Bundy (<i>Married With Children</i>), Fred Flintstone (<i>The Flintstones</i>), Homer Simpson and Maggie Simpson (<i>The Simpsons</i>), Howard Sprague (<i>The Andy Griffith Show</i>), Jim (<i>According to Jim</i>), Ron Swanson (<i>Parks and Recreation</i>), and Mort Goldman (<i>Family Guy</i>)." + (source('1', '1989_(Perfect_game_(bowling)'));
 sportsFactsList[3]="Prior to renaming the Tampa Bay Devil Rays to the Tampa Bay Rays in 2008, several other names were considered: Aces, Bandits, Cannons, Dukes, Stripes, and Stuart Sternberg's personal favorite, the \"Nine\"." + (source('1', '2008_Tampa_Bay_Devil_Rays_season'));
-sportsFactsList[4]="As of the end of 2014 - The Seattle Mariners, owned by Nintendo of America, have had a losing record in 26 of the 38 seasons they have been a team, and have also never been to the World Series." + (source('1', 'Seattle_Mariners'));
+sportsFactsList[4]=timedFactsList[0];
 sportsFactsList[5]="The cost of a 30-second commercial in Super Bowl I in 1967 was just $42,000 compared to Super Bowl XLVIII's cost of $4,000,000." + (source('1', 'Super_Bowl_I')) + (source('2', 'Super_Bowl_XLVIII'));
 sportsFactsList[6]="The Milwaukee Brewers' blue and gold colors come from their original colors as the 1969 Seattle Pilots. Owner Bud Selig wanted to change the colors to navy and red when they moved to Milwaukee in 1970, but there wasn't enough time before Opening Day." + (source('1', 'Seattle_Pilots'));
 sportsFactsList[7]="Babe Ruth once pitched a 4-pitch walk to start a game, got angry at the umpire's calls, and punched him, getting ejected. Reliever Ernie Shore came in and retired every batter for a combined no-hitter." + (source('1', 'Babe_Ruth'));
@@ -346,10 +362,10 @@ sportsFactsList[9]="In Nolan Ryan's 27-year pitching career, he struck out 7 pai
 sportsFactsList[10]="Jackie Mitchell, one of the first female players in professional baseball, struck out both Babe Ruth and Lou Gehrig in an exhibition game in 1931." + (source('1', 'Jackie_Mitchell'));
 sportsFactsList[11]="During the famous 1998 MLB home run record race, when Mark McGwire broke Roger Maris' home run record, his rival and competition Sammy Sosa ran in from right field and engaged McGwire in a celebratory embrace." + (source('1', '1998_home_run_chase'));
 sportsFactsList[12]="In an effort to break the \"Curse of the Billy Goat,\" which has supposedly kept the Chicago Cubs from reaching the World Series in 1945, several times Cubs fans have hung butchered goat body parts from the Harry Caray statue." + (source('1', 'Curse_of_the_Billy_Goat'));
-sportsFactsList[13]="As of the end of the 2014 season, only 5 MLB players have hit 60 or more home runs in a season: Babe Ruth (60), Roger Maris (61), Sammy Sosa (66, 63, 64), Mark McGwire (70, 65), and Barry Bonds (73)." + (source('1', '50_home_run_club'));
+sportsFactsList[13]=timedFactsList[1];
 sportsFactsList[14]="The 2008 Detroit Lions finished the season with an 0-16 record, becoming the first team to lose every game since the NFL schedule was increased to 16 games in 1978." + (source('1', '2008_Detroit_Lions_season'));
 sportsFactsList[15]="MLB player Ryan Howard has appeared as himself in the television shows <i>Entourage</i>, <i>It's Always Sunny in Philadelphia</i>, and <i>The Office</i>." + (source('1', 'Ryan_Howard'));
-sportsFactsList[16]="As of the end of the 2013-2014 NBA season, only 3 players have ever won NBA MVP, All-Star game MVP, and Finals MVP awards in the same year: Willis Reed (1970), Michael Jordan (1996, 1998), and Shaquille O'Neal (2000)." + (source('1', 'Shaquille_O%27Neal'));
+sportsFactsList[16]=timedFactsList[2];
 sportsFactsList[17]="The 3-point field goal was not introduced into the NBA until the 1979-80 season. " + (source('1', '1979–80_NBA_season'));
 sportsFactsList[18]="During the 8-year stretch from 1996-2003, the New York Yankees went to the World Series 6 times, and won the Series 4 of those times. " + (source('1', 'List_of_World_Series_champions'));
 sportsFactsList[19]="The 1988 Baltimore Orioles lost each of their first 21 games to start the season, until finally winning on April 29th to improve to 1-21." + (source('1', '1988_in_baseball'));
@@ -357,14 +373,14 @@ sportsFactsList[20]="During Wilt Chamberlain's famous 100-point basketball game 
 sportsFactsList[21]="The first person to run a sub-4-minute mile was Roger Bannister, who ran a mile in 3:59.4 in 1954. There is a plaque at Oxford University's Iffley Road Track commemorating the achievement." + (source('1', 'Four-minute_mile'));
 sportsFactsList[22]="The 2016 Super Bowl did not use Roman Numerals to number it, like usual. Instead of Super Bowl L, it was known as <br/>" + (includeImage('Super Bowl 50', 'sb50.png')) + "." + (source('1', 'Super_Bowl_50'));
 sportsFactsList[23]="The Montreal Canadiens appeared in the Stanley Cup Finals all 10 years from the 1950-51 season to the 1959-60 season, winning the Stanley Cup 6 times." + (source('1', 'List_of_NHL_franchise_post-season_appearance_streaks'));
-sportsFactsList[24]="As of the end of the NHL's 2014-15 regular season, the Detroit Red Wings have appeared in the playoffs 24 seasons in a row, dating back to the 1990-91 season." + (source('1', 'List_of_NHL_franchise_post-season_appearance_streaks'));
+sportsFactsList[24]=timedFactsList[3];
 sportsFactsList[25]="NHL player Wayne Gretzky scored 70+ goals in a season 4 different times: 92 goals in the 1981-82 season, 71 goals in '82-'83, 87 goals in '83-84, and 73 goals in '84-'85." + (source('1', 'List_of_NHL_players_with_50-goal_seasons'));
 sportsFactsList[26]="On May 8, 2012, Texas Ranger player Josh Hamilton went 5-5 with 4 homeruns. All 4 homeruns were 2-run homeruns, and the runner on base all 4 times was Elvis Andrus." + (source('1', 'Josh_Hamilton'));
 sportsFactsList[27]="Michael Jordan continued to receive his multi-million dollar NBA salary during his first retirement, when he left the NBA to play minor league baseball. He played for a Chicago White Sox minor league affiliate, which was owned by Chicago Bulls owner Jerry Reinsdorf." + (source('1', 'Michael_Jordan'));
-sportsFactsList[28]="As of 2015, the NFL has never had a team win the Super Bowl 3 times in a row. The NBA (5 times), NHL (5 times), and MLB (4 times), have all had teams win the championship at least 3 times in a row." + (source('1', 'List_of_Super_Bowl_champions')) + (source('2', 'List_of_NBA_champions')) + (source('3', 'List_of_Stanley_Cup_champions')) + (source('4', 'List_of_World_Series_champions'));
+sportsFactsList[28]=timedFactsList[4];
 sportsFactsList[29]="During Yogi Berra's 18 years playing with the New York Yankees, the team appeared in the World Series 14 times, and won 10 of those series." + (source('1', 'Yogi_Berra')) + (source('1', 'List_of_World_Series_champions'));
 sportsFactsList[30]="Tiger Woods made 142 straight cuts, making the cut for every tournament starting in 1998 until May 13, 2005." + (source('1', 'List_of_career_achievements_by_Tiger_Woods'));
-sportsFactsList[31]="As of 2015, Barry Bonds holds the record for most intentional walks in a 9-inning game (4), season (120), and career (668)." + (source('1', 'Intentional_base_on_balls'));
+sportsFactsList[31]=timedFactsList[5];
 sportsFactsList[32]="New Jersey Devil goaltender Martin Brodeur scored 3 goals in his career as a goaltender in the NHL." + (source('1', 'List_of_goaltenders_who_have_scored_a_goal_in_an_NHL_game'));
 sportsFactsList[33]="Shaquille O'Neal once missed all 11 free throw attempts in a single game in 2000." + (source("1", "List_of_career_achievements_by_Shaquille_O'Neal"));
 sportsFactsList[34]="The 1995-96 Chicago Bulls finished the season with a 72-10 record (or a winning percentage of .878)." + (source('1', 'NBA_regular_season_records'));
@@ -400,7 +416,7 @@ technologyFactsList[15]="Nintendo was sued and found guilty when <i>Mario Party<
 technologyFactsList[16]="The original Japanese version of the arcade game Pac-Man was called Puck Man, referencing the character's shape being like a hockey puck." + (source('1', 'Pac-Man'));
 technologyFactsList[17]="Due to Circuit City's bankruptcy in 2008, several brand new stores were closed after just a few weeks of being open. Some stores were also built and never even opened." + (source('1', 'Circuit_City'));
 technologyFactsList[18]="Best Buy was originally a chain of stores called Sound of Music. After its most profitable store was hit by a tornado, its owner held a sale selling its damaged stock, promising \"best buys\"." + (source('1', 'Best_Buy'));
-technologyFactsList[19]="In 1991, a 1 GB hard drive could be purchased for about $2,700. As of 2014, a 4 TB (4,000 GB) hard drive can be purchased for about $150." + (source('1', 'Terabyte'));
+technologyFactsList[19]="Amazon released the " + (includeImage('first Kindle', 'kindle.jpg')) + " in November 2007, for $399. It sold out in five and a half hours and remained out of stock for five months until late April 2008." + (source('1', 'Amazon_Kindle'));
 technologyFactsList[20]="Sonic the Hedgehog's sidekick, Miles \"Tails\" Prower, gets his name from a pun on \"miles per hour\", referencing the famed speed of Sonic the Hedgehog." + (source('1', 'Tails_(character)'));
 technologyFactsList[21]="The early Nintendo game <i>Baseball</i>, released in 1983, only allowed the player to choose 6 of the 26 MLB teams to play as." + (source('1', 'Baseball_(1983_video_game)'));
 technologyFactsList[22]="In 2010 and 2012, Sega released a follow-up sequel to the original Sonic series from 1991 to 1994. It is called <i>Sonic the Hedgehog 4 Episode I</i> and <i>Episode II</i>, and picks up where <i>Sonic and Knuckles</i> left off." + (source('1', 'Sonic_the_Hedgehog_4:_Episode_I')) + (source('2', 'Sonic_the_Hedgehog_4:_Episode_II'));
@@ -420,7 +436,6 @@ technologyFactsList[35]="The Atari 2600 game <i>E.T. the Extra-Terrestrial</i>, 
 technologyFactsList[36]="The first Nintendo game to feature Luigi as the lone main character was <i>Mario is Missing!</i>, released in 1992. This did not happen again until <i>Luigi's Mansion</i> in 2001." + (source('1', 'Mario_Is_Missing'));
 technologyFactsList[37]="The Sony PlayStation was originally an add-on peripheral for the Super Nintendo, called Play Station, which allowed the SNES to play a CD format called " + (includeImage('SNES-CD', 'snes-cd.jpg')) + ".  After Nintendo broke their contract with Sony in favor of their rival Philips, Sony eventually created their own video game system." + (source('1', 'SNES-CD'));
 technologyFactsList[38]="Nintendo's first attempt at a 3D gaming system was the " + (includeImage('Virtual Boy', 'virtualboy.jpg')) + " in 1995, which was considered a commercial failure as it sold less than 800,000 units, lacked portability, had poor wireframe monochromatic graphics, was overpriced, and sometimes caused painful physiological symptoms. It was discontinued after just 7 months." + (source('1', 'Virtual_Boy'));
-technologyFactsList[39]="Amazon released the " + (includeImage('first Kindle', 'kindle.jpg')) + " in November 2007, for $399. It sold out in five and a half hours and remained out of stock for five months until late April 2008." + (source('1', 'Amazon_Kindle'));
 
 
 	/*  --          Television/Film list          --  */
@@ -479,7 +494,7 @@ televisionFactsList[50]="The term \"soap opera\" comes from the soap and deterge
 televisionFactsList[51]="Over the course of 26 seasons of their show, the Simpsons family have owned the following pets: two dogs (Santa's Little Helper and Laddie), five cats (Snowball I, Snowball II, Snowball III, Coltrane, Snowball V), an elephant (Stampy), a snake (Strangles), a guinea pig (Pokey), a horse (Princess), and a lobster (Pinchy)." + (source('1', 'Simpson_family'));
 televisionFactsList[52]="For the role of <i>Friends</i> character Gunther, James Michael Tyler was cast because he was the only extra who could competently work the coffee machine on the set. He ended up appearing in the most episodes (148 out of 236) besides the main cast." + (source('1', 'List_of_Friends_characters')) + (source('2', 'James_Michael_Tyler'));
 televisionFactsList[53]="Ruth Cohen, who plays the cashier at Monk's Cafe on <i>Seinfeld</i>, appears in the most episodes (101 out of 180) besides the main cast." + (source('1', 'Ruth_Cohen'));
-televisionFactsList[54]="As of 2016, the longest running scripted television series are <i>The Simpsons</i> (currently in its 27th season), <i>Gunsmoke</i> (lasted 20 seasons), <i>Law &amp; Order</i> (lasted 20 seasons), <i>Lassie</i> (lasted 19 seasons), and <i>South Park</i> (currently in its 19th season)." + (source('1', 'List_of_longest-running_U.S._primetime_television_series'));
+televisionFactsList[54]=timedFactsList[7];
 televisionFactsList[55]="The original plan for season 6 of <i>The Brady Bunch</i> was to use Carol's previous husband as a mechanism to replace Robert Reed (who was constantly unhappy with the show's scripts) in season 6. However the show was canceled after its fifth season." + (source('1', 'Characters_of_The_Brady_Bunch')) + (source('2', 'Robert_Reed'));
 televisionFactsList[56]="Scenes for an episode of <i>Entourage</i> were shot on location at a 2005 U2 concert. Similarly, scenes for the <i>Entourage</i> film were shot on location at the 72nd Golden Globe Awards." + (source('1', 'City_of_Blinding_Lights')) + (source('2', 'Entourage_(film)'));
 televisionFactsList[57]="<i>Taken</i> actor Liam Neeson turned down the role of James Bond in 1995's <i>Goldeneye</i> because he wasn't interested in starring in action movies." + (source('1', 'List_of_actors_considered_for_the_James_Bond_character'));
@@ -495,7 +510,7 @@ televisionFactsList[66]="<i>Lord of the Rings</i> actor Sean Bean's fear of flyi
 televisionFactsList[67]="The staff of Pixar came up with the original ideas for <i>WALL-E</i>, <i>A Bug's Life</i>, and <i>Monsters Inc.</i> all during one lunch in 1994." + (source('1', 'WALL-E'));
 televisionFactsList[68]="Throughout Eileen Fulton's 50-year tenure on the soap opera <i>As the World Turns</i>, her character Lisa Grimaldi had 8 spouses." + (source('1', 'Lisa_Grimaldi'));
 televisionFactsList[69]="<i>CBS Evening News</i> has aired over 16,400 episodes, dating back to May 3, 1948." + (source('1', 'List_of_longest-running_United_States_television_series'));
-televisionFactsList[70]="As of 2016, <i>Spongebob Squarepants</i> is the only remaining Nickelodeon show that debuted before the year 2000." + (source('1', 'List_of_longest-running_United_States_television_series'));
+televisionFactsList[70]=timedFactsList[8];
 televisionFactsList[71]="In <i>Grey's Anatomy</i>, only 4 of the main characters have appeared in all 12 seasons of the show: Meredith, Alex, Dr. Bailey, and Richard. Also appearing in all 12 seasons is the recurring character, Bokhee the scrub nurse." + (source('1', 'List_of_Grey%27s_Anatomy_cast_members'));
 televisionFactsList[72]="None of the main cast of <i>ER</i> appeared in all of the show's 15 seasons. Laura Innes' character Kerry Weaver appeared in 13 seasons, the most of any main cast member." + (source('1', 'Cast_of_ER'));
 televisionFactsList[73]="Starting with its 8th season, <i>Aqua Teen Hunger Force</i> changed its series title with each new season: <i>Aqua Unit Patrol Squad 1</i> was season 8's title, <i>Aqua Something You Know Whatever</i> for season 9, and <i>Aqua TV Show Show</i> for season 10." + (source('1', 'Aqua_Teen_Hunger_Force'));
@@ -540,6 +555,7 @@ var mostFactsList = ["music21","pop18","pop19","television63","television64"];
 	/*  --          Retired list           --    */
 var retiredFactsList = new Array;
 retiredFactsList[0]="The word for \"second-to-last\" is <i>penultimate</i>, from Latin <i>paene</i> (\"almost\") + <i>ultimus</i> (\"last\"). Similarly, third-to-last is <i>antepenultimate</i>, fourth-to-last is <i>preantepenultimate</i>, and fifth-to-last is <i>propreantepenultimate</i>.<sup><a href='http://en.wiktionary.org/wiki/penultimate' target='_blank'>[1]</a></sup>";
+retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,700. As of 2014, a 4 TB (4,000 GB) hard drive can be purchased for about $150." + (source('1', 'Terabyte'));
 
 
 /*  --          Featured facts section          --  */
