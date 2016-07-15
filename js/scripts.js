@@ -541,7 +541,7 @@ televisionFactsList[97]="Rather than the usual repeated lines that Bart Simpson 
 televisionFactsList[98]="In response to <i>The Simpsons</i> episode \"Brother's Little Helper\", where Bart is diagnosed with ADHD, U.S. President Bill Clinton held the first ever White House conference on Mental Health." + (source('1', 'Brother%27s_Little_Helper'));
 televisionFactsList[99]="The Comedy Central television series <i>Drunk History</i> was inspired by a 2007 conversation that creator Derek Waters had with <i>New Girl</i> actor Jake Johnson, who drunkenly tried to explain Otis Reddings' death to Waters. Johnson later appeared in multiple episodes of the show after it started in 2013." + (source('1', 'Jake_Johnson'));
 televisionFactsList[100]="Jaleel White, who played Steve Urkel in <i>Family Matters</i>, also appeared as his character Steve Urkel in <i>Full House</i>, <i>Step by Step</i>, and <i>Meego</i>. In <i>Family Matters</i> he also sends a chain letter to his friend Cory Matthews, who lived in Philadelphia, referencing a crossover to the series <i>Boy Meets World</i>." + (source('1', 'Steve_Urkel'));
-
+televisionFactsList[101]="The 2016 film <i>Sausage Party</i>, about an anthropomorphic sausage living in a supermarket with other groceries, was the first CGI-animated movie to receive an R-rating." + (source('1', 'Sausage_Party'));
 
 	/*  --          User-submitted list          --  */
 var userSubmittedFactsList = ["food18","history19","music9","television47","pop20", "pop24","history24","pop31","technology23","technology24","television59","food22","pop43","pop46", "television98"];
