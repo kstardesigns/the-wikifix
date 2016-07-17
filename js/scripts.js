@@ -169,6 +169,7 @@ timedFactsList[5]="As of 2016, Barry Bonds holds the record for most intentional
 timedFactsList[7]="As of 2016, the longest running scripted television series are <i>The Simpsons</i> (currently in its 27th season), <i>Gunsmoke</i> (lasted 20 seasons), <i>Law &amp; Order</i> (lasted 20 seasons), <i>Lassie</i> (lasted 19 seasons), and <i>South Park</i> (currently in its 19th season)." + (source('1', 'List_of_longest-running_U.S._primetime_television_series'));
 timedFactsList[8]="As of 2016, <i>Spongebob Squarepants</i> is the only remaining Nickelodeon show that debuted before the year 2000." + (source('1', 'List_of_longest-running_United_States_television_series'));
 
+//olympic facts sports45, 46
 
 	/*  --          Food list          --  */
 var foodFactsList = new Array;
@@ -394,6 +395,9 @@ sportsFactsList[41]="Kobe Bryant's parents named him after the famous beef of Ko
 sportsFactsList[42]="From 2000-2010, the Los Angeles Lakers appeared in the NBA Finals 7 times, winning the championship 5 times." + (source('1', 'List_of_NBA_champions'));
 sportsFactsList[43]="The New Orleans Hornets (now Pelicans) relocated to Oklahoma City due to the damage caused by Hurricane Katrina in 2005, and were officially known as the New Orleans/Oklahoma City Hornets for two seasons." + (source('1', 'New_Orleans_Pelicans'));
 sportsFactsList[44]="When Shaquille O'Neill and Kobe Bryant were no longer teammates, Shaq's team went 7-4 against Kobe's in the 11 times they played each other. However, Kobe outscored Shaq all 11 times, by a total of 385-184." + (source('1', 'Shaq%E2%80%93Kobe_feud'));
+sportsFactsList[45]="Since Russia is banned from the 2016 Summer Olympics due to the doping scandal, no Russian athlete is allowed to participate internationally. The International Olympic Committee is allowing 2 athletes  as \"neutral\" athletes, under the " + (includeImage('Olympic flag', 'olympicflag.png')) + ", who will not represent any nation." + (source('1', 'Independent_Olympic_Athletes_at_the_2016_Summer_Olympics'));
+sportsFactsList[46]="10 athletes will participate in the 2016 Summer Olympics officially as the Team of Refugee Olympic Athletes, in the context of the \"worldwide refugee crisis\", of which the European migrant crisis and the Syrian Civil War are a prominent part. The athletes will compete under the " + (includeImage('Olympic flag', 'olympicflag.png')) + " with the IOC country code ROA." + (source('1', 'Refugee_Olympic_Athletes_at_the_2016_Summer_Olympics'));
+
 
 	/*  --          Technology list          --  */
 var technologyFactsList = new Array;
