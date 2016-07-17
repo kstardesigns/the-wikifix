@@ -169,7 +169,7 @@ timedFactsList[5]="As of 2016, Barry Bonds holds the record for most intentional
 timedFactsList[7]="As of 2016, the longest running scripted television series are <i>The Simpsons</i> (currently in its 27th season), <i>Gunsmoke</i> (lasted 20 seasons), <i>Law &amp; Order</i> (lasted 20 seasons), <i>Lassie</i> (lasted 19 seasons), and <i>South Park</i> (currently in its 19th season)." + (source('1', 'List_of_longest-running_U.S._primetime_television_series'));
 timedFactsList[8]="As of 2016, <i>Spongebob Squarepants</i> is the only remaining Nickelodeon show that debuted before the year 2000." + (source('1', 'List_of_longest-running_United_States_television_series'));
 
-//olympic facts sports45, 46
+//olympic facts sports45 and 46
 
 	/*  --          Food list          --  */
 var foodFactsList = new Array;
