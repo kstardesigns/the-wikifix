@@ -70,3 +70,5 @@ CJCR699B - $2.43 - kstarkphoto.com\\
 
 - start coding monday, then add forgotten stuff from above
 - make sure mixins are used (box shadow, text shadow too)
+- make thank you page, test form
+- add home page link to dropdown nav
