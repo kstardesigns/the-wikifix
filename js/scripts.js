@@ -244,6 +244,7 @@ historyFactsList[28]="The word \"fortnight\" comes from the Old English word <i
 historyFactsList[29]="Since 1972, a \"" + (includeImage('leap second', 'leapsecond.png')) + "\" has been added 26 times onto the Coordinated Universal Time in order to keep its time of day close to the mean solar time. The most recent one being June 30, 2015, at 23:59:60 UTC." + (source('1', 'Leap_second'));
 historyFactsList[30]="The Secret Service codenames for recent Presidents of the United States include Renegade (Barack Obama), Tumbler and Trailblazer (George W. Bush), Eagle (Bill Clinton), Timberwolf (George H.W. Bush), and Rawhide (Ronald Reagan)." + (source('1', 'Secret_Service_codename'));
 historyFactsList[31]="Ticket prices for the Titanic's promenade deck suites cost $4,350 (equivalent to $106,660 in 2015) for a one-way passage." + (source('1', 'Sinking_of_the_RMS_Titanic'));
+historyFactsList[32]="The distance between the United States and Russia is less than 2.4 miles, between Diomede, Alaska, on Little Diomede Island, and Big Diomede, Russia." + (source('1','Diomede,_Alaska'));
 
 
 	/*  --          Music list          --  */
@@ -346,7 +347,7 @@ popFactsList[54]="Playing cards first entered Southern Europe in the 14th centur
 popFactsList[55]="The joker was added to playing card decks around 1860, as a third trump for the game of Euchre, which ranked higher than the two bowers (the two highest ranking cards, the Jack of the trump suit and the Jack of the same color as the trump suit)." + (source('1', 'Playing_card'));
 popFactsList[56]="The FCC fined CBS a record $550,000 over Janet Jackson's \"wardrobe malfunction\" at the Super Bowl XXXVIII halftime show in 2003. It was fought in the Supreme Court, and the fine was appealed and ultimately voided by the Third Circuit Court of Appeals in a 2011 ruling. A case to reinstate the fine was refused in 2012." + (source('1', 'Super_Bowl_XXXVIII_halftime-show_controversy'));
 popFactsList[57]="YouTube co-founder Jawed Karim claims that Janet Jackson's \"wardrobe malfunction\" at the Super Bowl XXXVIII halftime show was what led to the creation of the video sharing website. This was due to his frustration at not being able to easily find a video clip of the incident." + (source('1', 'Super_Bowl_XXXVIII_halftime-show_controversy'));
-
+popFactsList[58]="On July 12, <i>Pok&eacute; Go</i> became the most active mobile game in the United States ever with 21 million active users, eclipsing <i>Candy Crush Saga</i>'s peak of 20 million." + (source('1','Pokémon_Go'));
 
 	/*  --          Sports list          --  */
 var sportsFactsList = new Array;
@@ -546,6 +547,8 @@ televisionFactsList[98]="In response to <i>The Simpsons</i> episode \"Brother's 
 televisionFactsList[99]="The Comedy Central television series <i>Drunk History</i> was inspired by a 2007 conversation that creator Derek Waters had with <i>New Girl</i> actor Jake Johnson, who drunkenly tried to explain Otis Reddings' death to Waters. Johnson later appeared in multiple episodes of the show after it started in 2013." + (source('1', 'Jake_Johnson'));
 televisionFactsList[100]="Jaleel White, who played Steve Urkel in <i>Family Matters</i>, also appeared as his character Steve Urkel in <i>Full House</i>, <i>Step by Step</i>, and <i>Meego</i>. In <i>Family Matters</i> he also sends a chain letter to his friend Cory Matthews, who lived in Philadelphia, referencing a crossover to the series <i>Boy Meets World</i>." + (source('1', 'Steve_Urkel'));
 televisionFactsList[101]="The 2016 film <i>Sausage Party</i>, about an anthropomorphic sausage living in a supermarket with other groceries, was the first CGI-animated movie to receive an R-rating." + (source('1', 'Sausage_Party'));
+televisionFactsList[102]="In an early script of <i>Back to the Future</i>, the time machine was designed as a refrigerator, rather than a car. One of the reasons this was changed is that production was concerned that kids would accidentally lock themselves in refrigerators." + (source('1','Back_to_the_Future'));
+televisionFactsList[103]="In the original proof of concept of <i>Bob's Burgers</i>, the daughter Tina was instead a boy named Daniel." + (source('1','Bob%27s_Burgers'));
 
 	/*  --          User-submitted list          --  */
 var userSubmittedFactsList = ["food18","history19","music9","television47","pop20", "pop24","history24","pop31","technology23","technology24","television59","food22","pop43","pop46", "television98"];
@@ -616,6 +619,15 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'Food &amp; Drink',
 			'bgImage': 'pringles.jpg',
 			'altTag': 'Asian Pringles cans',
+			'bgcolor': 'rgba(86, 168, 212, .75)',
+			'textColor': '#fff'
+		},
+		{
+			'ffNumber': '7',
+			'theFact': televisionFactsList[103],
+			'filter': 'TV &amp; Film',
+			'bgImage': 'tinabelcher.jpg',
+			'altTag': 'Tina Belcher as a boy',
 			'bgcolor': 'rgba(86, 168, 212, .75)',
 			'textColor': '#fff'
 		}
