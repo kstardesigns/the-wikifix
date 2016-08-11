@@ -347,7 +347,7 @@ popFactsList[54]="Playing cards first entered Southern Europe in the 14th centur
 popFactsList[55]="The joker was added to playing card decks around 1860, as a third trump for the game of Euchre, which ranked higher than the two bowers (the two highest ranking cards, the Jack of the trump suit and the Jack of the same color as the trump suit)." + (source('1', 'Playing_card'));
 popFactsList[56]="The FCC fined CBS a record $550,000 over Janet Jackson's \"wardrobe malfunction\" at the Super Bowl XXXVIII halftime show in 2003. It was fought in the Supreme Court, and the fine was appealed and ultimately voided by the Third Circuit Court of Appeals in a 2011 ruling. A case to reinstate the fine was refused in 2012." + (source('1', 'Super_Bowl_XXXVIII_halftime-show_controversy'));
 popFactsList[57]="YouTube co-founder Jawed Karim claims that Janet Jackson's \"wardrobe malfunction\" at the Super Bowl XXXVIII halftime show was what led to the creation of the video sharing website. This was due to his frustration at not being able to easily find a video clip of the incident." + (source('1', 'Super_Bowl_XXXVIII_halftime-show_controversy'));
-popFactsList[58]="On July 12, <i>Pok&eacute; Go</i> became the most active mobile game in the United States ever with 21 million active users, eclipsing <i>Candy Crush Saga</i>'s peak of 20 million." + (source('1','Pokémon_Go'));
+popFactsList[58]="On July 12, 2016, <i>Pok&eacute;mon Go</i> became the most active mobile game in the United States ever with 21 million active users, eclipsing <i>Candy Crush Saga</i>'s peak of 20 million." + (source('1','Pokémon_Go'));
 
 	/*  --          Sports list          --  */
 var sportsFactsList = new Array;
