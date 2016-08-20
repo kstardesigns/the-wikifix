@@ -108,24 +108,6 @@ function changeToUnfiltered() {
 	giveafactbutton();
 }
 
-$('#addSource').click = function createInputField() {
-  var input = document.createElement('input');
-  var lineBreak = document.createElement('br');
-  var testId = 'Source';
-  var i = 0;
-  var x = document.getElementsByTagName('INPUT').length - 2;
-  for (i = 0; i < x; i++) {
-    i;
-  }
-  input.setAttribute('id', testId + i);
-  input.type = 'text';
-  input.name = 'Source' + i;
-  var aplayer1 = $('#sourcearea');
-  aplayer1.appendChild(input);
-  aplayer1.appendChild(lineBreak);
-}
-
-
 
 /*  --          Filtered fact lists and functions         --  */
 
@@ -348,6 +330,8 @@ popFactsList[55]="The joker was added to playing card decks around 1860, as a th
 popFactsList[56]="The FCC fined CBS a record $550,000 over Janet Jackson's \"wardrobe malfunction\" at the Super Bowl XXXVIII halftime show in 2003. It was fought in the Supreme Court, and the fine was appealed and ultimately voided by the Third Circuit Court of Appeals in a 2011 ruling. A case to reinstate the fine was refused in 2012." + (source('1', 'Super_Bowl_XXXVIII_halftime-show_controversy'));
 popFactsList[57]="YouTube co-founder Jawed Karim claims that Janet Jackson's \"wardrobe malfunction\" at the Super Bowl XXXVIII halftime show was what led to the creation of the video sharing website. This was due to his frustration at not being able to easily find a video clip of the incident." + (source('1', 'Super_Bowl_XXXVIII_halftime-show_controversy'));
 popFactsList[58]="On July 12, 2016, <i>Pok&eacute;mon Go</i> became the most active mobile game in the United States ever with 21 million active users, eclipsing <i>Candy Crush Saga</i>'s peak of 20 million." + (source('1','Pokémon_Go'));
+popFactsList[59]="Disney planned to open a theme park in 1998 called " + (includeImage('Disney\'s America', 'disneysamerica.jpg')) + ", dedicated to the history of the United States. It was planned first for Haymarket, VA, and Buena Park, CA, but the plans fell through both times. Several of the proposed elements of the park were included in California Adventure in 2001." + (source('1','Disney%27s_America'));
+
 
 	/*  --          Sports list          --  */
 var sportsFactsList = new Array;
@@ -396,9 +380,9 @@ sportsFactsList[41]="Kobe Bryant's parents named him after the famous beef of Ko
 sportsFactsList[42]="From 2000-2010, the Los Angeles Lakers appeared in the NBA Finals 7 times, winning the championship 5 times." + (source('1', 'List_of_NBA_champions'));
 sportsFactsList[43]="The New Orleans Hornets (now Pelicans) relocated to Oklahoma City due to the damage caused by Hurricane Katrina in 2005, and were officially known as the New Orleans/Oklahoma City Hornets for two seasons." + (source('1', 'New_Orleans_Pelicans'));
 sportsFactsList[44]="When Shaquille O'Neill and Kobe Bryant were no longer teammates, Shaq's team went 7-4 against Kobe's in the 11 times they played each other. However, Kobe outscored Shaq all 11 times, by a total of 385-184." + (source('1', 'Shaq%E2%80%93Kobe_feud'));
-sportsFactsList[45]="Since Russia is banned from the 2016 Summer Olympics due to the doping scandal, no Russian athlete is allowed to participate internationally. The International Olympic Committee is allowing 2 athletes  as \"neutral\" athletes, under the " + (includeImage('Olympic flag', 'olympicflag.png')) + ", who will not represent any nation." + (source('1', 'Independent_Olympic_Athletes_at_the_2016_Summer_Olympics'));
-sportsFactsList[46]="10 athletes will participate in the 2016 Summer Olympics officially as the Team of Refugee Olympic Athletes, in the context of the \"worldwide refugee crisis\", of which the European migrant crisis and the Syrian Civil War are a prominent part. The athletes will compete under the " + (includeImage('Olympic flag', 'olympicflag.png')) + " with the IOC country code ROA." + (source('1', 'Refugee_Olympic_Athletes_at_the_2016_Summer_Olympics'));
-
+sportsFactsList[45]="Since Russia is banned from the 2016 Summer Olympics due to the doping scandal, no Russian athlete is allowed to participate internationally. The International Olympic Committee is allowing 2 athletes  as \"neutral\" athletes, under the " + (includeImage('Olympic flag', 'olympicflag.jpg')) + ", who will not represent any nation." + (source('1', 'Independent_Olympic_Athletes_at_the_2016_Summer_Olympics'));
+sportsFactsList[46]="10 athletes will participate in the 2016 Summer Olympics officially as the Team of Refugee Olympic Athletes, in the context of the \"worldwide refugee crisis\", of which the European migrant crisis and the Syrian Civil War are a prominent part. The athletes will compete under the " + (includeImage('Olympic flag', 'olympicflag.jpg')) + " with the IOC country code ROA." + (source('1', 'Refugee_Olympic_Athletes_at_the_2016_Summer_Olympics'));
+sportsFactsList[47]="MLB Hall of Famer Rickey Henderson retired with 1,406 career stolen bases, which is 50% higher than the previous record of 938 held by Lou Brock." + (source('1','Rickey_Henderson'));
 
 	/*  --          Technology list          --  */
 var technologyFactsList = new Array;
@@ -451,7 +435,7 @@ televisionFactsList[2]="Bill Murray's part in <i>Zombieland</i> was originally a
 televisionFactsList[3]="The very last rental at Blockbuster was <i>This Is The End</i>, on November 9, 2013, in a store in Hawaii." + (source('1', 'Blockbuster_LLC'));
 televisionFactsList[4]="Jackie, Hyde, Donna, Fez, Red, and Kitty appeared in all 200 episodes of <i>That '70s Show</i>." + (source('1', "List_of_That_'70s_Show_episodes"));
 televisionFactsList[5]="Matt Groening named the Simpsons family characters after his own family members, substituting \"Bart\" for his own name." + (source('1', 'Simpson_family'));
-televisionFactsList[6]="The working title of the TV show <i>The New Girl</i> was <i>Chicks & Dicks</i>." + (source('1', 'New_Girl'));
+televisionFactsList[6]="The working title of the TV show <i>New Girl</i> was <i>Chicks & Dicks</i>." + (source('1', 'New_Girl'));
 televisionFactsList[7]="There is only 1 episode of 550+ episodes of <i>The Simpsons</i> to not feature (or even mention) Bart Simpson: season 20's \"Four Great Women and a Manicure\"." + (source('1', 'Four_Great_Women_and_a_Manicure'));
 televisionFactsList[8]="Voice actor Billy West has played Bugs Bunny, Elmer Fudd, Fry and Dr. Zoidberg (<i>Futurama</i>), Doug Funnie (<i>Doug</i>), the red M&M, Popeye, Shaggy (<i>Scooby-Doo</i>), Tom (<i>Tom & Jerry</i>), Woody Woodpecker, and Ren and Stimpy." + (source('1', 'Billy_West'));
 televisionFactsList[9]="The 2008 film <i>Forgetting Sarah Marshall</i> was only \"60 or 70% scripted\", with the rest of the film being improv." + (source('1', 'Forgetting_Sarah_Marshall'));
@@ -549,12 +533,14 @@ televisionFactsList[100]="Jaleel White, who played Steve Urkel in <i>Family Matt
 televisionFactsList[101]="The 2016 film <i>Sausage Party</i>, about an anthropomorphic sausage living in a supermarket with other groceries, was the first CGI-animated movie to receive an R-rating." + (source('1', 'Sausage_Party'));
 televisionFactsList[102]="In an early script of <i>Back to the Future</i>, the time machine was designed as a refrigerator, rather than a car. One of the reasons this was changed is that production was concerned that kids would accidentally lock themselves in refrigerators." + (source('1','Back_to_the_Future'));
 televisionFactsList[103]="In the original proof of concept of <i>Bob's Burgers</i>, the daughter Tina was instead a boy named Daniel." + (source('1','Bob%27s_Burgers'));
+televisionFactsList[104]="<i>Saved by the Bell</i> is a reboot of the original Disney series, <i>Good Morning, Miss Bliss</i>, featuring most of the same cast. After Disney dropped the series, NBC picked it up and changed the title and direction of the show." + (source('1','Saved_by_the_Bell'));
+televisionFactsList[105]="The TV series <i>Saved by the Bell</i> included 126 episodes, split between 3 different TV series and 2 films. This includes 13 episodes of <i>Good Morning, Miss Bliss</i>, 86 episodes of <i>Saved by the Bell</i>, 19 episodes of <i>Saved by the Bell: The College Years</i>,  and the films <i>Saved by the Bell: Hawaiian Style</i> and <i>Saved by the Bell: Wedding in Las Vegas</i>, which were aired as 4 episodes each." + (source('1','List_of_Saved_by_the_Bell_episodes'));
 
 	/*  --          User-submitted list          --  */
 var userSubmittedFactsList = ["food18","history19","music9","television47","pop20", "pop24","history24","pop31","technology23","technology24","television59","food22","pop43","pop46", "television98"];
 
-	/*  --          Pictures list          --  */
-var picturesFactsList = ["history1","history16","pop8","pop37","history22","history29","sports22","music17","music23","pop49", "technology35","technology37","technology38", "television92", "food34", "technology39"];
+	/*  --          Pictures facts list          --  */
+var picturesFactsList = ["history1","history16","pop8","pop37","history22","history29","sports22","music17","music23","pop49", "technology35","technology37","technology38", "television92", "food34", "technology39", "pop59", "sports45", "sports46"];
 
 	/*  --          Most used Wiki page list          --  */
 var mostFactsList = ["music21","pop18","pop19","television63","television64"];
@@ -813,7 +799,7 @@ $( document ).ready(function() {
 /*  --          Recently added facts section          --  */
 
 	//How many facts to show for each filter
-	var factsShown = 3;
+	var factsShown = 5;
 
 	//Get the most recent facts and show most recent first
 	var lastFood = foodFactsList.slice(-factsShown).reverse();

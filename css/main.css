@@ -60,9 +60,20 @@ section {
 }
 
 .kstar {
-	width: 100%; 
-	clear: both;
+	width: 100%;
+}
 
+.kstar a {
+	float: right;
+    padding-right: 20px;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: transparent;
+    cursor: pointer;
+}
+
+.kstar a:hover {
+	text-shadow: 0 0 0 rgba(255,255,255,.1)
 }
 
 .box {
@@ -798,6 +809,8 @@ dd {
 	a.popimg:hover > span { visibility: hidden; opacity: 0;}
 	a.popimg {color: #252525;}
 	.recent {padding:5px 20px 20px 5px;}
+	.kstar a {font-size: 14px; }
+	.content {margin: 0 auto 5px auto;}
 	
 }
 
