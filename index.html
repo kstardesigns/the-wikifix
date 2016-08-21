@@ -18,7 +18,8 @@
     <span class="bottom"></span>
 </div>
 <div class="mobilenav">
-    <a href="index.html" title="The WikiFix Home"><img src="assets/logo.png" class="logo" alt="The WikiFix" /></a>
+    <a href="index.html" title="The WikiFix Home"><img src="assets/logo.png" class="logo logo-light" alt="The WikiFix" /></a>
+    <a href="index.html" title="The WikiFix Home"><img src="assets/logo-white.png" class="logo logo-dark" alt="The WikiFix" /></a>
     <ul>
         <li><a href="#top">Random facts</a></li>
         <li><a href="#recent">Recently added facts</a></li>
@@ -33,7 +34,8 @@
 <div class="overlay"></div>
 <div class="content">
     <div id="top" class="header">
-        <a href="index.html" title="The WikiFix Home"><img src="assets/logo.png" class="logo" alt="The WikiFix" /></a>
+        <a href="index.html" title="The WikiFix Home"><img src="assets/logo.png" class="logo-light" alt="The WikiFix" /></a>
+        <a href="index.html" title="The WikiFix Home"><img src="assets/logo-white.png" class="logo logo-dark" alt="The WikiFix" /></a>
         <div class="links">
             <a href="http://donate.wikimedia.org" title="Donate to Wikipedia" target="_blank"><img class="wikipedia" src="assets/wikipedia.svg" alt="Donate to Wikipedia"></a>
             <a href="http://wikiwand.com/" title="Download Wikiwand" target="_blank"><img class="wikiwand" src="assets/wikiwand.svg" alt="Download Wikiwand"></a>
@@ -221,6 +223,12 @@
         </div>
 
         <div class="kstar">
+            <div class="switchblock">
+                <div class="switch">
+                    <div class="themebutton on"></div>
+                </div>
+                change theme
+            </div>
             <a href="js/scripts.js" target="_blank">js</a>
             <div class="c"></div>
         </div>
@@ -232,6 +240,7 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/cookies.js"></script>
 <script src="js/scripts.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

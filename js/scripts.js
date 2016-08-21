@@ -25,7 +25,7 @@ III. Functions
 	c. updateShareLinks - update Twitter link w/fact
 	d. Generate unfiltered facts
 		i. giveafoodfact, etc.
-IV. Stats section
+IV. On load: Stats section / set cookie
 	a. Input sentence stats
 	b. Build the chart
 	c. Calculate weekly stat count
@@ -380,8 +380,8 @@ sportsFactsList[41]="Kobe Bryant's parents named him after the famous beef of Ko
 sportsFactsList[42]="From 2000-2010, the Los Angeles Lakers appeared in the NBA Finals 7 times, winning the championship 5 times." + (source('1', 'List_of_NBA_champions'));
 sportsFactsList[43]="The New Orleans Hornets (now Pelicans) relocated to Oklahoma City due to the damage caused by Hurricane Katrina in 2005, and were officially known as the New Orleans/Oklahoma City Hornets for two seasons." + (source('1', 'New_Orleans_Pelicans'));
 sportsFactsList[44]="When Shaquille O'Neill and Kobe Bryant were no longer teammates, Shaq's team went 7-4 against Kobe's in the 11 times they played each other. However, Kobe outscored Shaq all 11 times, by a total of 385-184." + (source('1', 'Shaq%E2%80%93Kobe_feud'));
-sportsFactsList[45]="Since Russia is banned from the 2016 Summer Olympics due to the doping scandal, no Russian athlete is allowed to participate internationally. The International Olympic Committee is allowing 2 athletes  as \"neutral\" athletes, under the " + (includeImage('Olympic flag', 'olympicflag.jpg')) + ", who will not represent any nation." + (source('1', 'Independent_Olympic_Athletes_at_the_2016_Summer_Olympics'));
-sportsFactsList[46]="10 athletes will participate in the 2016 Summer Olympics officially as the Team of Refugee Olympic Athletes, in the context of the \"worldwide refugee crisis\", of which the European migrant crisis and the Syrian Civil War are a prominent part. The athletes will compete under the " + (includeImage('Olympic flag', 'olympicflag.jpg')) + " with the IOC country code ROA." + (source('1', 'Refugee_Olympic_Athletes_at_the_2016_Summer_Olympics'));
+sportsFactsList[45]="Since Russia was banned from the 2016 Summer Olympics due to the doping scandal, no Russian athlete was allowed to participate internationally. The International Olympic Committee allowed 2 athletes to compete as \"neutral\" athletes, under the " + (includeImage('Olympic flag', 'olympicflag.jpg')) + ", who did not represent any nation." + (source('1', 'Independent_Olympic_Athletes_at_the_2016_Summer_Olympics'));
+sportsFactsList[46]="10 athletes participated in the 2016 Summer Olympics officially as the Team of Refugee Olympic Athletes, in the context of the \"worldwide refugee crisis\", of which the European migrant crisis and the Syrian Civil War are a prominent part. The athletes competed under the " + (includeImage('Olympic flag', 'olympicflag.jpg')) + " with the IOC country code ROA." + (source('1', 'Refugee_Olympic_Athletes_at_the_2016_Summer_Olympics'));
 sportsFactsList[47]="MLB Hall of Famer Rickey Henderson retired with 1,406 career stolen bases, which is 50% higher than the previous record of 938 held by Lou Brock." + (source('1','Rickey_Henderson'));
 
 	/*  --          Technology list          --  */
@@ -740,10 +740,39 @@ $('.mobilenav a[href*=#]').bind('click', function(e) {
 	return false;
    });
 
+// When the theme button is clicked
+$('.themebutton').click(function () {
+    // Check the current cookie value
+    // If the cookie is empty or set to no, then add darktheme
+    if ($.cookie('darktheme') == 'undefined' || $.cookie('darktheme') == 'no') {
+        // Set cookie value to yes
+        $.cookie('darktheme','yes', {expires: 365, path: ''});
+        // Add the class to the body
+        $('body').addClass('dark');
+        $('.themebutton').addClass('off');
+        $('.themebutton').removeClass('on');
+    }
+    // If the cookie was already set to yes then remove it
+    else {
+        $.cookie('darktheme','no',  {expires: 365, path: ''});
+        $('body').removeClass('dark');
+        $('.themebutton').addClass('on');
+        $('.themebutton').removeClass('off');
+    }
+}); 
 
-	/*  --          Stats section          --  */
+	/*  --          Stats section / Set cookie          --  */
 
-$( document ).ready(function() {
+$(document).ready(function() {
+
+	/* -- Check/set cookie if user chooses the dark theme  -- */
+        // Check (onLoad) if the cookie is there and set the class if it is
+        if ($.cookie('darktheme') == "yes") {
+            $('body').addClass('dark');
+            $('.themebutton').addClass('off');
+            $('.themebutton').removeClass('on');
+        }
+
 	/* --    Input sentence stats   -- */
 	var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
 	$('#total').html(factsList.length);
