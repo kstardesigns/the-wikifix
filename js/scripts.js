@@ -293,7 +293,7 @@ popFactsList[18]="Gene Autry has a star in all 5 categories in the Hollywood Wal
 popFactsList[19]="Boxer Muhammed Ali was granted a star on the Hollywood Walk of Fame, as the committee justified it as boxing being a form of \"live performance\", one of the five categories." + (source('1', 'Hollywood_Walk_of_Fame'));
 popFactsList[20]="Encountering a MissingNo. Pok&eacute;mon in <i>Pok&eacute;mon Red</i> and <i>Blue</i> is the result of three computing events, including the game's random battle encounter system, the temporary storage of the player's name in the data buffer, and the game's error handling system. One of the effects of encountering a MissingNo. is the duplication of the 6th item in the player's item menu." + (source('1', 'MissingNo.'));
 popFactsList[21]="In March 2013, Mats Valk of the Netherlands solved a Rubik's Cube in 5.55 seconds at the Zonhoven Open in Belgium." + (source('1', 'Rubik%27s_Cube'));
-popFactsList[22]="A robot built from Lego Mindstormers and a Samsung Galaxy S4 phone was developed to solved a Rubik's Cube 3.25 seconds." + (source('1', 'Rubik%27s_Cube'));
+popFactsList[22]="A robot built from Lego Mindstormers and a Samsung Galaxy S4 phone was developed to solve a Rubik's Cube 3.25 seconds." + (source('1', 'Rubik%27s_Cube'));
 popFactsList[23]="In January 2014 a cryptocurrency named Coinye West (named after rapper Kanye West) was introduced and circulated briefly before West's lawyers filed a lawsuit, pushing the creators to abandon the project." + (source('1', 'Coinye_West'));
 popFactsList[24]="The \"S.O.S\" in S.O.S brand Soap Pads stands for \"Save Our Saucepans\"." + (source('1', 'S.O.S_Soap_Pad'));
 popFactsList[25]="The first non-human animal to ask an existential question was a parrot named Alex, who asked what color he was. He learned \"grey\" after being told the answer 6 times." + (source('1', 'Alex_(parrot)'));
@@ -331,7 +331,8 @@ popFactsList[56]="The FCC fined CBS a record $550,000 over Janet Jackson's \"war
 popFactsList[57]="YouTube co-founder Jawed Karim claims that Janet Jackson's \"wardrobe malfunction\" at the Super Bowl XXXVIII halftime show was what led to the creation of the video sharing website. This was due to his frustration at not being able to easily find a video clip of the incident." + (source('1', 'Super_Bowl_XXXVIII_halftime-show_controversy'));
 popFactsList[58]="On July 12, 2016, <i>Pok&eacute;mon Go</i> became the most active mobile game in the United States ever with 21 million active users, eclipsing <i>Candy Crush Saga</i>'s peak of 20 million." + (source('1','Pokémon_Go'));
 popFactsList[59]="Disney planned to open a theme park in 1998 called " + (includeImage('Disney\'s America', 'disneysamerica.jpg')) + ", dedicated to the history of the United States. It was planned first for Haymarket, VA, and Buena Park, CA, but the plans fell through both times. Several of the proposed elements of the park were included in California Adventure in 2001." + (source('1','Disney%27s_America'));
-
+popFactsList[60]="The title of the popular comic strip \"Get Fuzzy\" comes from a concert poster that creator Darby Conley once made for his brother's band, the Fuzzy Sprouts. The poster read, \"Life's too short to be cool. Get Fuzzy.\"" + (source('1','Get_Fuzzy'));
+popFactsList[61]="In February 2005, MySpace founder Chris DeWolfe held talks with Facebook founder Mark Zuckerberg about acquiring Facebook for $75 million, but DeWolfe rejected the asking price." + (source('1','Myspace'));
 
 	/*  --          Sports list          --  */
 var sportsFactsList = new Array;
@@ -425,7 +426,7 @@ technologyFactsList[35]="The Atari 2600 game <i>E.T. the Extra-Terrestrial</i>, 
 technologyFactsList[36]="The first Nintendo game to feature Luigi as the lone main character was <i>Mario is Missing!</i>, released in 1992. This did not happen again until <i>Luigi's Mansion</i> in 2001." + (source('1', 'Mario_Is_Missing'));
 technologyFactsList[37]="The Sony PlayStation was originally an add-on peripheral for the Super Nintendo, called Play Station, which allowed the SNES to play a CD format called " + (includeImage('SNES-CD', 'snes-cd.jpg')) + ".  After Nintendo broke their contract with Sony in favor of their rival Philips, Sony eventually created their own video game system." + (source('1', 'SNES-CD'));
 technologyFactsList[38]="Nintendo's first attempt at a 3D gaming system was the " + (includeImage('Virtual Boy', 'virtualboy.jpg')) + " in 1995, which was considered a commercial failure as it sold less than 800,000 units, lacked portability, had poor wireframe monochromatic graphics, was overpriced, and sometimes caused painful physiological symptoms. It was discontinued after just 7 months." + (source('1', 'Virtual_Boy'));
-
+technologyFactsList[39]="Newspapers first started printing color comic strips in the 1890's, when the CMYK printing press was invented. It utilized the primary pigment colors cyan, magenta, yellow, and black." + (source('1','Shades_of_cyan'));
 
 	/*  --          Television/Film list          --  */
 var televisionFactsList = new Array;
@@ -535,9 +536,11 @@ televisionFactsList[102]="In an early script of <i>Back to the Future</i>, the t
 televisionFactsList[103]="In the original proof of concept of <i>Bob's Burgers</i>, the daughter Tina was instead a boy named Daniel." + (source('1','Bob%27s_Burgers'));
 televisionFactsList[104]="<i>Saved by the Bell</i> is a reboot of the original Disney series, <i>Good Morning, Miss Bliss</i>, featuring most of the same cast. After Disney dropped the series, NBC picked it up and changed the title and direction of the show." + (source('1','Saved_by_the_Bell'));
 televisionFactsList[105]="The TV series <i>Saved by the Bell</i> included 126 episodes, split between 3 different TV series and 2 films. This includes 13 episodes of <i>Good Morning, Miss Bliss</i>, 86 episodes of <i>Saved by the Bell</i>, 19 episodes of <i>Saved by the Bell: The College Years</i>,  and the films <i>Saved by the Bell: Hawaiian Style</i> and <i>Saved by the Bell: Wedding in Las Vegas</i>, which were aired as 4 episodes each." + (source('1','List_of_Saved_by_the_Bell_episodes'));
+televisionFactsList[106]="The original 1971 <i>Willy Wonka &amp; the Chocolate Factory</i> disappointed Roald Dahl so much that he refused to have a film version produced of the second book in the series, <i>Charlie and the Great Glass Elevator</i>." + (source('1','Charlie_and_the_Great_Glass_Elevator'));
+televisionFactsList[107]="The original handwritten manuscripts of <i>Charlie and the Chocolate Factory</i> included a child named Herpes, named after the sexually transmitted disease, among other politically incorrect things that didn't make it into the final published book." + (source('1','Charlie_and_the_Chocolate_Factory_(film)'));
 
 	/*  --          User-submitted list          --  */
-var userSubmittedFactsList = ["food18","history19","music9","television47","pop20", "pop24","history24","pop31","technology23","technology24","television59","food22","pop43","pop46", "television98"];
+var userSubmittedFactsList = ["food18","history19","music9","television47","pop20", "pop24","history24","pop31","technology23","technology24","television59","food22","pop43","pop46", "television98","technology39"];
 
 	/*  --          Pictures facts list          --  */
 var picturesFactsList = ["history1","history16","pop8","pop37","history22","history29","sports22","music17","music23","pop49", "technology35","technology37","technology38", "television92", "food34", "technology39", "pop59", "sports45", "sports46"];
@@ -615,6 +618,33 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'bgImage': 'tinabelcher.jpg',
 			'altTag': 'Tina Belcher as a boy',
 			'bgcolor': 'rgba(86, 168, 212, .75)',
+			'textColor': '#fff'
+		},
+		{
+			'ffNumber': '8',
+			'theFact': sportsFactsList[32],
+			'filter': 'Sports',
+			'bgImage': 'brodeur.jpg',
+			'altTag': 'Martin Brodeur scoring his 3rd career goal',
+			'bgcolor': 'rgba(225, 58, 62, .75)',
+			'textColor': '#fff'
+		},
+		{
+			'ffNumber': '9',
+			'theFact': 'Ticket prices for the Titanic\'s promenade deck suites cost $4,350 (equivalent to $106,660 in 2015) for a 1-way passage.', //historyFactsList[31] - adjusted this fact to fit better in featurebox
+			'filter': 'History',
+			'bgImage': 'titanic.jpg',
+			'altTag': 'Artistic rendition of the Titanic sinking',
+			'bgcolor': 'rgba(157, 157, 157, .75)',
+			'textColor': '#fff'
+		},
+		{
+			'ffNumber': '10',
+			'theFact': musicFactsList[7],
+			'filter': 'Music',
+			'bgImage': 'metallica.jpg',
+			'altTag': 'Metallica playing music in Antarctica',
+			'bgcolor': 'rgba(60, 60, 60, .75)',
 			'textColor': '#fff'
 		}
 
