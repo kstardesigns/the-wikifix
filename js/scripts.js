@@ -333,7 +333,7 @@ popFactsList[58]="On July 12, 2016, <i>Pok&eacute;mon Go</i> became the most act
 popFactsList[59]="Disney planned to open a theme park in 1998 called " + (includeImage('Disney\'s America', 'disneysamerica.jpg')) + ", dedicated to the history of the United States. It was planned first for Haymarket, VA, and Buena Park, CA, but the plans fell through both times. Several of the proposed elements of the park were included in California Adventure in 2001." + (source('1','Disney%27s_America'));
 popFactsList[60]="The title of the popular comic strip \"Get Fuzzy\" comes from a concert poster that creator Darby Conley once made for his brother's band, the Fuzzy Sprouts. The poster read, \"Life's too short to be cool. Get Fuzzy.\"" + (source('1','Get_Fuzzy'));
 popFactsList[61]="In February 2005, MySpace founder Chris DeWolfe held talks with Facebook founder Mark Zuckerberg about acquiring Facebook for $75 million, but DeWolfe rejected the asking price." + (source('1','Myspace'));
-
+popFactsList[62]="Over 6,000 people applied to compete in the first season of <i>Survivor</i>; 800 were then interviewed in 16 cities. 48 people were then chosen, and after background checks and psychological evaluations done by the producers, the final 16 contestants and 2 alternates were picked." + (source('1','Survivor:_Borneo'));
 	/*  --          Sports list          --  */
 var sportsFactsList = new Array;
 sportsFactsList[0]="The New York Yankees were originally founded in 1901 as the Baltimore Orioles. When they moved to New York, they became the New York Highlanders, and then the Yankees." + (source('1', 'New_York_Yankees'));
@@ -368,7 +368,7 @@ sportsFactsList[28]=timedFactsList[4];
 sportsFactsList[29]="During Yogi Berra's 18 years playing with the New York Yankees, the team appeared in the World Series 14 times, and won 10 of those series." + (source('1', 'Yogi_Berra')) + (source('1', 'List_of_World_Series_champions'));
 sportsFactsList[30]="Tiger Woods made 142 straight cuts, making the cut for every tournament starting in 1998 until May 13, 2005." + (source('1', 'List_of_career_achievements_by_Tiger_Woods'));
 sportsFactsList[31]=timedFactsList[5];
-sportsFactsList[32]="New Jersey Devil goaltender Martin Brodeur scored 3 goals in his career as a goaltender in the NHL." + (source('1', 'List_of_goaltenders_who_have_scored_a_goal_in_an_NHL_game'));
+sportsFactsList[32]="New Jersey Devils goaltender Martin Brodeur scored 3 goals in his career as a goaltender in the NHL." + (source('1', 'List_of_goaltenders_who_have_scored_a_goal_in_an_NHL_game'));
 sportsFactsList[33]="Shaquille O'Neal once missed all 11 free throw attempts in a single game in 2000." + (source("1", "List_of_career_achievements_by_Shaquille_O'Neal"));
 sportsFactsList[34]="The 1995-96 Chicago Bulls finished the season with a 72-10 record (or a winning percentage of .878)." + (source('1', 'NBA_regular_season_records'));
 sportsFactsList[35]="The 2001 Seattle Mariners had a 116-46 record (or a winning percentage of .716), however they lost in the American League Championship series against the Yankees, losing the series 4-1. " + (source('1', '2001_Seattle_Mariners_season'));
