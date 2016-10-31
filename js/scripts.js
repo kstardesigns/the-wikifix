@@ -847,12 +847,20 @@ $(document).ready(function() {
 	var currentDate = todaysDate.getDate();
 	var currentMonth = todaysDate.getMonth();
 	var currentYear = todaysDate.getFullYear();
+
+	var lastUpdated = new Date(document.lastModified);
+	var getMonth = lastUpdated.getMonth();
+	var getDate = lastUpdated.getDate();
+	var getYear = lastUpdated.getFullYear();
+
 	//$('#today').html(months[currentMonth] + ' ' + currentDate + ', ' + currentYear);
 
 	var totalDays = Math.round((todaysDate.getTime() - startDate.getTime())/(oneDay)); 
 	var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
 	var weeklyTotal = ((factsList.length/totalDays)*7).toFixed(2);
 	$('#weeklytotal').html(weeklyTotal);
+
+	var lastfact = $('#lastfact').html(months[getMonth] + " " + getDate + ", " + getYear);
 
 
 /*  --          Recently added facts section          --  */
