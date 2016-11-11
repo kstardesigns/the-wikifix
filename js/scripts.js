@@ -336,6 +336,8 @@ popFactsList[59]="Disney planned to open a theme park in 1998 called " + (includ
 popFactsList[60]="The title of the popular comic strip \"Get Fuzzy\" comes from a concert poster that creator Darby Conley once made for his brother's band, the Fuzzy Sprouts. The poster read, \"Life's too short to be cool. Get Fuzzy.\"" + (source('1','Get_Fuzzy'));
 popFactsList[61]="In February 2005, MySpace founder Chris DeWolfe held talks with Facebook founder Mark Zuckerberg about acquiring Facebook for $75 million, but DeWolfe rejected the asking price." + (source('1','Myspace'));
 popFactsList[62]="Over 6,000 people applied to compete in the first season of <i>Survivor</i>; 800 were then interviewed in 16 cities. 48 people were then chosen, and after background checks and psychological evaluations done by the producers, the final 16 contestants and 2 alternates were picked." + (source('1','Survivor:_Borneo'));
+popFactsList[63]="Due to health concerns over the dye amaranth (also know as Red #2), red M&amp;M's were removed and replaced with orange M&amp;M's, despite the fact that red M&amp;M's did not contain Red #2. This was purely to satisfy worried consumers. Red M&amp;M's were reintroduced 10 years later." + (source('1','M%26M%27s'));
+
 	/*  --          Sports list          --  */
 var sportsFactsList = new Array;
 sportsFactsList[0]="The New York Yankees were originally founded in 1901 as the Baltimore Orioles. When they moved to New York, they became the New York Highlanders, and then the Yankees." + (source('1', 'New_York_Yankees'));
