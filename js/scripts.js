@@ -1,4 +1,4 @@
-/*  --          Table of Contents          --  */ 
+/*  --          Table of Contents          --  */
 
 /*
 
@@ -15,7 +15,7 @@ II. Fact lists
 		viii. Technology list
 		ix. TV/Film list
 	b. User-submitted facts list
-	c. Most used Wiki page list 
+	c. Most used Wiki page list
 	d. Pictures facts list
 	e. Retired facts list
 	f. Featured facts list
@@ -39,10 +39,10 @@ V. Recently added facts section
 function changeToFood() {
 	$('#button').attr('onClick','giveafoodfact()');
 	$('#listfood a').addClass('activefilter');
-	$('.filterbuttons a').not('#listfood a').removeClass('activefilter');	
+	$('.filterbuttons a').not('#listfood a').removeClass('activefilter');
 	$('#resetbutton').css('display','inline-block');
 	updateShareLinks();
-	giveafoodfact();	
+	giveafoodfact();
 }
 
 function changeToHistory() {
@@ -227,7 +227,9 @@ historyFactsList[29]="Since 1972, a \"" + (includeImage('leap second', 'leapseco
 historyFactsList[30]="The Secret Service codenames for recent Presidents of the United States include Renegade (Barack Obama), Tumbler and Trailblazer (George W. Bush), Eagle (Bill Clinton), Timberwolf (George H.W. Bush), and Rawhide (Ronald Reagan)." + (source('1', 'Secret_Service_codename'));
 historyFactsList[31]="Ticket prices for the Titanic's promenade deck suites cost $4,350 (equivalent to $106,660 in 2015) for a one-way passage." + (source('1', 'Sinking_of_the_RMS_Titanic'));
 historyFactsList[32]="The distance between the United States and Russia is less than 2.4 miles, between Diomede, Alaska, on Little Diomede Island, and Big Diomede, Russia." + (source('1','Diomede,_Alaska'));
-
+historyFactsList[33]="The city of Topeka, Kansas was temporarily renamed \"Google\" in March 2010, in an effort to attract Google to select the city for installation of Google Fiber. Google then jokingly announced its own name change to \"Topeka\", on April Fool's Day." + (source('1','Google_Fiber')) + (source('2','Topeka,_Kansas'));
+historyFactsList[34]="The highly disputed and controversial 1876 presidential election in the United States ended with an electoral vote of 185-184, with Rutherford B. Hayes winning the presidency. The informal and unwritten Compromise of 1877 helped decide the election, given the terms that Hayes removed all U.S. military forces from the former Confederate states." + (source('1','United_States_presidential_election,_1876')) + (source('2','Compromise_of_1877'));
+historyFactsList[35]="Although one of the smallest primates, a tarsier's eyeballs are approximately 16 mm in diameter and are as large as its brain." + (source('1','Tarsier'));
 
 	/*  --          Music list          --  */
 var musicFactsList = new Array;
@@ -411,7 +413,7 @@ technologyFactsList[20]="Sonic the Hedgehog's sidekick, Miles \"Tails\" Prower, 
 technologyFactsList[21]="The early Nintendo game <i>Baseball</i>, released in 1983, only allowed the player to choose 6 of the 26 MLB teams to play as." + (source('1', 'Baseball_(1983_video_game)'));
 technologyFactsList[22]="In 2010 and 2012, Sega released a follow-up sequel to the original Sonic series from 1991 to 1994. It is called <i>Sonic the Hedgehog 4 Episode I</i> and <i>Episode II</i>, and picks up where <i>Sonic and Knuckles</i> left off." + (source('1', 'Sonic_the_Hedgehog_4:_Episode_I')) + (source('2', 'Sonic_the_Hedgehog_4:_Episode_II'));
 technologyFactsList[23]="The creator of Atari video game system also created Chuck E. Cheese, which could function as a way to distribute Atari games and get kids to play Atari video games." + (source('1', 'Nolan_Bushnell'));
-technologyFactsList[24]="Some alternate endings considered for the video game <i>Portal 2</i> included the player-character shooting a Portal onto the moon's surface, and having the player die of asphyxiation over a closing song; another featured Chell finally saying a single word." + (source('1', 'Portal_2')); 
+technologyFactsList[24]="Some alternate endings considered for the video game <i>Portal 2</i> included the player-character shooting a Portal onto the moon's surface, and having the player die of asphyxiation over a closing song; another featured Chell finally saying a single word." + (source('1', 'Portal_2'));
 technologyFactsList[25]="The oldest still-existing .com domain is www.symbolics.com, which was registered on March 15, 1985." + (source('1', '.com'));
 technologyFactsList[26]="The first iPhone (released in 2007) did not have video recording, GPS, a front-facing camera, or a digital compass." + (source('1', 'List_of_iOS_devices'));
 technologyFactsList[27]="Upon the launch of Gmail and its 1-GB inboxes on April 1, 2004, many people dismissed it as a joke since Google is known for their elaborate April Fools' Day jokes." + (source('1', "April_Fools'_Day"));
@@ -538,6 +540,7 @@ televisionFactsList[104]="<i>Saved by the Bell</i> is a reboot of the original D
 televisionFactsList[105]="The TV series <i>Saved by the Bell</i> included 126 episodes, split between 3 different TV series and 2 films. This includes 13 episodes of <i>Good Morning, Miss Bliss</i>, 86 episodes of <i>Saved by the Bell</i>, 19 episodes of <i>Saved by the Bell: The College Years</i>,  and the films <i>Saved by the Bell: Hawaiian Style</i> and <i>Saved by the Bell: Wedding in Las Vegas</i>, which were aired as 4 episodes each." + (source('1','List_of_Saved_by_the_Bell_episodes'));
 televisionFactsList[106]="The original 1971 <i>Willy Wonka &amp; the Chocolate Factory</i> disappointed Roald Dahl so much that he refused to have a film version produced of the second book in the series, <i>Charlie and the Great Glass Elevator</i>." + (source('1','Charlie_and_the_Great_Glass_Elevator'));
 televisionFactsList[107]="The original handwritten manuscripts of <i>Charlie and the Chocolate Factory</i> included a child named Herpes, named after the sexually transmitted disease, among other politically incorrect things that didn't make it into the final published book." + (source('1','Charlie_and_the_Chocolate_Factory_(film)'));
+televisionFactsList[108]="According to Mel Blanc, who voiced most of the male characters in <i>Looney Tunes</i>, Sylvester the Cat was the easiest character to voice because \"It's just my normal speaking voice with a spray at the end.\" Yosemite Sam was the hardest because of his loudness and raspiness." + (source('1','Mel_Blanc'));
 
 	/*  --          User-submitted list          --  */
 var userSubmittedFactsList = ["food18","history19","music9","television47","pop20", "pop24","history24","pop31","technology23","technology24","television59","food22","pop43","pop46", "television98","technology39"];
@@ -555,7 +558,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 
 
 /*  --          Featured facts section          --  */
-	
+
 	var featuredFacts = [
 		{
 			'ffNumber': '1',
@@ -646,10 +649,19 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'altTag': 'Metallica playing music in Antarctica',
 			'bgcolor': 'rgba(60, 60, 60, .75)',
 			'textColor': '#fff'
+		},
+		{
+			'ffNumber': '11',
+			'theFact': historyFactsList[35],
+			'filter': 'History',
+			'bgImage': 'tarsier.jpg',
+			'altTag': 'A Philippine tarsier climbing a tree',
+			'bgcolor': 'rgba(134, 203, 14, .75)',
+			'textColor': '#fff'
 		}
 
 
-		
+
 
 
 	];
@@ -690,9 +702,9 @@ updateShareLinks();
 function updateShareLinks() {
 	var factText = $('#fact').text(); // Gets the fact text
 	var factStr = factText.toString(); // Converts text to string
-	var trimSpot = factStr.indexOf('['); // Finds the start of the fact sources 
+	var trimSpot = factStr.indexOf('['); // Finds the start of the fact sources
 	var trimmedFact = factStr.slice(0, trimSpot); // Trims the source links
-	
+
 	// Update the Twitter link
 	var linkRefTW = 'http://twitter.com/share?url=thewikifix.com&text=' + trimmedFact + '&hashtags=thewikifix';
 	$('#shareLinkTwitter').attr('href', linkRefTW);
@@ -759,14 +771,14 @@ $('.mobilenav a').click(function(){
 // Auto scroll
 $('.mobilenav a[href*=#]').bind('click', function(e) {
 	e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump
-       
+
 	var target = $(this).attr('href'); //Get the target
-			
+
 	// perform animated scrolling by getting top-position of target-element and set it as scroll target
 	$('html, body').stop().animate({ scrollTop: $(target).offset().top}, 1000, function() { //adjust - 48 if the header height changes
 	     location.hash = target;  //attach the hash (#jumptarget) to the pageurl
 	});
-			
+
 	return false;
    });
 
@@ -789,7 +801,7 @@ $('.themebutton').click(function () {
         $('.themebutton').addClass('on');
         $('.themebutton').removeClass('off');
     }
-}); 
+});
 
 	/*  --          Stats section / Set cookie          --  */
 
@@ -807,11 +819,11 @@ $(document).ready(function() {
 	var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
 	$('#total').html(factsList.length);
 	$('#usertotal').html(userSubmittedFactsList.length);
-	$('#pictotal').html(picturesFactsList.length);	
-	$('#retiredtotal').html(retiredFactsList.length);	
+	$('#pictotal').html(picturesFactsList.length);
+	$('#retiredtotal').html(retiredFactsList.length);
 	$('#mosttotal').html(mostFactsList.length);
-	
-	/* --    Build the chart    -- */	
+
+	/* --    Build the chart    -- */
 	var multiplier = 2;
 	var tvmultiplier = 1.6;
 	var foodbar = foodFactsList.length * multiplier + 'px';
@@ -821,15 +833,15 @@ $(document).ready(function() {
 	var sportsbar = sportsFactsList.length * multiplier + 'px';
 	var techbar = technologyFactsList.length * multiplier + 'px';
 	var tvbar = televisionFactsList.length * tvmultiplier + 'px';
-	
+
 	$('#fooddrinksbar').css('width', foodbar);
 	$('#historybar').css('width', histbar);
 	$('#musicbar').css('width', musicbar);
 	$('#popbar').css('width', popbar);
 	$('#sportsbar').css('width', sportsbar);
 	$('#techbar').css('width', techbar);
-	$('#tvfilmbar').css('width', tvbar);	
-	
+	$('#tvfilmbar').css('width', tvbar);
+
 	$('#foodtotal').html(foodFactsList.length);
 	$('#historytotal').html(historyFactsList.length);
 	$('#musictotal').html(musicFactsList.length);
@@ -855,7 +867,7 @@ $(document).ready(function() {
 
 	//$('#today').html(months[currentMonth] + ' ' + currentDate + ', ' + currentYear);
 
-	var totalDays = Math.round((todaysDate.getTime() - startDate.getTime())/(oneDay)); 
+	var totalDays = Math.round((todaysDate.getTime() - startDate.getTime())/(oneDay));
 	var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
 	var weeklyTotal = ((factsList.length/totalDays)*7).toFixed(2);
 	$('#weeklytotal').html(weeklyTotal);
@@ -957,6 +969,3 @@ $(document).ready(function() {
 
 
 });
-
-
-
