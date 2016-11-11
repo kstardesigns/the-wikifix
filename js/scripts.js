@@ -190,7 +190,7 @@ foodFactsList[31]="In an effort to promote its $2 meal deals, Taco Bell started 
 foodFactsList[32]="The popular McDonald's jingle \"I'm lovin' it\" was written and performed by Justin Timberlake and Pusha T, and produced by The Neptunes." + (source('1', 'I%27m_Lovin%27_It_(song)'));
 foodFactsList[33]="In the early 1980s, the Chuck E. Cheese opened in Australia under the name \"Charlie Cheese's Pizza Playhouse\" due to the word \"chuck\" meaning to throw up in Australia." + (source('1', 'Chuck_E._Cheese%27s'));
 foodFactsList[34]="In an effort to target a more adult audience, McDonald's developed a massive marketing campaign in 1996 for the " + (includeImage('Arch Deluxe burger', 'archdeluxe.jpg')) + ". It is considered to be one of McDonald's most expensive flops of all time, having spent over $300 million on research, production, and marketing." + (source('1', 'Arch_Deluxe'));
-foodFactsList[35]="Due to health concerns over the dye amaranth (also know as Red #2), red M&amp;M's were removed and replaced with orange M&amp;M's, despite the fact that red M&amp;M's did not contain Red #2. This was purely to satisfy worried consumers. Red M&amp;M's were reintroduced 10 years later." + (source('1','M%26M%27s'));
+foodFactsList[35]="Due to health concerns over the dye amaranth (also known as Red #2), red M&amp;M's were removed and replaced with orange M&amp;M's, despite the fact that red M&amp;M's did not contain Red #2. This was purely to satisfy worried consumers. Red M&amp;M's were reintroduced 10 years later." + (source('1','M%26M%27s'));
 
 
 	/*  --          History list          --  */
