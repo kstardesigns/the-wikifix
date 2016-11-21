@@ -231,6 +231,7 @@ historyFactsList[32]="The distance between the United States and Russia is less 
 historyFactsList[33]="The city of Topeka, Kansas was temporarily renamed \"Google\" in March 2010, in an effort to attract Google to select the city for installation of Google Fiber. Google then jokingly announced its own name change to \"Topeka\", on April Fool's Day." + (source('1','Google_Fiber')) + (source('2','Topeka,_Kansas'));
 historyFactsList[34]="The highly disputed and controversial 1876 presidential election in the United States ended with an electoral vote of 185-184, with Rutherford B. Hayes winning the presidency. The informal and unwritten Compromise of 1877 helped decide the election, given the terms that Hayes removed all U.S. military forces from the former Confederate states." + (source('1','United_States_presidential_election,_1876')) + (source('2','Compromise_of_1877'));
 historyFactsList[35]="Although one of the smallest primates, a tarsier's eyeballs are approximately 16 mm in diameter and are as large as its brain." + (source('1','Tarsier'));
+historyFactsList[36]="There have been 4 U.S. Presidents who have received a Nobel Peace Prize: Theodore Roosevelt, Woodrow Wilson, Jimmy Carter, and Barack Obama." + (source('1','2009_Nobel_Peace_Prize'));
 
 	/*  --          Music list          --  */
 var musicFactsList = new Array;
@@ -388,6 +389,7 @@ sportsFactsList[44]="When Shaquille O'Neill and Kobe Bryant were no longer teamm
 sportsFactsList[45]="Since Russia was banned from the 2016 Summer Olympics due to the doping scandal, no Russian athlete was allowed to participate internationally. The International Olympic Committee allowed 2 athletes to compete as \"neutral\" athletes, under the " + (includeImage('Olympic flag', 'olympicflag.jpg')) + ", who did not represent any nation." + (source('1', 'Independent_Olympic_Athletes_at_the_2016_Summer_Olympics'));
 sportsFactsList[46]="10 athletes participated in the 2016 Summer Olympics officially as the Team of Refugee Olympic Athletes, in the context of the \"worldwide refugee crisis\", of which the European migrant crisis and the Syrian Civil War are a prominent part. The athletes competed under the " + (includeImage('Olympic flag', 'olympicflag.jpg')) + " with the IOC country code ROA." + (source('1', 'Refugee_Olympic_Athletes_at_the_2016_Summer_Olympics'));
 sportsFactsList[47]="MLB Hall of Famer Rickey Henderson retired with 1,406 career stolen bases, which is 50% higher than the previous record of 938 held by Lou Brock." + (source('1','Rickey_Henderson'));
+sportsFactsList[48]="In his first 5 years of Major League Baseball, Mike Trout has won 2 American League MVP awards and placed second in MVP voting 3 times. He has also appeared in all 5 All-Star games, and won the All-Star MVP award 2 times." + (source('1','Mike_Trout'));
 
 	/*  --          Technology list          --  */
 var technologyFactsList = new Array;
