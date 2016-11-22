@@ -232,7 +232,7 @@ historyFactsList[33]="The city of Topeka, Kansas was temporarily renamed \"Googl
 historyFactsList[34]="The highly disputed and controversial 1876 presidential election in the United States ended with an electoral vote of 185-184, with Rutherford B. Hayes winning the presidency. The informal and unwritten Compromise of 1877 helped decide the election, given the terms that Hayes removed all U.S. military forces from the former Confederate states." + (source('1','United_States_presidential_election,_1876')) + (source('2','Compromise_of_1877'));
 historyFactsList[35]="Although one of the smallest primates, a tarsier's eyeballs are approximately 16 mm in diameter and are as large as its brain." + (source('1','Tarsier'));
 historyFactsList[36]="There have been 4 U.S. Presidents who have received a Nobel Peace Prize: Theodore Roosevelt, Woodrow Wilson, Jimmy Carter, and Barack Obama." + (source('1','2009_Nobel_Peace_Prize'));
-historyFactsList[37]="Vigo County, Indiana has voted for the winning candidate in every U.S. Presidential election since 1956, and in all but two elections since 1888." + (sourc('1', 'Vigo_County,_Indiana'));
+historyFactsList[37]="Vigo County, Indiana has voted for the winning candidate in every U.S. Presidential election since 1956, and in all but two elections since 1888." + (source('1', 'Vigo_County,_Indiana'));
 
 	/*  --          Music list          --  */
 var musicFactsList = new Array;
