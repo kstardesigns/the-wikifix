@@ -339,6 +339,7 @@ popFactsList[59]="Disney planned to open a theme park in 1998 called " + (includ
 popFactsList[60]="The title of the popular comic strip \"Get Fuzzy\" comes from a concert poster that creator Darby Conley once made for his brother's band, the Fuzzy Sprouts. The poster read, \"Life's too short to be cool. Get Fuzzy.\"" + (source('1','Get_Fuzzy'));
 popFactsList[61]="In February 2005, MySpace founder Chris DeWolfe held talks with Facebook founder Mark Zuckerberg about acquiring Facebook for $75 million, but DeWolfe rejected the asking price." + (source('1','Myspace'));
 popFactsList[62]="Over 6,000 people applied to compete in the first season of <i>Survivor</i>; 800 were then interviewed in 16 cities. 48 people were then chosen, and after background checks and psychological evaluations done by the producers, the final 16 contestants and 2 alternates were picked." + (source('1','Survivor:_Borneo'));
+popFactsList[63]="Nearly all of <i>The New York Times</i> crossword puzzles have rotational symmetry: they can be rotated 180 degrees and remain identical. When asked why, the first <i>Times</i> editor Margaret Farrar is said to have responded, \"Because it is prettier.\"" + (source('1','The_New_York_Times_crossword_puzzle'));
 
 	/*  --          Sports list          --  */
 var sportsFactsList = new Array;
