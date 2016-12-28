@@ -139,17 +139,17 @@ function source(sourceNo, sourceURL) {
 
 
 	/*  --          Time-based fact list           --    */
-	// last updated: 7/6/16
+	// last updated: 12/28/16
 var timedFactsList = new Array;
-timedFactsList[0]="As of the end of 2015 - the Seattle Mariners, owned by Nintendo of America, have had a losing record in 27 of the 39 seasons they have been a team. The team did not have a winning season for its first 14 seasons, and have also never been to the World Series." + (source('1', 'Seattle_Mariners'));
-timedFactsList[1]="As of the end of the 2015 season, only 5 MLB players have hit 60 or more home runs in a season: Babe Ruth (60), Roger Maris (61), Sammy Sosa (66, 63, 64), Mark McGwire (70, 65), and Barry Bonds (73)." + (source('1', '50_home_run_club'));
+timedFactsList[0]="As of the end of 2016 season the Seattle Mariners have had a losing record in 27 of the 40 seasons they have been a team. The team did not have a winning season for its first 14 seasons, and has also never been to the World Series." + (source('1', 'List_of_Seattle_Mariners_seasons'));
+timedFactsList[1]="As of the end of the 2016 season, only 5 MLB players have hit 60 or more home runs in a season: Babe Ruth (60), Roger Maris (61), Sammy Sosa (66, 63, 64), Mark McGwire (70, 65), and Barry Bonds (73)." + (source('1', '50_home_run_club'));
 timedFactsList[2]="As of the end of the 2015-2016 NBA season, only 3 players have ever won NBA MVP, All-Star game MVP, and Finals MVP awards in the same year: Willis Reed (1970), Michael Jordan (1996, 1998), and Shaquille O'Neal (2000)." + (source('1', 'Shaquille_O%27Neal'));
 timedFactsList[3]="As of the end of the NHL's 2015-16 regular season, the Detroit Red Wings have appeared in the playoffs 25 seasons in a row, dating back to the 1990-91 season." + (source('1', 'List_of_NHL_franchise_post-season_appearance_streaks'));
-timedFactsList[4]="As of 2016, the NFL has never had a team win the Super Bowl 3 times in a row. The NBA (5 times), NHL (5 times), and MLB (4 times), have all had teams win the championship at least 3 times in a row." + (source('1', 'List_of_Super_Bowl_champions')) + (source('2', 'List_of_NBA_champions')) + (source('3', 'List_of_Stanley_Cup_champions')) + (source('4', 'List_of_World_Series_champions'));
-timedFactsList[5]="As of 2016, Barry Bonds holds the record for most intentional walks in a 9-inning game (4), season (120), and career (668)." + (source('1', 'Intentional_base_on_balls'));
+timedFactsList[4]="As of the end of 2016, the NFL has never had a team win the Super Bowl 3 times in a row. The NBA (5 times), NHL (5 times), and MLB (4 times), have all had teams win the championship at least 3 times in a row." + (source('1', 'List_of_Super_Bowl_champions')) + (source('2', 'List_of_NBA_champions')) + (source('3', 'List_of_Stanley_Cup_champions')) + (source('4', 'List_of_World_Series_champions'));
+timedFactsList[5]="As of the end of the 2016 season, Barry Bonds holds the record for most intentional walks in a 9-inning game (4), season (120), and career (668)." + (source('1', 'Intentional_base_on_balls'));
 // retired timedFactsList[6]= "";
-timedFactsList[7]="As of 2016, the longest running scripted television series are <i>The Simpsons</i> (currently in its 27th season), <i>Gunsmoke</i> (lasted 20 seasons), <i>Law &amp; Order</i> (lasted 20 seasons), <i>Lassie</i> (lasted 19 seasons), and <i>South Park</i> (currently in its 19th season)." + (source('1', 'List_of_longest-running_U.S._primetime_television_series'));
-timedFactsList[8]="As of 2016, <i>Spongebob Squarepants</i> is the only remaining Nickelodeon show that debuted before the year 2000." + (source('1', 'List_of_longest-running_United_States_television_series'));
+timedFactsList[7]="As of the end of 2016, the longest running scripted television series are <i>The Simpsons</i> (currently in its 28th season), <i>Gunsmoke</i> (lasted 20 seasons), <i>Law &amp; Order</i> (lasted 20 seasons), <i>Law &amp; Order: Special Victims Unit</i> (currently in its 18th season), and <i>Lassie</i> (lasted 17 seasons, plus 2 more in syndication)." + (source('1', 'List_of_longest-running_scripted_U.S._primetime_television_series'));
+timedFactsList[8]="As of the end of 2016, <i>Spongebob Squarepants</i> is the only remaining Nickelodeon show that debuted before the year 2000." + (source('1', 'List_of_longest-running_United_States_television_series'));
 
 //olympic facts sports45 and 46
 
@@ -190,7 +190,7 @@ foodFactsList[31]="In an effort to promote its $2 meal deals, Taco Bell started 
 foodFactsList[32]="The popular McDonald's jingle \"I'm lovin' it\" was written and performed by Justin Timberlake and Pusha T, and produced by The Neptunes." + (source('1', 'I%27m_Lovin%27_It_(song)'));
 foodFactsList[33]="In the early 1980s, the Chuck E. Cheese opened in Australia under the name \"Charlie Cheese's Pizza Playhouse\" due to the word \"chuck\" meaning to throw up in Australia." + (source('1', 'Chuck_E._Cheese%27s'));
 foodFactsList[34]="In an effort to target a more adult audience, McDonald's developed a massive marketing campaign in 1996 for the " + (includeImage('Arch Deluxe burger', 'archdeluxe.jpg')) + ". It is considered to be one of McDonald's most expensive flops of all time, having spent over $300 million on research, production, and marketing." + (source('1', 'Arch_Deluxe'));
-foodFactsList[35]="Due to health concerns over the dye amaranth (also known as Red #2), red M&amp;M's were removed and replaced with orange M&amp;M's, despite the fact that red M&amp;M's did not contain Red #2. This was purely to satisfy worried consumers. Red M&amp;M's were reintroduced 10 years later." + (source('1','M%26M%27s'));
+foodFactsList[35]="Due to health concerns over the dye amaranth (also known as Red #2), red M&amp;M's were removed in 1976 and replaced with orange M&amp;M's, despite the fact that red M&amp;M's did not contain Red #2. This was purely to satisfy worried consumers. Red M&amp;M's were reintroduced 10 years later." + (source('1','M%26M%27s'));
 
 
 	/*  --          History list          --  */
@@ -340,6 +340,8 @@ popFactsList[60]="The title of the popular comic strip \"Get Fuzzy\" comes from 
 popFactsList[61]="In February 2005, MySpace founder Chris DeWolfe held talks with Facebook founder Mark Zuckerberg about acquiring Facebook for $75 million, but DeWolfe rejected the asking price." + (source('1','Myspace'));
 popFactsList[62]="Over 6,000 people applied to compete in the first season of <i>Survivor</i>; 800 were then interviewed in 16 cities. 48 people were then chosen, and after background checks and psychological evaluations done by the producers, the final 16 contestants and 2 alternates were picked." + (source('1','Survivor:_Borneo'));
 popFactsList[63]="Nearly all of <i>The New York Times</i> crossword puzzles have rotational symmetry: they can be rotated 180 degrees and remain identical. When asked why, the first <i>Times</i> editor Margaret Farrar is said to have responded, \"Because it is prettier.\"" + (source('1','The_New_York_Times_crossword_puzzle'));
+popFactsList[64]="American Airlines frequent flyer Steve Rothstein upgraded to a lifetime AAirpass in 1987, for $233,509.93, enabling him unlimited travel. During the more than 10 years he owned the pass, he traveled more than 10 million miles, and cost the airline $21 million, according to American Airlines. The airline terminated the lifetime pass in 2008." + (source('1','AAirpass'));
+popFactsList[65]="In 2011, a newly discovered species of mushroom was named <i>Spongiforma squarepantsii</i>, after the character SpongeBob SquarePants." + (source('1','SpongeBob_SquarePants)')) + (source('2','Spongiforma_squarepantsii)'));
 
 	/*  --          Sports list          --  */
 var sportsFactsList = new Array;
@@ -549,6 +551,10 @@ televisionFactsList[107]="The original handwritten manuscripts of <i>Charlie and
 televisionFactsList[108]="According to Mel Blanc, who voiced most of the male characters in <i>Looney Tunes</i>, Sylvester the Cat was the easiest character to voice because \"It's just my normal speaking voice with a spray at the end.\" Yosemite Sam was the hardest because of his loudness and raspiness." + (source('1','Mel_Blanc'));
 televisionFactsList[109]="The characters of <i>Gilligan's Island</i> remained stranded when the show was unexpectedly cancelled in 1967. However they were finally rescued 15 years later in the made-for-TV film <i>Rescue from Gilligan's Island</i>. That film ends with them getting stranded once again on the same island." + (source('1','Gilligan%27s_Island')) + (source('2','Rescue_from_Gilligan%27s_Island'));
 televisionFactsList[110]="After the first season of <i>Gilligan's Island</i>, star Bob Denver personally went to the studio executives and insisted that his co-stars Russell Johnson (the Professor) and Dawn Wells (Mary Ann) be added to the theme song's opening credits. After first refusing, the studio eventually added them into the credits starting in season 2." + (source('1','Gilligan%27s_Island'));
+televisionFactsList[111]="The film <i>Bruce Almighty</i> was initially banned in Egypt due to pressure from Muslims who objected to the portrayal of God as a visually ordinary man." + (source('1','Bruce_Almighty'));
+televisionFactsList[112]="<i>Doug</i> creator Jim Jinkins credits the characters' odd skin color choices to a \"margarita stupor\" with a friend in a Mexican restaurant, while discussing early character designs." + (source('1','Doug_(TV_series)'));
+televisionFactsList[113]="The titular character of the show <i>SpongeBob SquarePants</i> was originally going to be named SpongeBoy, with the show being titled <i>SpongeBoy Ahoy!</i> It was changed after Nickelodeon's legal department found that the name \"SpongeBoy\" was already a trademarked name for a mop product."+ (source('1','SpongeBob_SquarePants)'));
+
 
 	/*  --          User-submitted list          --  */
 var userSubmittedFactsList = ["food18","history19","music9","television47","pop20", "pop24","history24","pop31","technology23","technology24","television59","food22","pop43","pop46", "television98","technology39"];
