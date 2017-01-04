@@ -437,6 +437,8 @@ technologyFactsList[36]="The first Nintendo game to feature Luigi as the lone ma
 technologyFactsList[37]="The Sony PlayStation was originally an add-on peripheral for the Super Nintendo, called Play Station, which allowed the SNES to play a CD format called " + (includeImage('SNES-CD', 'snes-cd.jpg')) + ".  After Nintendo broke their contract with Sony in favor of their rival Philips, Sony eventually created their own video game system." + (source('1', 'SNES-CD'));
 technologyFactsList[38]="Nintendo's first attempt at a 3D gaming system was the " + (includeImage('Virtual Boy', 'virtualboy.jpg')) + " in 1995, which was considered a commercial failure as it sold less than 800,000 units, lacked portability, had poor wireframe monochromatic graphics, was overpriced, and sometimes caused painful physiological symptoms. It was discontinued after just 7 months." + (source('1', 'Virtual_Boy'));
 technologyFactsList[39]="Newspapers first started printing color comic strips in the 1890's, when the CMYK printing press was invented. It utilized the primary pigment colors cyan, magenta, yellow, and black." + (source('1','Shades_of_cyan'));
+technologyFactsList[40]="The 1981 Nintendo arcade game <i>Donkey Kong</i> was originally going to be a game based off of the <i>Popeye</i> comic strip. However, unable to get licensing, game director Shigeru Miyamoto eventually settled on new characters: a love triangle between a gorilla, carpenter, and girlfriend that mirrors the rivalry between Bluto and Popeye for Olive Oyl." + (source('1','Popeye_(video_game)')) + (source('2','Donkey_Kong_(video_game)'));
+
 
 	/*  --          Television/Film list          --  */
 var televisionFactsList = new Array;
