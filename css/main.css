@@ -82,9 +82,8 @@ section {
 
 .box {
 	background-color: #fff;
-	box-shadow: 1px 1px 2px rgba(0,0,0,0.8);
-	border: 1px solid #aaa;
-	border-bottom-width: 4px;
+	box-shadow: 0px 3px 3px rgba(0,0,0,.4);
+	border-bottom-width: 8px;
 	border-bottom-style: solid;
 	padding: 5px 5px 15px;
 	margin: 15px 0;
@@ -281,7 +280,7 @@ section {
 	border: 1px solid #aaa;
 	background-color: #f9f9f9;
 	padding: 20px;
-	font-size: 18px;
+	font-size: 19px;
 	text-align: center;
 }
 
@@ -345,10 +344,12 @@ section {
 }
 
 #shareLinkTwitter:before {
-	content: url('../assets/twitter.png');
-  	position: relative;
- 	top: 5px;
-  	margin-right: 5px; 
+	content: '\f099';
+  position: relative;
+  top: 2px;
+  font-family: 'FontAwesome';
+  left: -6px;
+  font-size: 24px;
 }
 
 /*tooltip credit to menucool.com*/
@@ -356,7 +357,7 @@ a.popimg {
   outline: none;
   text-decoration: none;
   position: relative;
- 
+
 }
 a.popimg > span {
   padding: 10px;
@@ -369,29 +370,29 @@ a.popimg > span {
   bottom: 30px;
   left: -50px;
 
-   } 
+   }
 
-a.popimg:hover > span { 
-  opacity: 1; 
-  text-decoration: none; 
-  visibility: visible; 
-  overflow: visible;  
-  display: inline; 
-} 
+a.popimg:hover > span {
+  opacity: 1;
+  text-decoration: none;
+  visibility: visible;
+  overflow: visible;
+  display: inline;
+}
 
- a.popimg span i { 
-   width: 15px; 
-   height: 15px; 
-   bottom: -9px; 
-   left: 50px; 
-   display: block; 
-   position: absolute; 
-   -webkit-transform: rotate(135deg); 
-   -moz-transform: rotate(135deg); 
-   -o-transform: rotate(135deg); 
-   transform: rotate(135deg);   
-   background: #fff; 
-   border-top: 1px solid #aaa; 
+ a.popimg span i {
+   width: 15px;
+   height: 15px;
+   bottom: -9px;
+   left: 50px;
+   display: block;
+   position: absolute;
+   -webkit-transform: rotate(135deg);
+   -moz-transform: rotate(135deg);
+   -o-transform: rotate(135deg);
+   transform: rotate(135deg);
+   background: #fff;
+   border-top: 1px solid #aaa;
    border-right: 1px solid #aaa; }
 
 
@@ -549,7 +550,7 @@ label {
 	line-height: 18px;
 	width: 20px;
 	background-color: #fff;
-} 
+}
 
 
 .recent {
@@ -631,7 +632,7 @@ label {
 	border-bottom-color: #a2ff73;
 	position: relative;
 }
-	
+
 .stats a {
 	font-weight: bold;
 }
@@ -655,22 +656,22 @@ label {
 	margin-left: 40px;
 }
 
-dl { 
-  width: 110%; 
-  margin: 10px 2.5%; 
+dl {
+  width: 110%;
+  margin: 10px 2.5%;
   background-color: tan;
   line-height: 27px;
 }
 
-dt { 
-  clear: both; 
+dt {
+  clear: both;
   float: left;
-  font-size: 12px;
-  font-family: sans-serif;
-  text-transform: uppercase;
+  font-size: 13px;
   font-weight: bold;
   width: 120px;
   text-align: right;
+	padding-bottom: 3px;
+	padding-right: 3px;
 }
 
 dt:nth-child(1) { color: #ff0000; }
@@ -682,11 +683,10 @@ dt:nth-child(11) { color: #bdbdbd; }
 dt:nth-child(13) { color: #e8c203; }
 dt:nth-child(15) { color: #e80c86; }
 
-dd { 
-  height: 20px; 
-  background-color: black; 
+dd {
+  height: 20px;
+  background-color: black;
   float: left;
-  margin-left: 5px;
   margin: 2px 0 0 5px;
   text-align: right;
   padding: 0 3px 3px 0;
@@ -834,7 +834,7 @@ body.dark .fact .populatedfact p {
   background-color: #545454;
 }
 
-body.dark textarea, 
+body.dark textarea,
 body.dark input,
 body.dark select,
 body.dark input[type="submit"] {
@@ -879,7 +879,7 @@ body.dark a.popimg span i {
   background: #545454;
 }
 
-body.dark .kstar a { 
+body.dark .kstar a {
 	color: transparent;
 }
 
@@ -992,5 +992,5 @@ body.dark .kstar a:hover {
 	.recent {padding:5px 20px 20px 5px;}
 	.kstar a {font-size: 14px; }
 	.content {margin: 0 auto 5px auto;}
-	
+
 }

@@ -894,7 +894,7 @@ $(document).ready(function() {
 /*  --          Recently added facts section          --  */
 
 	//How many facts to show for each filter
-	var factsShown = 5;
+	var factsShown = 3;
 
 	//Get the most recent facts and show most recent first
 	var lastFood = foodFactsList.slice(-factsShown).reverse();
