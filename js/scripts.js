@@ -582,7 +582,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'Sports',
 			'bgImage': 'nolanryan.jpg',
 			'altTag': 'Nolan Ryan pitching',
-			'bgcolor': 'rgba(6, 75, 145, .75)',
+			'bgcolor': 'rgba(6, 75, 145, 1)',
 			'textColor': '#fff'
 		},
 		{
@@ -591,7 +591,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'Pop Culture',
 			'bgImage': 'mj-wheaties.jpg',
 			'altTag': 'Michael Jordan in front of giant Wheaties box',
-			'bgcolor': 'rgba(255, 95, 54, .75)',
+			'bgcolor': 'rgba(255, 95, 54, 1)',
 			'textColor': '#fff'
 		},
 		{
@@ -600,7 +600,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'History',
 			'bgImage': 'moonlanding.jpg',
 			'altTag': 'Gene Cernan on the moon',
-			'bgcolor': 'rgba(68, 68, 68, .75)',
+			'bgcolor': 'rgba(68, 68, 68, 1)',
 			'textColor': '#fff'
 		},
 		{
@@ -609,7 +609,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'Pop Culture',
 			'bgImage': 'angrybirds.jpg',
 			'altTag': 'Screenshot of Angry Birds iOS',
-			'bgcolor': 'rgba(73, 170, 51, .9)',
+			'bgcolor': 'rgba(73, 170, 51, 1)',
 			'textColor': '#fff'
 		},
 		{
@@ -618,7 +618,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'TV &amp; Film',
 			'bgImage': 'tuco.jpg',
 			'altTag': 'Raymond Cruz as Tuco, in Breaking Bad',
-			'bgcolor': 'rgba(187, 199, 209, .75)',
+			'bgcolor': 'rgba(187, 199, 209, 1)',
 			'textColor': '#fff'
 		},
 		{
@@ -627,7 +627,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'Food &amp; Drink',
 			'bgImage': 'pringles.jpg',
 			'altTag': 'Asian Pringles cans',
-			'bgcolor': 'rgba(86, 168, 212, .75)',
+			'bgcolor': 'rgba(86, 168, 212, 1)',
 			'textColor': '#fff'
 		},
 		{
@@ -636,7 +636,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'TV &amp; Film',
 			'bgImage': 'tinabelcher.jpg',
 			'altTag': 'Tina Belcher as a boy',
-			'bgcolor': 'rgba(86, 168, 212, .75)',
+			'bgcolor': 'rgba(86, 168, 212, 1)',
 			'textColor': '#fff'
 		},
 		{
@@ -645,7 +645,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'Sports',
 			'bgImage': 'brodeur.jpg',
 			'altTag': 'Martin Brodeur scoring his 3rd career goal',
-			'bgcolor': 'rgba(225, 58, 62, .75)',
+			'bgcolor': 'rgba(225, 58, 62, 1)',
 			'textColor': '#fff'
 		},
 		{
@@ -654,7 +654,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'History',
 			'bgImage': 'titanic.jpg',
 			'altTag': 'Artistic rendition of the Titanic sinking',
-			'bgcolor': 'rgba(157, 157, 157, .75)',
+			'bgcolor': 'rgba(157, 157, 157, 1)',
 			'textColor': '#fff'
 		},
 		{
@@ -663,7 +663,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'Music',
 			'bgImage': 'metallica.jpg',
 			'altTag': 'Metallica playing music in Antarctica',
-			'bgcolor': 'rgba(60, 60, 60, .75)',
+			'bgcolor': 'rgba(60, 60, 60, 1)',
 			'textColor': '#fff'
 		},
 		{
@@ -672,7 +672,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 			'filter': 'History',
 			'bgImage': 'tarsier.jpg',
 			'altTag': 'A Philippine tarsier climbing a tree',
-			'bgcolor': 'rgba(134, 203, 14, .75)',
+			'bgcolor': 'rgba(134, 203, 14, 1)',
 			'textColor': '#fff'
 		}
 
