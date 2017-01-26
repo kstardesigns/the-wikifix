@@ -277,11 +277,11 @@ section {
 	width: 600px;
 	margin: 20px auto 0 auto;
 	display: block;
-	border: 1px solid #aaa;
 	background-color: #f9f9f9;
 	padding: 20px;
 	font-size: 19px;
 	text-align: center;
+	box-shadow: 0 2px 1px rgba(0,0,0,.4);
 }
 
 .fact .populatedfact a {
@@ -328,7 +328,7 @@ section {
 .sharingsection {
 	width: 600px;
 	position: relative;
-	margin: 5px auto;
+	margin: 10px auto;
 	display: block;
 
 }
