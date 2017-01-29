@@ -513,7 +513,7 @@ televisionFactsList[67]="The staff of Pixar came up with the original ideas for 
 televisionFactsList[68]="Throughout Eileen Fulton's 50-year tenure on the soap opera <i>As the World Turns</i>, her character Lisa Grimaldi had 8 spouses." + (source('1', 'Lisa_Grimaldi'));
 televisionFactsList[69]="<i>CBS Evening News</i> has aired over 16,400 episodes, dating back to May 3, 1948." + (source('1', 'List_of_longest-running_United_States_television_series'));
 televisionFactsList[70]=timedFactsList[8];
-televisionFactsList[71]="In <i>Grey's Anatomy</i>, only 4 of the main characters have appeared in all 12 seasons of the show: Meredith, Alex, Dr. Bailey, and Richard. Also appearing in all 12 seasons is the recurring character, Bokhee the scrub nurse." + (source('1', 'List_of_Grey%27s_Anatomy_cast_members'));
+televisionFactsList[71]="In <i>Grey's Anatomy</i>, only 4 of the main characters have appeared in all 13 seasons of the show: Meredith, Alex, Dr. Bailey, and Richard. Also appearing in all 12 seasons is the recurring character, Bokhee the scrub nurse." + (source('1', 'List_of_Grey%27s_Anatomy_cast_members'));
 televisionFactsList[72]="None of the main cast of <i>ER</i> appeared in all of the show's 15 seasons. Laura Innes' character Kerry Weaver appeared in 13 seasons, the most of any main cast member." + (source('1', 'Cast_of_ER'));
 televisionFactsList[73]="Starting with its 8th season, <i>Aqua Teen Hunger Force</i> changed its series title with each new season: <i>Aqua Unit Patrol Squad 1</i> was season 8's title, <i>Aqua Something You Know Whatever</i> for season 9, and <i>Aqua TV Show Show</i> for season 10." + (source('1', 'Aqua_Teen_Hunger_Force'));
 televisionFactsList[74]="Kel Mitchell, of <i>All That</i> and <i>Kenan & Kel</i> fame, also auditioned for <i>SNL</i> but lost the part to Kenan Thompson." + (source('1', 'Kel_Mitchell'));
@@ -773,7 +773,7 @@ updateShareLinks();
 
 // Activate mobile menu
 $('.mobilemenu').click(function(){
-	$('.mobilenav').toggle('slide');
+	$('.mobilenav').slideToggle();
 	$(this).toggleClass('close');
 	$('.overlay').toggle();
 });

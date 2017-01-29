@@ -143,7 +143,6 @@ section {
     position: absolute;
     bottom: -24px;
     right: -3px;
-    font-weight: bold;
     color: #3d78e8;
 }
 
@@ -171,7 +170,7 @@ section {
 .mobilenav ul {
 	padding-left: 0;
     list-style-type: none;
-    margin: 5px 0 0 0;
+    margin: 12px 0 0 0;
 }
 
 .mobilenav li {
@@ -336,7 +335,6 @@ section {
 	text-align: right;
 	font-size: 18px;
 	margin: 0 auto 20px auto;
-	font-weight: bold;
 }
 
 #shareLinkTwitter {
@@ -349,7 +347,7 @@ section {
   top: 2px;
   font-family: 'FontAwesome';
   left: -6px;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 /*tooltip credit to menucool.com*/
@@ -642,13 +640,39 @@ label {
 	font-size: 15px;
 }
 
+.stats ul {
+	padding-left: 20px;
+	list-style-type: none;
+}
+
 .statstext ul li {
-	margin: 5px 0;
+	margin: 10px 0;
+}
+
+.statstext ul strong {
+	font-size: 24px;
+	margin-right: 3px;
+}
+
+#total {
+    color: #ff6666;
+}
+
+#usertotal {
+    color: #ffc182;
+}
+
+#pictotal {
+    color: #d089ff;
+}
+
+#weeklytotal {
+	color: #98b7f3;
 }
 
 .bargraph {
 	height: 230px;
-	margin: 20px 0 0 -25px;
+	margin: 10px 0 0 -25px;
 }
 
 .bargraph h3 {
@@ -722,13 +746,9 @@ dd {
 	margin: 5px 0;
 }
 
-.notestext ul li:last-child {
-	line-height: 39px;
-}
-
 .notestext ul li img {
-	width: 150px;
-	vertical-align: bottom;
+	width: 100px;
+	vertical-align: middle;
 }
 
 .backtotop {
@@ -890,7 +910,7 @@ body.dark .kstar a:hover {
 
 .switchblock {
     display: block;
-    margin: 0 auto;
+    margin: 25px auto 0 auto;
     width: 100px;
     line-height: 23px;
     color: #dedede;
@@ -973,6 +993,7 @@ body.dark .kstar a:hover {
 	.links {display: none;}
 	.mobilenav .links, body.dark .mobilenav .links {display:block; margin: 0 auto; width: 125px; float: none; position: relative; right: inherit; top: inherit;}
 	.header img.logo-light, .header img.logo-dark {float: none; margin: 9px 15px 3px 15px;}
+	.header { margin-bottom: 20px; }
 	.backtotop {display: block;}
 	#sourcearea input#addSource { display: none; }
 	.recentlists ul {padding-left: 30px;}
