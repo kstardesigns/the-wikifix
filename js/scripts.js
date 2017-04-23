@@ -556,7 +556,7 @@ televisionFactsList[110]="After the first season of <i>Gilligan's Island</i>, st
 televisionFactsList[111]="The film <i>Bruce Almighty</i> was initially banned in Egypt due to pressure from Muslims who objected to the portrayal of God as a visually ordinary man." + (source('1','Bruce_Almighty'));
 televisionFactsList[112]="<i>Doug</i> creator Jim Jinkins credits the characters' odd skin color choices to a \"margarita stupor\" with a friend in a Mexican restaurant, while discussing early character designs." + (source('1','Doug_(TV_series)'));
 televisionFactsList[113]="The titular character of the show <i>SpongeBob SquarePants</i> was originally going to be named SpongeBoy, with the show being titled <i>SpongeBoy Ahoy!</i> It was changed after Nickelodeon's legal department found that the name \"SpongeBoy\" was already a trademarked name for a mop product."+ (source('1','SpongeBob_SquarePants)'));
-
+televisionFactsList[114]="In <i>Survivor: China</i>, the show's 15th season, the usual slogan \"Outwit, Outplay, Outlast\" was replaced with Chinese characters in its logo: 比智慧 (\"compete in intelligence\"), 比技巧 (\"compete in skill\"), and 比耐力 (\"compete in endurance\")." + (source('1','Survivor:_China'));
 
 	/*  --          User-submitted list          --  */
 var userSubmittedFactsList = ["food18","history19","music9","television47","pop20", "pop24","history24","pop31","technology23","technology24","television59","food22","pop43","pop46", "television98","technology39"];
