@@ -33,6 +33,7 @@ V. Recently added facts section
 
 */
 
+'use strict';
 
 /*  --          Filter buttons          --  */
 
@@ -687,7 +688,7 @@ retiredFactsList[1]="In 1991, a 1 GB hard drive could be purchased for about $2,
 function giveafact(){ //instead of relisting all array items here, add all the other arrays to this one
 // give a fact in main box
 var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
-randomFact = Math.floor(Math.random()*factsList.length);
+const randomFact = Math.floor(Math.random()*factsList.length);
 $('#fact').html(factsList[randomFact]);
 updateShareLinks();
 
@@ -708,7 +709,7 @@ window.onload=giveafact;
 function giveafactbutton(){ //instead of relisting all array items here, add all the other arrays to this one
 // give a fact in main box
 var factsList = foodFactsList.concat(musicFactsList,historyFactsList,popFactsList,sportsFactsList,technologyFactsList,televisionFactsList);
-randomFact = Math.floor(Math.random()*factsList.length);
+const randomFact = Math.floor(Math.random()*factsList.length);
 $('#fact').html(factsList[randomFact]);
 updateShareLinks();
 }
@@ -730,43 +731,43 @@ function updateShareLinks() {
 	/*  --          Generate unfiltered facts          --  */
 
 function giveafoodfact() {
-randomFoodFact = Math.floor(Math.random()*foodFactsList.length);
+const randomFoodFact = Math.floor(Math.random()*foodFactsList.length);
 $('#fact').html(foodFactsList[randomFoodFact]);
 updateShareLinks();
 }
 
 function giveahistoryfact() {
-randomHistoryFact = Math.floor(Math.random()*historyFactsList.length);
+const randomHistoryFact = Math.floor(Math.random()*historyFactsList.length);
 $('#fact').html(historyFactsList[randomHistoryFact]);
 updateShareLinks();
 }
 
 function giveamusicfact() {
-randomMusicFact = Math.floor(Math.random()*musicFactsList.length);
+const randomMusicFact = Math.floor(Math.random()*musicFactsList.length);
 $('#fact').html(musicFactsList[randomMusicFact]);
 updateShareLinks();
 }
 
 function giveapopculturefact() {
-randomPopCultureFact = Math.floor(Math.random()*popFactsList.length);
+const randomPopCultureFact = Math.floor(Math.random()*popFactsList.length);
 $('#fact').html(popFactsList[randomPopCultureFact]);
 updateShareLinks();
 }
 
 function giveasportsfact() {
-randomSportsFact = Math.floor(Math.random()*sportsFactsList.length);
+const randomSportsFact = Math.floor(Math.random()*sportsFactsList.length);
 $('#fact').html(sportsFactsList[randomSportsFact]);
 updateShareLinks();
 }
 
 function giveatechnologyfact() {
-randomTechnologyFact = Math.floor(Math.random()*technologyFactsList.length);
+const randomTechnologyFact = Math.floor(Math.random()*technologyFactsList.length);
 $('#fact').html(technologyFactsList[randomTechnologyFact]);
 updateShareLinks();
 }
 
 function giveatelevisionfact() {
-randomTelevisionFact = Math.floor(Math.random()*televisionFactsList.length);
+const randomTelevisionFact = Math.floor(Math.random()*televisionFactsList.length);
 $('#fact').html(televisionFactsList[randomTelevisionFact]);
 updateShareLinks();
 }
@@ -871,7 +872,7 @@ $(document).ready(function() {
 
 	var oneDay = 24*60*60*1000; //number of seconds in a day
 	var todaysDate = new Date();
-	var startDate = new Date(2014,05,21); //June 21, 2014
+	var startDate = new Date(2014,5,21); //June 21, 2014
 	var currentDate = todaysDate.getDate();
 	var currentMonth = todaysDate.getMonth();
 	var currentYear = todaysDate.getFullYear();
@@ -894,16 +895,17 @@ $(document).ready(function() {
 /*  --          Recently added facts section          --  */
 
 	//How many facts to show for each filter
-	var factsShown = 3;
+	let factsShown = 3;
 
 	//Get the most recent facts and show most recent first
-	var lastFood = foodFactsList.slice(-factsShown).reverse();
-	var lastHistory = historyFactsList.slice(-factsShown).reverse();
-	var lastMusic = musicFactsList.slice(-factsShown).reverse();
-	var lastPop = popFactsList.slice(-factsShown).reverse();
-	var lastSports = sportsFactsList.slice(-factsShown).reverse();
-	var lastTech = technologyFactsList.slice(-factsShown).reverse();
-	var lastTelevision = televisionFactsList.slice(-factsShown).reverse();
+	let lastFood = foodFactsList.slice(-factsShown).reverse();
+	let lastHistory = historyFactsList.slice(-factsShown).reverse();
+	let lastMusic = musicFactsList.slice(-factsShown).reverse();
+	let lastPop = popFactsList.slice(-factsShown).reverse();
+	let lastSports = sportsFactsList.slice(-factsShown).reverse();
+	let lastTech = technologyFactsList.slice(-factsShown).reverse();
+	let lastTelevision = televisionFactsList.slice(-factsShown).reverse();
+
 
 	// Bold the current filter
 	$('.ra.filterbuttons a').click(function(){
@@ -949,34 +951,34 @@ $(document).ready(function() {
 
 	//Append the facts for each filter
 
-	for (var i = 0; i < lastFood.length; i++) {
-		$('.ra-food').append('<li>' + lastFood[i] + '</li>');
+	for (var fact of lastFood) {
+		$('.ra-food').append('<li>' + fact + '</li>');
 	}
 
-	for (var i = 0; i < lastHistory.length; i++) {
-		$('.ra-history').append('<li>' + lastHistory[i] + '</li>');
+	for (var fact of lastHistory) {
+		$('.ra-history').append('<li>' + fact + '</li>');
+		//$('.ra-history').append('<li>' + "hello" + '</li>');
 	}
 
-	for (var i = 0; i < lastMusic.length; i++) {
-		$('.ra-music').append('<li>' + lastMusic[i] + '</li>');
+	for (var fact of lastMusic) {
+		$('.ra-music').append('<li>' + fact + '</li>');
 	}
 
-	for (var i = 0; i < lastPop.length; i++) {
-		$('.ra-pop').append('<li>' + lastPop[i] + '</li>');
+	for (var fact of lastPop) {
+		$('.ra-pop').append('<li>' + fact + '</li>');
 	}
 
-	for (var i = 0; i < lastSports.length; i++) {
-		$('.ra-sports').append('<li>' + lastSports[i] + '</li>');
+	for (var fact of lastSports) {
+		$('.ra-sports').append('<li>' + fact + '</li>');
 	}
 
-	for (var i = 0; i < lastTech.length; i++) {
-		$('.ra-tech').append('<li>' + lastTech[i] + '</li>');
+	for (var fact of lastTech) {
+		$('.ra-tech').append('<li>' + fact + '</li>');
 	}
 
-	for (var i = 0; i < lastTelevision.length; i++) {
-		$('.ra-television').append('<li>' + lastTelevision[i] + '</li>');
+	for (var fact of lastTech) {
+		$('.ra-television').append('<li>' + fact + '</li>');
 	}
-
 
 
 
