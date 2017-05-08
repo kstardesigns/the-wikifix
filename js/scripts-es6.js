@@ -905,7 +905,7 @@ $(document).ready(function() {
 	let lastSports = sportsFactsList.slice(-factsShown).reverse();
 	let lastTech = technologyFactsList.slice(-factsShown).reverse();
 	let lastTelevision = televisionFactsList.slice(-factsShown).reverse();
-
+	//make these into a reverse function
 
 	// Bold the current filter
 	$('.ra.filterbuttons a').click(function(){
@@ -951,32 +951,32 @@ $(document).ready(function() {
 
 	//Append the facts for each filter
 
-	for (var fact of lastFood) {
+	for (let fact of lastFood) {
 		$('.ra-food').append('<li>' + fact + '</li>');
 	}
 
-	for (var fact of lastHistory) {
+	for (let fact of lastHistory) {
 		$('.ra-history').append('<li>' + fact + '</li>');
 		//$('.ra-history').append('<li>' + "hello" + '</li>');
 	}
 
-	for (var fact of lastMusic) {
+	for (let fact of lastMusic) {
 		$('.ra-music').append('<li>' + fact + '</li>');
 	}
 
-	for (var fact of lastPop) {
+	for (let fact of lastPop) {
 		$('.ra-pop').append('<li>' + fact + '</li>');
 	}
 
-	for (var fact of lastSports) {
+	for (let fact of lastSports) {
 		$('.ra-sports').append('<li>' + fact + '</li>');
 	}
 
-	for (var fact of lastTech) {
+	for (let fact of lastTech) {
 		$('.ra-tech').append('<li>' + fact + '</li>');
 	}
 
-	for (var fact of lastTech) {
+	for (let fact of lastTech) {
 		$('.ra-television').append('<li>' + fact + '</li>');
 	}
 
