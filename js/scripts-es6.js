@@ -37,7 +37,7 @@ V. Recently added facts section
 
 /*  --          Filter buttons          --  */
 
-function changeToFood() {
+var changeToFood = () => {
 	$('#button').attr('onClick','giveafoodfact()');
 	$('#listfood a').addClass('activefilter');
 	$('.filterbuttons a').not('#listfood a').removeClass('activefilter');
@@ -46,7 +46,7 @@ function changeToFood() {
 	giveafoodfact();
 }
 
-function changeToHistory() {
+var changeToHistory = () => {
 	$('#button').attr('onClick','giveahistoryfact()');
 	$('#listhistory a').addClass('activefilter');
 	$('.filterbuttons a').not('#listhistory a').removeClass('activefilter');
@@ -55,7 +55,7 @@ function changeToHistory() {
 	giveahistoryfact();
 }
 
-function changeToMusic() {
+var changeToMusic = () => {
 	$('#button').attr('onClick','giveamusicfact()');
 	$('#listmusic a').addClass('activefilter');
 	$('.filterbuttons a').not('#listmusic a').removeClass('activefilter');
@@ -64,7 +64,7 @@ function changeToMusic() {
 	giveamusicfact();
 }
 
-function changeToPop() {
+var changeToPop = () => {
 	$('#button').attr('onClick','giveapopculturefact()');
 	$('#listpopculture a').addClass('activefilter');
 	$('.filterbuttons a').not('#listpopculture a').removeClass('activefilter');
@@ -73,7 +73,7 @@ function changeToPop() {
 	giveapopculturefact();
 }
 
-function changeToSports() {
+var changeToSports = () => {
 	$('#button').attr('onClick','giveasportsfact()');
 	$('#listsports a').addClass('activefilter');
 	$('.filterbuttons a').not('#listsports a').removeClass('activefilter');
@@ -82,7 +82,7 @@ function changeToSports() {
 	giveasportsfact();
 }
 
-function changeToTechnology() {
+var changeToTechnology = () => {
 	$('#button').attr('onClick','giveatechnologyfact()');
 	$('#listtechnology a').addClass('activefilter');
 	$('.filterbuttons a').not('#listtechnology a').removeClass('activefilter');
@@ -91,7 +91,7 @@ function changeToTechnology() {
 	giveatechnologyfact();
 }
 
-function changeToTelevision() {
+var changeToTelevision = () => {
 	$('#button').attr('onClick','giveatelevisionfact()');
 	$('#listtelevision a').addClass('activefilter');
 	$('.filterbuttons a').not('#listtelevision a').removeClass('activefilter');
@@ -101,7 +101,7 @@ function changeToTelevision() {
 }
 
 
-function changeToUnfiltered() {
+var changeToUnfiltered = () => {
 	$('#button').attr('onClick','giveafactbutton()');
 	$('.filterbuttons a').not('#resetbutton a').removeClass('activefilter');
 	$('#resetbutton').css('display','none');
