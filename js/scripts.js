@@ -438,7 +438,7 @@ technologyFactsList[37]="The Sony PlayStation was originally an add-on periphera
 technologyFactsList[38]="Nintendo's first attempt at a 3D gaming system was the " + (includeImage('Virtual Boy', 'virtualboy.jpg')) + " in 1995, which was considered a commercial failure as it sold less than 800,000 units, lacked portability, had poor wireframe monochromatic graphics, was overpriced, and sometimes caused painful physiological symptoms. It was discontinued after just 7 months." + (source('1', 'Virtual_Boy'));
 technologyFactsList[39]="Newspapers first started printing color comic strips in the 1890's, when the CMYK printing press was invented. It utilized the primary pigment colors cyan, magenta, yellow, and black." + (source('1','Shades_of_cyan'));
 technologyFactsList[40]="The 1981 Nintendo arcade game <i>Donkey Kong</i> was originally going to be a game based off of the <i>Popeye</i> comic strip. However, unable to get licensing, game director Shigeru Miyamoto eventually settled on new characters: a love triangle between a gorilla, carpenter, and girlfriend that mirrors the rivalry between Bluto and Popeye for Olive Oyl." + (source('1','Popeye_(video_game)')) + (source('2','Donkey_Kong_(video_game)'));
-
+technologyFactsList[41]="According to a study in 2007 by Tom Chavez of \"Rapt\", the \"I'm Feeling Lucky\" feature cost Google about $110 million a year, as 1% of all searches used this feature and bypassed all advertising." + (source('1','Google_Search'));
 
 	/*  --          Television/Film list          --  */
 var televisionFactsList = new Array;
