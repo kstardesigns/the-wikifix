@@ -905,7 +905,7 @@ $(document).ready(function() {
 	let lastSports = sportsFactsList.slice(-factsShown).reverse();
 	let lastTech = technologyFactsList.slice(-factsShown).reverse();
 	let lastTelevision = televisionFactsList.slice(-factsShown).reverse();
-	//make these into a reverse function
+	//make these into a reverse function, use an array
 
 	// Bold the current filter
 	$('.ra.filterbuttons a').click(function(){
@@ -957,7 +957,6 @@ $(document).ready(function() {
 
 	for (let fact of lastHistory) {
 		$('.ra-history').append('<li>' + fact + '</li>');
-		//$('.ra-history').append('<li>' + "hello" + '</li>');
 	}
 
 	for (let fact of lastMusic) {
