@@ -233,6 +233,9 @@ historyFactsList[34]="The highly disputed and controversial 1876 presidential el
 historyFactsList[35]="Although one of the smallest primates, a tarsier's eyeballs are approximately 16 mm in diameter and are as large as its brain." + (source('1','Tarsier'));
 historyFactsList[36]="There have been 4 U.S. Presidents who have received a Nobel Peace Prize: Theodore Roosevelt, Woodrow Wilson, Jimmy Carter, and Barack Obama." + (source('1','2009_Nobel_Peace_Prize'));
 historyFactsList[37]="Vigo County, Indiana has voted for the winning candidate in every U.S. Presidential election since 1956, and in all but two elections since 1888." + (source('1', 'Vigo_County,_Indiana'));
+historyFactsList[38]="Four is the only cardinal numeral in the English language that has the same number of letters as its number value." + (source('1','4'));
+historyFactsList[39]="The state of Franklin was an unrecognized and autonomous territory (located in current-day eastern Tennessee) that was founded in 1784, with the intent of becoming the 14th state of the new United States. It was never admitted to the union and was back under control of North Carolina by 1789." + (source('1','State_of_Franklin'));
+historyFactsList[40]="The abbreviation for \"number\", often seen as \"&numero;\", derives from the Latin numero, which is the ablative form of numerus (number)." + (source('1','Numero_sign'));
 
 	/*  --          Music list          --  */
 var musicFactsList = new Array;
@@ -557,6 +560,7 @@ televisionFactsList[111]="The film <i>Bruce Almighty</i> was initially banned in
 televisionFactsList[112]="<i>Doug</i> creator Jim Jinkins credits the characters' odd skin color choices to a \"margarita stupor\" with a friend in a Mexican restaurant, while discussing early character designs." + (source('1','Doug_(TV_series)'));
 televisionFactsList[113]="The titular character of the show <i>SpongeBob SquarePants</i> was originally going to be named SpongeBoy, with the show being titled <i>SpongeBoy Ahoy!</i> It was changed after Nickelodeon's legal department found that the name \"SpongeBoy\" was already a trademarked name for a mop product."+ (source('1','SpongeBob_SquarePants)'));
 televisionFactsList[114]="In <i>Survivor: China</i>, the show's 15th season, the usual slogan \"Outwit, Outplay, Outlast\" was replaced with Chinese characters in its logo: 比智慧 (\"compete in intelligence\"), 比技巧 (\"compete in skill\"), and 比耐力 (\"compete in endurance\")." + (source('1','Survivor:_China'));
+televisionFactsList[115]="The season 7 premiere of <i>Game of Thrones</i> was pirated more than 90 million times in the first 3 days after its airing." + (source('1','Game_of_Thrones_(season_7)'));
 
 	/*  --          User-submitted list          --  */
 var userSubmittedFactsList = ["food18","history19","music9","television47","pop20", "pop24","history24","pop31","technology23","technology24","television59","food22","pop43","pop46", "television98","technology39"];
