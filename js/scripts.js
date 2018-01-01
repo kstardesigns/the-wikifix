@@ -139,17 +139,17 @@ function source(sourceNo, sourceURL) {
 
 
 	/*  --          Time-based fact list           --    */
-	// last updated: 12/28/16
+	// last updated: 1/1/18
 var timedFactsList = new Array;
-timedFactsList[0]="As of the end of 2016 season the Seattle Mariners have had a losing record in 27 of the 40 seasons they have been a team. The team did not have a winning season for its first 14 seasons, and has also never been to the World Series." + (source('1', 'List_of_Seattle_Mariners_seasons'));
-timedFactsList[1]="As of the end of the 2016 season, only 5 MLB players have hit 60 or more home runs in a season: Babe Ruth (60), Roger Maris (61), Sammy Sosa (66, 63, 64), Mark McGwire (70, 65), and Barry Bonds (73)." + (source('1', '50_home_run_club'));
-timedFactsList[2]="As of the end of the 2015-2016 NBA season, only 3 players have ever won NBA MVP, All-Star game MVP, and Finals MVP awards in the same year: Willis Reed (1970), Michael Jordan (1996, 1998), and Shaquille O'Neal (2000)." + (source('1', 'Shaquille_O%27Neal'));
-timedFactsList[3]="As of the end of the NHL's 2015-16 regular season, the Detroit Red Wings have appeared in the playoffs 25 seasons in a row, dating back to the 1990-91 season." + (source('1', 'List_of_NHL_franchise_post-season_appearance_streaks'));
-timedFactsList[4]="As of the end of 2016, the NFL has never had a team win the Super Bowl 3 times in a row. The NBA (5 times), NHL (5 times), and MLB (4 times), have all had teams win the championship at least 3 times in a row." + (source('1', 'List_of_Super_Bowl_champions')) + (source('2', 'List_of_NBA_champions')) + (source('3', 'List_of_Stanley_Cup_champions')) + (source('4', 'List_of_World_Series_champions'));
-timedFactsList[5]="As of the end of the 2016 season, Barry Bonds holds the record for most intentional walks in a 9-inning game (4), season (120), and career (668)." + (source('1', 'Intentional_base_on_balls'));
+timedFactsList[0]="As of the end of 2017 season the Seattle Mariners have had a losing record in 28 of the 41 seasons they have been a team. The team did not have a winning season for its first 14 seasons, and has also never been to the World Series." + (source('1', 'List_of_Seattle_Mariners_seasons'));
+timedFactsList[1]="As of the end of the 2017 season, only 5 MLB players have hit 60 or more home runs in a season: Babe Ruth (60), Roger Maris (61), Sammy Sosa (66, 63, 64), Mark McGwire (70, 65), and Barry Bonds (73)." + (source('1', '50_home_run_club'));
+timedFactsList[2]="As of the end of the 2016-2017 NBA season, only 3 players have ever won NBA MVP, All-Star game MVP, and Finals MVP awards in the same year: Willis Reed (1970), Michael Jordan (1996, 1998), and Shaquille O'Neal (2000)." + (source('1', 'Shaquille_O%27Neal'));
+//timedFactsList[3]=(moved to non-timed list)
+timedFactsList[4]="As of the end of 2017, the NFL has never had a team win the Super Bowl 3 times in a row. The NBA (5 times), NHL (5 times), and MLB (4 times), have all had teams win the championship at least 3 times in a row." + (source('1', 'List_of_Super_Bowl_champions')) + (source('2', 'List_of_NBA_champions')) + (source('3', 'List_of_Stanley_Cup_champions')) + (source('4', 'List_of_World_Series_champions'));
+timedFactsList[5]="As of the end of the 2017 season, Barry Bonds holds the record for most intentional walks in a 9-inning game (4), season (120), and career (668)." + (source('1', 'Intentional_base_on_balls'));
 // retired timedFactsList[6]= "";
-timedFactsList[7]="As of the end of 2016, the longest running scripted television series are <i>The Simpsons</i> (currently in its 28th season), <i>Gunsmoke</i> (lasted 20 seasons), <i>Law &amp; Order</i> (lasted 20 seasons), <i>Law &amp; Order: Special Victims Unit</i> (currently in its 18th season), and <i>Lassie</i> (lasted 17 seasons, plus 2 more in syndication)." + (source('1', 'List_of_longest-running_scripted_U.S._primetime_television_series'));
-timedFactsList[8]="As of the end of 2016, <i>Spongebob Squarepants</i> is the only remaining Nickelodeon show that debuted before the year 2000." + (source('1', 'List_of_longest-running_United_States_television_series'));
+timedFactsList[7]="As of the end of 2017, the longest running scripted television series are <i>The Simpsons</i> (currently in its 29th season), <i>Gunsmoke</i> (lasted 20 seasons), <i>Law &amp; Order</i> (lasted 20 seasons), and <i>Law &amp; Order: Special Victims Unit</i> (currently in its 19th season)." + (source('1', 'List_of_longest-running_scripted_U.S._primetime_television_series'));
+timedFactsList[8]="As of the end of 2017, <i>Spongebob Squarepants</i> is the only remaining Nickelodeon show that debuted before the year 2000." + (source('1', 'List_of_longest-running_United_States_television_series'));
 
 //olympic facts sports45 and 46
 
@@ -372,7 +372,7 @@ sportsFactsList[20]="During Wilt Chamberlain's famous 100-point basketball game 
 sportsFactsList[21]="The first person to run a sub-4-minute mile was Roger Bannister, who ran a mile in 3:59.4 in 1954. There is a plaque at Oxford University's Iffley Road Track commemorating the achievement." + (source('1', 'Four-minute_mile'));
 sportsFactsList[22]="The 2016 Super Bowl did not use Roman Numerals to number it, like usual. Instead of Super Bowl L, it was known as <br/>" + (includeImage('Super Bowl 50', 'sb50.png')) + "." + (source('1', 'Super_Bowl_50'));
 sportsFactsList[23]="The Montreal Canadiens appeared in the Stanley Cup Finals all 10 years from the 1950-51 season to the 1959-60 season, winning the Stanley Cup 6 times." + (source('1', 'List_of_NHL_franchise_post-season_appearance_streaks'));
-sportsFactsList[24]=timedFactsList[3];
+sportsFactsList[24]="As of the end of the NHL's 2015-16 regular season, the Detroit Red Wings had appeared in the playoffs 25 seasons in a row, dating back to the 1990-91 season. The steak finally ended when the Red Wings missed the playoffs in 2016-17." + (source('1', 'List_of_NHL_franchise_post-season_appearance_streaks'));
 sportsFactsList[25]="NHL player Wayne Gretzky scored 70+ goals in a season 4 different times: 92 goals in the 1981-82 season, 71 goals in '82-'83, 87 goals in '83-84, and 73 goals in '84-'85." + (source('1', 'List_of_NHL_players_with_50-goal_seasons'));
 sportsFactsList[26]="On May 8, 2012, Texas Ranger player Josh Hamilton went 5-5 with 4 homeruns. All 4 homeruns were 2-run homeruns, and the runner on base all 4 times was Elvis Andrus." + (source('1', 'Josh_Hamilton'));
 sportsFactsList[27]="Michael Jordan continued to receive his multi-million dollar NBA salary during his first retirement, when he left the NBA to play minor league baseball. He played for a Chicago White Sox minor league affiliate, which was owned by Chicago Bulls owner Jerry Reinsdorf." + (source('1', 'Michael_Jordan'));
@@ -562,6 +562,7 @@ televisionFactsList[112]="<i>Doug</i> creator Jim Jinkins credits the characters
 televisionFactsList[113]="The titular character of the show <i>SpongeBob SquarePants</i> was originally going to be named SpongeBoy, with the show being titled <i>SpongeBoy Ahoy!</i> It was changed after Nickelodeon's legal department found that the name \"SpongeBoy\" was already a trademarked name for a mop product."+ (source('1','SpongeBob_SquarePants)'));
 televisionFactsList[114]="In <i>Survivor: China</i>, the show's 15th season, the usual slogan \"Outwit, Outplay, Outlast\" was replaced with Chinese characters in its logo: 比智慧 (\"compete in intelligence\"), 比技巧 (\"compete in skill\"), and 比耐力 (\"compete in endurance\")." + (source('1','Survivor:_China'));
 televisionFactsList[115]="The season 7 premiere of <i>Game of Thrones</i> was pirated more than 90 million times in the first 3 days after its airing." + (source('1','Game_of_Thrones_(season_7)'));
+televisionFactsList[116]="A 24-hour kitten photo shoot was held to photograph and film the kittens for use on the Frolicsome Felines plates in Professor Umbridge's office, in <i>Harry Potter and the Order of the Phoenix</i>." + (source('1','Harry_Potter_and_the_Order_of_the_Phoenix_(film)'));
 
 	/*  --          User-submitted list          --  */
 var userSubmittedFactsList = ["food18","history19","music9","television47","pop20", "pop24","history24","pop31","technology23","technology24","television59","food22","pop43","pop46", "television98","technology39"];
