@@ -30,6 +30,7 @@ a:hover {
 
 sup {
 	font-size: 13px;
+	white-space: nowrap;
 }
 
 sup a {
