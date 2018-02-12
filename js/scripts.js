@@ -397,6 +397,7 @@ sportsFactsList[45]="Since Russia was banned from the 2016 Summer Olympics due t
 sportsFactsList[46]="10 athletes participated in the 2016 Summer Olympics officially as the Team of Refugee Olympic Athletes, in the context of the \"worldwide refugee crisis\", of which the European migrant crisis and the Syrian Civil War are a prominent part. The athletes competed under the " + (includeImage('Olympic flag', 'olympicflag.jpg')) + " with the IOC country code ROA." + (source('1', 'Refugee_Olympic_Athletes_at_the_2016_Summer_Olympics'));
 sportsFactsList[47]="MLB Hall of Famer Rickey Henderson retired with 1,406 career stolen bases, which is 50% higher than the previous record of 938 held by Lou Brock." + (source('1','Rickey_Henderson'));
 sportsFactsList[48]="In his first 5 years of Major League Baseball, Mike Trout has won 2 American League MVP awards and placed second in MVP voting 3 times. He has also appeared in all 5 All-Star games, and won the All-Star MVP award 2 times." + (source('1','Mike_Trout'));
+sportsFactsList[49]="Indiana Pacers small forward Ron Artest (now legally known as Metta World Peace) was suspended for a total of 86 games after the infamous \"Malice at the Palace\", a brawl between the Pacers, Pistons, and their fans in 2004. He lost $4,995,000 in salary during his suspension." + (source('1','Pacers–Pistons_brawl'));
 
 	/*  --          Technology list          --  */
 var technologyFactsList = new Array;
