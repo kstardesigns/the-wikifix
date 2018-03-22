@@ -444,6 +444,7 @@ technologyFactsList[39]="Newspapers first started printing color comic strips in
 technologyFactsList[40]="The 1981 Nintendo arcade game <i>Donkey Kong</i> was originally going to be a game based off of the <i>Popeye</i> comic strip. However, unable to get licensing, game director Shigeru Miyamoto eventually settled on new characters: a love triangle between a gorilla, carpenter, and girlfriend that mirrors the rivalry between Bluto and Popeye for Olive Oyl." + (source('1','Popeye_(video_game)')) + (source('2','Donkey_Kong_(video_game)'));
 technologyFactsList[41]="According to a study in 2007 by Tom Chavez of \"Rapt\", the \"I'm Feeling Lucky\" feature cost Google about $110 million a year, as 1% of all searches used this feature and bypassed all advertising." + (source('1','Google_Search'));
 technologyFactsList[42]="Early screenshots of <i>Conker's Bad Fur Day</i> for Nintendo 64 were criticized for its cuteness and similarity to Rare's past games. In response to this, Rare overhauled the game for mature audiences, featuring graphic violence, alcohol and tobacco use, profanity, vulgar humor, and pop culture references." + (source('1','Conker%27s_Bad_Fur_Day'));
+technologyFactsList[43]="The <i>Curiousity</i> rover landed within just 2.4 km (1.5 mi) of the center of its touchdown target, after a 560 million km (350 million mi) journey to Mars." + (source('1','Curiosity_(rover)'));
 
 	/*  --          Television/Film list          --  */
 var televisionFactsList = new Array;
