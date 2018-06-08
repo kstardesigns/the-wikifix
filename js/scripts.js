@@ -398,6 +398,7 @@ sportsFactsList[46]="10 athletes participated in the 2016 Summer Olympics offici
 sportsFactsList[47]="MLB Hall of Famer Rickey Henderson retired with 1,406 career stolen bases, which is 50% higher than the previous record of 938 held by Lou Brock." + (source('1','Rickey_Henderson'));
 sportsFactsList[48]="In his first 5 years of Major League Baseball, Mike Trout has won 2 American League MVP awards and placed second in MVP voting 3 times. He has also appeared in all 5 All-Star games, and won the All-Star MVP award 2 times." + (source('1','Mike_Trout'));
 sportsFactsList[49]="Indiana Pacers small forward Ron Artest (now legally known as Metta World Peace) was suspended for a total of 86 games after the infamous \"Malice at the Palace\", a brawl between the Pacers, Pistons, and their fans in 2004. He lost $4,995,000 in salary during his suspension." + (source('1','Pacers–Pistons_brawl'));
+sportsFactsList[50]="4 MLB players have hit a triple in their only major league at-bat and therefore share the record of a career slugging percentage of 3.000 (of a maximum of 4.000), when evaluated without regard to a minimum number of games played or plate appearances." + (source('1','Slugging_percentage'));
 
 	/*  --          Technology list          --  */
 var technologyFactsList = new Array;
